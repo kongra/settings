@@ -40,33 +40,21 @@ M2=$M2_HOME/bin
 MAVEN_OPTS="-Xms256m -Xmx512m"
 PATH=$PATH:$M2
 
-# Clojure and LAN project
-# CLOJURE_SRC=$HOME/Devel/Libs/clojure-1.1/src
-# CLASSPATH=$CLASSPATH:$CLOJURE_SRC/clj:$CLOJURE_SRC/jvm
-
-# CLOJURE_CONTRIB_SRC=$HOME/Devel/Libs/clojure-contrib-1.1/src
-# CLASSPATH=$CLASSPATH:$CLOJURE_CONTRIB_SRC
-
-# LAN_SRC=$HOME/Devel/Projects/LAN/src
-# CLASSPATH=$CLASSPATH:$LAN_SRC/clj-src:$LAN_SRC/java-src
-
-# JRuby
-# PATH=$PATH:$HOME/Javasoft/jruby/bin
-
 # Python
 PYTHONPATH=.:$HOME/Devel/Projects/Python
 
 # Python virtualenv
 VENV=~/virtualenv
 
-# ALTERNATE_EDITOR=emacs
-# EDITOR=emacsclient -t
-# VISUAL=emacsclient -t
-
 # Haskell
-PATH=$PATH:$HOME/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.3/bin:/opt/happy/1.19.3/bin:/opt/alex/3.1.3/bin
+PATH=$PATH:$HOME/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.1/bin:/opt/happy/1.19.3/bin:/opt/alex/3.1.3/bin
 
-export SBCL_HOME PATH JAVA_HOME ANT_HOME M2_HOME M2 MAVEN_OPTS CLASSPATH LAN_SRC CLOJURE_SRC CLOJURE_CONTRIB_SRC PYTHONPATH ALTERNATE_EDITOR EDITOR VISUAL VENV
+TMPDIR=$HOME/tmp
+
+# R
+R_LIBS_USER=/home/kongra/R/x86_64-pc-linux-gnu-library/3.2/
+
+export SBCL_HOME PATH JAVA_HOME ANT_HOME M2_HOME M2 MAVEN_OPTS CLASSPATH PYTHONPATH ALTERNATE_EDITOR EDITOR VISUAL VENV TMPDIR R_LIBS_USER
 
 export LANGUAGE="pl:en"
 export LC_MESSAGES="pl_PL.UTF-8"
