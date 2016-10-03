@@ -21,11 +21,7 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-PATH=.:$PATH
-
-# SBCL
-SBCL_HOME=$HOME/SBCL/lib/sbcl
-# PATH=$PATH:$HOME/SBCL/bin
+PATH=.:$PATH:$HOME/.local/bin
 
 # Java
 JAVA_HOME=$HOME/Javasoft/jdk
@@ -40,23 +36,19 @@ M2=$M2_HOME/bin
 MAVEN_OPTS="-Xms256m -Xmx512m"
 PATH=$PATH:$M2
 
-# Python
-PYTHONPATH=.:$HOME/Devel/Projects/Python
+# GNAT/Ada
+GNAT_HOME=$HOME/GNAT/gnat
+PATH=$PATH:$GNAT_HOME/bin
 
-# Python virtualenv
-VENV=~/virtualenv
+# LLVM
+LLVM_HOME=/usr/lib/llvm-3.7
+PATH=$PATH:$LLVM_HOME/bin
 
 # Haskell
-PATH=$PATH:$HOME/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.1/bin:/opt/happy/1.19.3/bin:/opt/alex/3.1.3/bin
+# PATH=$PATH:$HOME/.cabal/bin:/opt/cabal/1.24/bin:/opt/ghc/8.0.2/bin:/opt/happy/1.19.5/bin:/opt/alex/3.1.7/bin
 
-TMPDIR=$HOME/tmp
-
+# TMPDIR=$HOME/tmp
 # R
-R_LIBS_USER=/home/kongra/R/x86_64-pc-linux-gnu-library/3.2/
+# R_LIBS_USER=/home/kongra/R/x86_64-pc-linux-gnu-library/3.2/
 
-export SBCL_HOME PATH JAVA_HOME ANT_HOME M2_HOME M2 MAVEN_OPTS CLASSPATH PYTHONPATH ALTERNATE_EDITOR EDITOR VISUAL VENV TMPDIR R_LIBS_USER
-
-export LANGUAGE="pl:en"
-export LC_MESSAGES="pl_PL.UTF-8"
-export LC_CTYPE="pl_PL.UTF-8"
-export LC_COLLATE="pl_PL.UTF-8"
+export PATH JAVA_HOME ANT_HOME M2_HOME M2 MAVEN_OPTS CLASSPATH GNAT_HOME LLVM_HOME
