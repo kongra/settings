@@ -93,6 +93,9 @@
 (setq x-select-enable-clipboard t)
 (setq column-number-mode t)
 
+;; POWERLINE
+(require 'powerline)
+
 ;; SCROLLING
 
 ;; (setq mouse-wheel-progressive-speed nil)
