@@ -9,7 +9,7 @@
 
   :signing      {:gpg-key "D7B06D3D"}
 
-  :dependencies [[criterium          "0.4.4"]]
+  :dependencies [[criterium           "0.4.4"]]
 
   :jvm-opts     ["-server"
                  "-d64"
