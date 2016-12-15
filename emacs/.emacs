@@ -40,6 +40,10 @@
              '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/"))
 (package-initialize)
 
+;; DEFAULT BROWSER
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "opera")
+
 ;; FONTS
 ;; (set-face-attribute 'default nil :font "DejaVu Sans Mono-10")
 ;; (set-face-attribute 'default nil :font "Droid Sans Mono-11")
@@ -78,7 +82,7 @@
 ;; RULERS
 ;; NW MODE
 ;; (add-hook 'window-configuration-change-hook (lambda () (ruler-mode 1)))
-(setq-default fill-column 70)
+(setq-default fill-column 80)
 
 ;; BACKGROUND COLOR (BEFORE ZENBURN)
 ;; M-x list-faces-display
@@ -127,10 +131,10 @@
 
 ;; MAP THE WINDOW MANIPULATION KEYS TO META 0, 1, 2, O
 (global-set-key (kbd "M-3") 'split-window-horizontally)
-(global-set-key (kbd "M-2") 'split-window-vertically)
-(global-set-key (kbd "M-1") 'delete-other-windows)
-(global-set-key (kbd "M-0") 'delete-window)
-(global-set-key (kbd "M-o") 'other-window)
+(global-set-key (kbd "M-2") 'split-window-vertically  )
+(global-set-key (kbd "M-1") 'delete-other-windows     )
+(global-set-key (kbd "M-0") 'delete-window            )
+(global-set-key (kbd "M-o") 'other-window             )
 
 ;; ROTATING AND TRANSPOSING WINDOWS
 (defun rotate-windows ()
@@ -194,13 +198,11 @@
               (remove-if-not 'buffer-file-name (buffer-list)))))
 
 ;; SOME EASY KEYS
-(global-set-key (kbd "M-u") 'undo) ; was upcase-word
-(global-unset-key "\C-_")
-
-(global-set-key (kbd "M-a") 'mark-whole-buffer)
-
-(global-set-key [C-f4]  'kill-this-buffer)
-(global-set-key (kbd "C-x g")  'goto-line)
+(global-set-key (kbd "M-u")   'undo             ) ; was upcase-word
+(global-unset-key "\C-_"                        )
+(global-set-key (kbd "M-a")   'mark-whole-buffer)
+(global-set-key [C-f4]        'kill-this-buffer )
+(global-set-key (kbd "C-x g") 'goto-line        )
 
 ;; DELETE TRAILING SPACES ON EVERY SAVE
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
@@ -308,25 +310,9 @@
 ;; C/C++ STYLE
 
 (setq-default indent-tabs-mode nil)
-
-(defun my-c-mode-common-hook ()
- ;; my customizations for all of c-mode, c++-mode, objc-mode, java-mode
- (c-set-offset 'substatement-open 0)
- ;; other customizations can go here
-
- (setq c++-tab-always-indent t)
- (setq c-basic-offset 2)                  ;; Default is 2
- (setq c-indent-level 2)                  ;; Default is 2
-
- (setq tab-stop-list '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60))
- (setq tab-width 2)
- ;; (setq indent-tabs-mode nil)  ; use spaces only if nil
- )
-
-(add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
+(setq-default tab-width 2)
 
 ;; PYTHON-MODE
-
 (autoload 'python-mode "python-mode" "Python Mode." t)
 (add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
 (add-to-list 'interpreter-mode-alist '("python" . python-mode))
@@ -539,6 +525,16 @@
 (require 'hi2)
 (add-hook 'haskell-mode-hook 'turn-on-hi2)
 
+;; ELM MODE ...
+(require  'elm-mode)
+(add-hook 'elm-mode-hook 'turn-on-hi2)
+
+;; ... WITH FLYCHECK
+(require  'flycheck-elm)
+(add-hook 'flycheck-mode-hook 'flycheck-elm-setup)
+;; (with-eval-after-load 'flycheck
+;;   '(add-hook 'flycheck-mode-hook #'flycheck-elm-setup))
+
 ;; TURN ON ABBREV MODE GLOBALLY
 (setq default-abbrev-mode t)
 
@@ -551,15 +547,6 @@
 
 ;; SHUFFLING LINES
 (require 'shuffle-lines)
-
-;; (require 'google-c-style)
-;; (add-hook 'c-mode-common-hook 'google-make-newline-indent)
-;; (add-hook 'c-mode-common-hook 'google-set-c-style)
-
-;; INDENT SIZES FOR MISC.LANGUAGES
-
-;; (add-hook 'java-mode-hook
-;; 	  (lambda () (setq c-basic-offset 2)))
 
 ;; MISC. INSERTING
 
