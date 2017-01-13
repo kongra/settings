@@ -1,0 +1,27 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/kongra/" . "Pulpit/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/kongra/Pulpit/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "Oferty.csv"
+ "Oferty.txt"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/kongra/Pulpit/" (22642 2563 618687 718000) "Sobota/" "./" "Nieruchomości.R" "Oferty.csv" "../" "JACSM I/")
+
+ ("/home/kongra/" (22641 58903 905074 999000) ".Rhistory" ".xfce4-session.verbose-log.last" "Muzyka/" "Publiczny/" ".pki/" "examples.desktop" ".gimp-2.8/" ".gnome/" ".gtkrc-2.0" "Dokumenty/" ".themes/" ".bash_logout" ".zsh-update" ".oh-my-zsh/" "R/" "Wideo/" ".zcompdump-hp470-5.0.2" ".zshrc.pre-oh-my-zsh" ".local/" ".zshrc" ".Xauthority" "Pobrane/" "bin/" ".emacs" ".cache/" ".xsession-errors" ".xfce4-session.verbose-log" ".rstudio-desktop/" ".viminfo" "Temp/" ".thumbnails/" ".gconf/" "Szablony/" ".config/" "Obrazy/" "./" ".dmrc" ".xscreensaver" ".bash_history" "../" ".AMD/" ".profile" ".emacs.d/" ".compiz/" ".xsession-errors.old" ".gnupg/" ".xinputrc" ".ICEauthority" ".bashrc" ".smex-items" ".zcompdump" "Pulpit/" ".zsh_history" ".mozilla/" ".conkyrc")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

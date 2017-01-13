@@ -526,12 +526,12 @@
 (add-hook 'haskell-mode-hook 'turn-on-hi2)
 
 ;; ELM MODE ...
-(require  'elm-mode)
-(add-hook 'elm-mode-hook 'turn-on-hi2)
+;; (require  'elm-mode)
+;; (add-hook 'elm-mode-hook 'turn-on-hi2)
 
 ;; ... WITH FLYCHECK
-(require  'flycheck-elm)
-(add-hook 'flycheck-mode-hook 'flycheck-elm-setup)
+;; (require  'flycheck-elm)
+;; (add-hook 'flycheck-mode-hook 'flycheck-elm-setup)
 ;; (with-eval-after-load 'flycheck
 ;;   '(add-hook 'flycheck-mode-hook #'flycheck-elm-setup))
 
