@@ -1,11 +1,15 @@
 {:user
  {:plugins      [[lein-pprint        "1.1.2"]
                  [lein-ancient      "0.6.10"]
-                 [lein-bikeshed      "0.3.0"]
+                 [lein-bikeshed      "0.4.1"]
                  [jonase/eastwood    "0.2.3"]
-                 [lein-kibit         "0.1.2" :exclusions [org.clojure/clojure]]
+                 [lein-kibit         "0.1.3"
+                  :exclusions
+                  [org.clojure/clojure
+                   org.clojure/tools.namespace
+                   org.clojure/tools.cli]]
 
-                 [cider/cider-nrepl "0.13.0"]]
+                 [cider/cider-nrepl "0.14.0"]]
 
   :signing      {:gpg-key "D7B06D3D"}
 
