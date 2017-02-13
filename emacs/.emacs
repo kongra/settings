@@ -504,6 +504,8 @@
 
 (require 'haskell-mode)
 
+(setq haskell-process-args-stack-ghci '("--ghci-options=-ferror-spans"))
+
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 (add-hook 'haskell-mode-hook 'haskell-doc-mode)
 
