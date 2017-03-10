@@ -615,3 +615,7 @@
 (set-face-foreground 'git-gutter:modified "BlueViolet")
 (set-face-foreground 'git-gutter:added    "ForestGreen")
 (set-face-foreground 'git-gutter:deleted  "red")
+
+;; ANTLR MODE
+(push '("\\.g4\\'" . antlr-v4-mode) auto-mode-alist)
+(autoload 'antlr-v4-mode "antlr-mode" nil t)
