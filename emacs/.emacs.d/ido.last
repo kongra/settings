@@ -2,25 +2,57 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/home/kongra/" . "Pulpit/")
+ ("/ssh:konrad@127.0.0.1#2222:/" . "/")
+ ("/ssh:konrad@127.0.0.1:" . "2222/")
+ ("/home/kongra/" . "bin/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/kongra/"
  "/home/kongra/Pulpit/"
+ "/ssh:127.0.0.1#2222:"
+ "/ssh:konrad@127.0.0.1#2222/"
+ "/ssh:konrad@127.0.0.1:/"
+ "/home/kongra/bin/"
+ "/home/kongra/Pobrane/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "Oferty.csv"
- "Oferty.txt"
+ ".profile"
+ ".emacs"
+ "log"
+ "enrollment-problems.txt"
+ "127.0.0.1#2222"
+ "gentoo.sh"
+ "lista_bledow_walidacji.txt"
+ "Conspect.org"
+ "J8.org"
+ "core.clj"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/kongra/Pulpit/" (22642 2563 618687 718000) "Sobota/" "./" "Nieruchomości.R" "Oferty.csv" "../" "JACSM I/")
+ ("/home/kongra/" (22842 60276 710246 756000) ".thumbnails/" "Publiczny/" ".oracle_jre_usage/" ".IdeaIC2017.1/" ".p2/" ".emacs" ".gstreamer-0.10/" ".emacs.d/" ".m2/" ".odps.studio/" ".rnd" ".dmrc" ".texmf-var/" ".elm/" ".ICEauthority" ".zshrc.pre-oh-my-zsh" ".profile" ".bash_history" ".synaptic/" ".xsession-errors" ".davfs2/" "./" ".zsh-update" ".xinputrc" ".bash_logout" ".zoom/" ".xsession-errors.old" ".zcompdump" ".lein/" ".compiz/" "VirtualBox VMs/" ".Rhistory" ".mozilla/" "Pobrane/" "bin/" ".oh-my-zsh/" "Devel/" ".local/" ".bashrc" ".dbus/" ".swt/" ".gimp-2.8/" ".ssh/" ".gconf/" ".AMD/" ".macromedia/" ".viminfo" "Szablony/" "Desktop/" "Dokumenty/" ".install4j" ".atom/" ".Rprofile" ".xournal/" ".pki/" ".gnupg/" "Temp/" ".gksu.lock" ".Xauthority" "Obrazy/" ".Mathematica/" ".sane/" ".thunderbird/" ".rstudio-desktop/" ".zshrc" ".IdeaIC2016.3/" ".zsh_history" ".java/" "workspace-jee/" ".gtkrc-2.0" ".psql_history" "R/" ".putty/" ".smex-items" ".ghc/" "../" ".config/" ".themes/" ".stack/" ".gitconfig" ".xfce4-session.verbose-log" ".filezilla/" ".conkyrc" ".npm/" ".selected_editor" ".gnome/" ".vscode/" ".xfce4-session.verbose-log.last" ".eclipse/" "jee-workspace/" ".adobe/" "examples.desktop" ".hplip/" "Arch/" ".zcompdump-hp470-5.0.2" "Muzyka/" ".xscreensaver" "Mathematica/" "Javasoft/" ".cache/" "Pulpit/" "Wideo/")
 
- ("/home/kongra/" (22641 58903 905074 999000) ".Rhistory" ".xfce4-session.verbose-log.last" "Muzyka/" "Publiczny/" ".pki/" "examples.desktop" ".gimp-2.8/" ".gnome/" ".gtkrc-2.0" "Dokumenty/" ".themes/" ".bash_logout" ".zsh-update" ".oh-my-zsh/" "R/" "Wideo/" ".zcompdump-hp470-5.0.2" ".zshrc.pre-oh-my-zsh" ".local/" ".zshrc" ".Xauthority" "Pobrane/" "bin/" ".emacs" ".cache/" ".xsession-errors" ".xfce4-session.verbose-log" ".rstudio-desktop/" ".viminfo" "Temp/" ".thumbnails/" ".gconf/" "Szablony/" ".config/" "Obrazy/" "./" ".dmrc" ".xscreensaver" ".bash_history" "../" ".AMD/" ".profile" ".emacs.d/" ".compiz/" ".xsession-errors.old" ".gnupg/" ".xinputrc" ".ICEauthority" ".bashrc" ".smex-items" ".zcompdump" "Pulpit/" ".zsh_history" ".mozilla/" ".conkyrc")
+ ("/home/kongra/Pulpit/" (22840 23614 34352 558000) "./" "Krzysio/" "J8.org" ".Rhistory" "install-pkgs.R" "log" "Otodom/" "../")
+
+ ("/home/kongra/Devel/Projects/Present/TSRI/" (22821 37272 427776 89000) "plots/" ".Rproj.user/" ".gitignore" "TSRI.Rproj" ".git/" "DESCRIPTION" ".Rhistory" "reports/" "docs/" "R/" ".Rbuildignore" "data/" "tests/" "NAMESPACE" "man/" "../" "./")
+
+ ("/home/kongra/Devel/Projects/Present/TSRI/R/" (22821 37223 479776 965000) "errorplots.R" "report-raw-enrollment+evals.R" "./" "data-evals-SurveyMonkey.R" "report-raw-enrollment+evals/" "runall.R" "data-evals-0-responses-fix.R" "data-courses+evals-2013-Excel.R" "data-evals-cource(sic)-topic-fix.R" "../" "data/" "data.R" "errorplots/")
+
+ ("/home/kongra/Devel/" (22648 49278 978826 827000) "./" "Projects/" "Misc/" "Libs/" "../")
+
+ ("/home/kongra/Devel/Projects/" (22808 43463 606738 207000) "Makolab, TME, CSP.org" "./" "Present/" "Nauka.org" "Old/" "Rocky/" "TODO.org" "../" "Elements of Style.org" "Sharon/")
+
+ ("/home/kongra/Devel/Projects/Present/" (22808 43463 606738 207000) "vds/" "ch/" "./" "WawaJava/" "StreamOne/" "nc3/" "TSRI/" "retemp/" "settings/" "chR/" "gsom/" "kask/" "../" "aptell/" "kongRa/" "WebOne/" "rticles/" "prelude/")
+
+ ("/home/" (22648 46567 379802 940000) "./" "lost+found/" "../" "kongra/")
+
+ ("/home/kongra/bin/" (22816 11263 283792 88000) "data-instalacji-systemu" "LAN-unarch.sh" "stud" "fujitsu.sh" "utwórz-skrót-aplikacji.sh" "rmvb2avi" "luyten" "emacs-client.sh" "xp.sh" "99-hdd-ugly-fix.sh" "profile-dotemacs.el" "rename_files.py" "Visual_Paradigm_Update" "makolab.sh" "ANTLRWorks.sh" "run_vp_integration_ec" "clear-cached-memory.sh" "lein" "usuń.metacity.wireframe.sh" "ccl64" "lameall.sh" "LAN-arch.sh" "calc" "clj" "backup/" "git-dirty.sh" "jedit" "fujitsu-root.sh" "LAN.sh" "parkowanieglowicy.py" "screenruler.sh" "unload_kvm.sh" "run_vp_integration_ij" "zewnetrzny.ekran.sh" "hddparkcron.py" "pdf2eps" "minimap-rm.sh" "startconky.sh" "hslint" "jar-classes.sh" "TSRI-mount.sh" "./" "TSRI-umount.sh" "eclipsefix.sh" "../" "lhs2TeX/" "javac-all.sh" "emacsnw.sh" "Visual_Paradigm" "ANTLRJavaTree.sh" "gentoo.sh" "drop-caches.sh" "pdf2cmyk" "hddpark.py" "my-desktop" "Visual_Paradigm_Product_Selector" "capslock.ctrl.sh" "run_vp_integration_nb" "zeny.sh")
+
+ ("/home/kongra/Pobrane/" (22747 37602 212240 670000) "./" "100WebsitesthatRuletheInternet_58c2e422bd9e6.jpeg" "Person.of.Interest.S01E23.PL.HDTV.XviD-DeiX.avi" "../" "core.clj" "Person.of.Interest.S01E22.PL.HDTV.XviD-DeiX.avi")
 )
 
 ;; ----- ido-unc-hosts-cache -----

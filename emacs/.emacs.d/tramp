@@ -1,0 +1,5 @@
+;; -*- emacs-lisp -*- <17/05/20 14:29:06 /home/kongra/.emacs.d/tramp>
+;; Tramp connection history.  Don't change this file.
+;; You can delete it, forcing Tramp to reapply the checks.
+
+(nil)

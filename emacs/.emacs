@@ -528,8 +528,8 @@
 (add-hook 'haskell-mode-hook 'turn-on-hi2)
 
 ;; ELM MODE ...
-;; (require  'elm-mode)
-;; (add-hook 'elm-mode-hook 'turn-on-hi2)
+(require  'elm-mode)
+(add-hook 'elm-mode-hook 'turn-on-hi2)
 
 ;; ... WITH FLYCHECK
 ;; (require  'flycheck-elm)
@@ -619,3 +619,26 @@
 ;; ANTLR MODE
 (push '("\\.g4\\'" . antlr-v4-mode) auto-mode-alist)
 (autoload 'antlr-v4-mode "antlr-mode" nil t)
+
+;; TRAMP
+(require 'tramp)
+
+;; ESS (Emacs Speaks Statistics)
+(add-to-list 'load-path "~/.emacs.d/elisp/ess/lisp/")
+(require 'ess-site)
+;; (setq ess-indent-level 2)
+;; (setq ess-arg-function-offset 4)
+;; (setq ess-else-offset  2)
+
+(add-hook 'ess-mode-hook
+          (lambda ()
+            ;;                                 DEF GNU BSD K&R C++
+            ;; ess-indent-level                  2   2   8   5   4
+            ;; ess-continued-statement-offset    2   2   8   5   4
+            ;; ess-brace-offset                  0   0  -8  -5  -4
+            ;; ess-arg-function-offset           2   4   0   0   0
+            ;; ess-expression-offset             4   2   8   5   4
+            ;; ess-else-offset                   0   0   0   0   0
+            ;; ess-close-brace-offset            0   0   0   0   0
+            (ess-set-style 'GNU 'quiet)
+            (setq ess-arg-function-offset nil)))

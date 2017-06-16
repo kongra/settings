@@ -2,38 +2,38 @@
  {:plugins      [[lein-pprint        "1.1.2"]
                  [lein-ancient      "0.6.10"]
                  [lein-bikeshed      "0.4.1"]
-                 [jonase/eastwood    "0.2.3"]
-                 [lein-kibit         "0.1.3"
+                 [jonase/eastwood    "0.2.4"]
+                 [lein-kibit         "0.1.5"
                   :exclusions
                   [org.clojure/clojure
                    org.clojure/tools.namespace
                    org.clojure/tools.cli]]
 
                  [cider/cider-nrepl "0.14.0"]]
+  :signing       {:gpg-key        "CF1B5B02"}
+  :dependencies [[criterium          "0.4.4"]]
 
-  :signing      {:gpg-key "D7B06D3D"}
+  ;; :jvm-opts     ["-server"
+  ;;                "-d64"
+  ;;                "-Dclojure.compiler.direct-linking=true"
 
-  :dependencies [[criterium           "0.4.4"]]
+  ;;                "-Xshare:off"
+  ;;                "-XX:+AggressiveOpts"
+  ;;                "-XX:+DoEscapeAnalysis"
+  ;;                "-XX:+UseCompressedOops"
+  ;;                ;; "-XX:+UseNUMA" ;; to check: numactl --hardware
 
-  :jvm-opts     ["-server"
-                 "-d64"
-                 "-Dclojure.compiler.direct-linking=true"
+  ;;                "-Xms1G"
+  ;;                "-Xmx1G"
 
-                 "-Xshare:off"
-                 "-XX:+AggressiveOpts"
-                 "-XX:+DoEscapeAnalysis"
-                 "-XX:+UseCompressedOops"
-                 ;; "-XX:+UseNUMA" ;; to check: numactl --hardware
+  ;;                "-XX:+UseParallelGC"
+  ;;                "-XX:+UseParallelOldGC"
+  ;;                "-XX:NewSize=400m"
+  ;;                "-XX:MaxNewSize=400m"
+  ;;                "-XX:-UseAdaptiveSizePolicy"
+  ;;                "-XX:SurvivorRatio=6"
 
-                 "-Xms1G"
-                 "-Xmx1G"
+  ;;                "-XX:+PrintGCDetails"
+  ;;                "-XX:+PrintGCTimeStamps"]
 
-                 "-XX:+UseParallelGC"
-                 "-XX:+UseParallelOldGC"
-                 "-XX:NewSize=400m"
-                 "-XX:MaxNewSize=400m"
-                 "-XX:-UseAdaptiveSizePolicy"
-                 "-XX:SurvivorRatio=6"
-
-                 "-XX:+PrintGCDetails"
-                 "-XX:+PrintGCTimeStamps"]}}
+  }}
