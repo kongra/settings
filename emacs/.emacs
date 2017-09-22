@@ -642,3 +642,7 @@
             ;; ess-close-brace-offset            0   0   0   0   0
             (ess-set-style 'GNU 'quiet)
             (setq ess-arg-function-offset nil)))
+
+;; CUCUMBER FEATURE MODE
+(require 'feature-mode)
+(add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))

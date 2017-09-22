@@ -1,0 +1,18 @@
+{
+    "window.zoomLevel": 0,
+    "files.trimTrailingWhitespace": true,
+    "editor.fontFamily": "Ubuntu Mono",
+    "editor.fontSize": 14,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "line-thin",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.multiCursorModifier": "alt",
+
+    "workbench.colorCustomizations" :
+    {
+        "editorBracketMatch.background": "#4F4F4F",
+        "editorBracketMatch.border": "#1E1E1E"
+    }
+}
