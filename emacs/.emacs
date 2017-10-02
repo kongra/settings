@@ -45,20 +45,49 @@
       browse-url-generic-program "opera")
 
 ;; FONTS
-;; (set-face-attribute 'default nil :font "DejaVu Sans Mono-10")
-;; (set-face-attribute 'default nil :font "Droid Sans Mono-11")
-;; (set-face-attribute 'default nil :font "Liberation Mono-10")
-;; (set-face-attribute 'default nil :font "Ubuntu Mono-12")
-
 (set-default-font "Ubuntu Mono-12")
 (add-to-list 'default-frame-alist '(font . "Ubuntu Mono-12"))
 
 (global-set-key (kbd "C-+") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
 
-;; CURRENT LINE HIGHLIGHT (BEFORE ZENBURN)
-(add-hook 'text-mode-hook 'turn-off-visual-line-mode)
-(set-face-background 'hl-line "gray89")
+;; ;; MY THEME: CURSOR COLOR
+;; (set-cursor-color "IndianRed")
+;; (add-to-list 'default-frame-alist '(cursor-color . "IndianRed"))
+
+;; ;; MY THEME: CUSTOM COLORS FOR SYNTAX HIGHLIGHTING
+;; (set-face-attribute 'font-lock-comment-delimiter-face nil :foreground "#8080C9")
+;; (set-face-attribute 'font-lock-comment-face           nil :foreground "#8080C9")
+;; (set-face-attribute 'font-lock-doc-face               nil :foreground "#8080C9" :weight 'bold)
+;; (set-face-attribute 'font-lock-keyword-face           nil :foreground "#0000FF" :weight 'bold)
+;; (set-face-attribute 'font-lock-string-face            nil :foreground "#6100FF")
+;; (set-face-attribute 'font-lock-type-face              nil :foreground "#008289")
+;; (set-face-attribute 'font-lock-function-name-face     nil :foreground "#363636" :weight 'bold)
+;; (set-face-attribute 'font-lock-variable-name-face     nil :foreground "#363636" :weight 'bold)
+
+;; ;; MY THEME: CURRENT LINE HIGHLIGHT
+;; (add-hook 'text-mode-hook 'turn-off-visual-line-mode)
+;; (set-face-background 'hl-line "gray89")
+
+;; ;; MY THEME: BACKGROUND
+;; ;; M-x list-faces-display
+;; ;; Colors available:
+;; ;; http://www.geocities.com/kensanata/colors.htlm
+;; (setq default-frame-alist
+;;       (cons
+;;        '(background-color  . "#DBDBDB")
+;;        default-frame-alist))
+
+;; ZENBURN COLOR THEME
+(load-theme 'zenburn t)
+;; (require 'color-theme-zenburn)
+;; (color-theme-zenburn)
+
+;; ;; MATCHING PARENS COLORS (USE WITH ZENBURN)
+(custom-set-faces
+ '(show-paren-match ((t (:background "CornflowerBlue" :foreground "white"))))
+ '(show-paren-mismatch ((((class color))
+			 (:background "red" :foreground "white")))))
 
 ;; INITIAL FRAME SIZE
 (add-to-list 'default-frame-alist '(height . 39))
@@ -84,16 +113,6 @@
 ;; (add-hook 'window-configuration-change-hook (lambda () (ruler-mode 1)))
 (setq-default fill-column 80)
 
-;; BACKGROUND COLOR (BEFORE ZENBURN)
-;; M-x list-faces-display
-;; Colors available:
-;; http://www.geocities.com/kensanata/colors.htlm
-
-(setq default-frame-alist
-      (cons
-       '(background-color  . "#DBDBDB")
-       default-frame-alist))
-
 (setq x-select-enable-clipboard t)
 (setq column-number-mode t)
 
@@ -101,21 +120,11 @@
 (require 'powerline)
 
 ;; SCROLLING
-
-;; (setq mouse-wheel-progressive-speed nil)
-;; (setq mouse-wheel-follow-mouse 't)
-
-;; (setq auto-save-interval 500)
-;; (setq scroll-conservatively 10000)
-
 (setq scroll-step 2)
 (setq scroll-preserve-screen-position t)
 
 (set-scroll-bar-mode 'left)
 (scroll-bar-mode -1)
-
-;; (require 'smooth-scroll)
-;; (smooth-scroll-mode t)
 
 ;; TOOL BAR OFF
 (tool-bar-mode 0)
@@ -237,7 +246,6 @@
      (add-to-list 'ac-modes 'cider-repl-mode)))
 
 ;; CLOJURE INDENTATION (CUSTOM FORMS)
-
 (put-clojure-indent 'clongra.oloops/forever 0)
 (put-clojure-indent 'oloo/forever 0)
 
@@ -311,7 +319,6 @@
 (setf paren-priority 'close)
 
 ;; C/C++ STYLE
-
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
 
@@ -442,31 +449,6 @@
 (setq ispell-program-name "aspell")
 (setq ispell-dictionary "american")
 
-;; ZENBURN COLOR THEME
-;; (load-theme 'zenburn t)
-;; (require 'color-theme-zenburn)
-;; (color-theme-zenburn)
-
-;; CURSOR COLOR
-(set-cursor-color "IndianRed")
-(add-to-list 'default-frame-alist '(cursor-color . "IndianRed"))
-
-;; ;; MATCHING PARENS COLORS (USE WITH ZENBURN)
-;; (custom-set-faces
-;;  '(show-paren-match ((t (:background "CornflowerBlue" :foreground "white"))))
-;;  '(show-paren-mismatch ((((class color))
-;; 			 (:background "red" :foreground "white")))))
-
-;; CUSTOM COLORS FOR SYNTAX HIGHLIGHTING
-(set-face-attribute 'font-lock-comment-delimiter-face nil :foreground "#8080C9")
-(set-face-attribute 'font-lock-comment-face           nil :foreground "#8080C9")
-(set-face-attribute 'font-lock-doc-face               nil :foreground "#8080C9" :weight 'bold)
-(set-face-attribute 'font-lock-keyword-face           nil :foreground "#0000FF" :weight 'bold)
-(set-face-attribute 'font-lock-string-face            nil :foreground "#6100FF")
-(set-face-attribute 'font-lock-type-face              nil :foreground "#008289")
-(set-face-attribute 'font-lock-function-name-face     nil :foreground "#363636" :weight 'bold)
-(set-face-attribute 'font-lock-variable-name-face     nil :foreground "#363636" :weight 'bold)
-
 ;; CUA MODE
 (cua-mode)
 
@@ -492,7 +474,6 @@
 	(tab-mark 9 [9655 9] [92 9])	; tab, ▷
 	))
 
-
 ;; AUTO-COMPLETE MODE
 (require 'auto-complete)
 (require 'auto-complete-config)
@@ -504,18 +485,12 @@
 ;; HASKELL MODE
 ;; (add-to-list 'load-path "~/.emacs.d/elisp/haskell-mode/")
 ;; (load "haskell-mode-autoloads.el")
-
 (require 'haskell-mode)
-
 (setq haskell-process-args-stack-ghci '("--ghci-options=-ferror-spans"))
-
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 (add-hook 'haskell-mode-hook 'haskell-doc-mode)
-
 ;; (define-key haskell-mode-map (kbd "SPC") 'haskell-mode-contextual-space)
-
 (add-to-list 'completion-ignored-extensions ".hi")
-
 (add-to-list 'ac-modes 'haskell-mode)
 (add-hook 'haskell-mode-hook 'auto-complete-mode)
 
@@ -554,7 +529,6 @@
 (require 'shuffle-lines)
 
 ;; MISC. INSERTING
-
 (defun insert-time ()
   (interactive)
   (insert (format-time-string "%Y-%m-%d-%R")))
@@ -576,7 +550,6 @@
     (if face (message "Face: %s" face) (message "No face at %d" pos))))
 
 ;; CUPS PRINTER CONFIG.
-
 (setq lpr-page-header-switches (quote ("-o6")))
 
 ;; ESS

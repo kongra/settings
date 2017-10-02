@@ -22,7 +22,9 @@
 (setq powerline-color2 "grey40")
 
 (set-face-attribute 'mode-line nil
-                    :background "#8080C9"
+                    ;; :background "#8080C9" ;; FOR MY THEME
+                    :background "#495C49"    ;; FOR ZENBURN
+                    ;; :background "#546954"
                     ;; :background "#6100FF"
                     ;; :background "#8C96CF"
                     ;; :background "#7B84B6"
