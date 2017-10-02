@@ -45,7 +45,7 @@ GNAT_HOME=$HOME/GNAT/gnat
 PATH=$PATH:$GNAT_HOME/bin
 
 # LLVM
-LLVM_HOME=/usr/lib/llvm-3.7
+LLVM_HOME=$HOME/Cppsoft/clang
 PATH=$PATH:$LLVM_HOME/bin
 
 # CMAKE
