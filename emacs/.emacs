@@ -208,6 +208,8 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; CLOJURE via CIDER
+(add-to-list 'load-path "~/.emacs.d/elisp/cider")
+(require 'cider)
 (add-hook 'cider-mode-hook                #'eldoc-mode)
 (add-hook 'cider-repl-mode-hook           #'paredit-mode)
 (setq      cider-repl-display-help-banner nil)
@@ -224,6 +226,7 @@
 ;; (add-hook 'clojure-mode-hook #'my-clojure-mode-hook)
 
 ;; AC-MODE CIDER AUTO-COMPLETE
+(add-to-list 'load-path "~/.emacs.d/elisp/ac-cider")
 (require 'ac-cider)
 (add-hook 'cider-mode-hook 'ac-flyspell-workaround)
 (add-hook 'cider-mode-hook 'ac-cider-setup)
