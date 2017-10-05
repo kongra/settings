@@ -79,15 +79,22 @@
 ;;        default-frame-alist))
 
 ;; ZENBURN COLOR THEME
-(load-theme 'zenburn t)
+;; (load-theme 'zenburn t)
 ;; (require 'color-theme-zenburn)
 ;; (color-theme-zenburn)
 
-;; ;; MATCHING PARENS COLORS (USE WITH ZENBURN)
+;; SPACEMACS THEME
+(add-to-list 'load-path "~/.emacs.d/elisp/spacemacs-theme")
+(require 'spacemacs-dark-theme)
+
+;; MATCHING PARENS COLORS (USE WITH ZENBURN AND SPACEMACS)
 (custom-set-faces
- '(show-paren-match ((t (:background "CornflowerBlue" :foreground "white"))))
- '(show-paren-mismatch ((((class color))
-			 (:background "red" :foreground "white")))))
+  '(show-paren-match ((t (:background "CornflowerBlue" :foreground "white"))))
+    '(show-paren-mismatch ((((class color))
+ 			 (:background "red" :foreground "white")))))
+
+;; POWERLINE
+(require 'powerline)
 
 ;; INITIAL FRAME SIZE
 (add-to-list 'default-frame-alist '(height . 39))
@@ -115,9 +122,6 @@
 
 (setq x-select-enable-clipboard t)
 (setq column-number-mode t)
-
-;; POWERLINE
-(require 'powerline)
 
 ;; SCROLLING
 (setq scroll-step 2)

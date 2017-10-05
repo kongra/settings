@@ -12,7 +12,8 @@
 
     "workbench.colorCustomizations" :
     {
-        "editorBracketMatch.background": "#4F4F4F",
+        "editorBracketMatch.background": "#3C4248",
         "editorBracketMatch.border": "#1E1E1E"
-    }
+    },
+    "workbench.colorTheme": "Spacemacs - dark"
 }
