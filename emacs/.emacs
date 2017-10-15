@@ -306,8 +306,8 @@
 (setq backup-inhibited t)
 
 ;; SMART-TABS-MODE
-(smart-tabs-insinuate 'c 'c++ 'java 'javascript 'cperl 'python
-                       'ruby 'nxml)
+;; (smart-tabs-insinuate 'c 'c++ 'java 'javascript 'cperl 'python
+;;                        'ruby 'nxml)
 
 ;; MANAGING BOOKMARKS
 (global-set-key [f8] 'bookmark-set)
@@ -323,8 +323,12 @@
 (setf paren-priority 'close)
 
 ;; C/C++ STYLE
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 2)
+(setq-default indent-tabs-mode  nil)
+(setq         c-basic-offset      2)
+(setq         c-default-style "gnu")
+
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+;; (setq-default tab-width 2)
 
 ;; PYTHON-MODE
 (autoload 'python-mode "python-mode" "Python Mode." t)
@@ -558,7 +562,6 @@
 
 ;; ESS
 ;; (require 'ess-site)
-
 ;; (add-hook 'ess-mode-hook
 ;;           (lambda ()
 ;;             ;;                                 DEF GNU BSD K&R C++
@@ -570,12 +573,14 @@
 ;;             ;; ess-else-offset                   0   0   0   0   0
 ;;             ;; ess-close-brace-offset            0   0   0   0   0
 ;;             (ess-set-style 'GNU 'quiet)
-
 ;;             (setq ess-arg-function-offset nil)))
+
+(global-set-key (kbd "M-m") 'ess-eval-line-and-step)
+(global-set-key (kbd "M--") (lambda () (interactive) (insert "%>% ")))
+(global-set-key [f12]       (lambda () (interactive) (insert "runApp(launch.browser = FALSE)")))
 
 (add-hook 'perl-mode-hook
       (lambda () (setq perl-indent-level 2)))
-
 
 ;; HIGHLIGHTING SYMBOLS AT POINT
 (require 'highlight-symbol)
