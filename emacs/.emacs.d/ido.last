@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/" . "kongra/")
  ("/home/kongra/Devel/" . "Projects/")
  ("/ssh:konrad@127.0.0.1#2222:/" . "/")
  ("/ssh:konrad@127.0.0.1:" . "2222/")
@@ -10,9 +11,9 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/kongra/"
  "/home/kongra/Pulpit/"
  "/home/kongra/Devel/Projects/"
- "/home/kongra/"
  "/home/kongra/Pobrane/"
  "/ssh:127.0.0.1#2222:"
  "/ssh:konrad@127.0.0.1#2222/"
@@ -22,27 +23,53 @@
 
 ;; ----- ido-work-file-list -----
 (
- "notes.md"
- "Elements of Style.org"
  ".emacs"
+ "notes.md"
+ "dicts.R"
+ "Elements of Style.org"
  "notes.org"
  "sample.txt"
  ".zshrc"
  "J8.org"
  "meetup.org"
  "notes"
- "Nauka.org"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/kongra/Pulpit/" (22998 18216 235059 537000) "./" "dicts.R" "J8.org" "hog.lang.1" "r-downgrade.sh" "notes.md" "hog.lang" "../")
+ ("/home/kongra/" (23045 30035 776034 303000) ".thumbnails/" "Publiczny/" ".oracle_jre_usage/" ".IdeaIC2017.1/" ".p2/" ".emacs" ".gstreamer-0.10/" ".emacs.d/" ".m2/" ".odps.studio/" ".rnd" ".dmrc" ".texmf-var/" ".elm/" ".ICEauthority" ".zshrc.pre-oh-my-zsh" ".profile" ".bash_history" ".synaptic/" ".xsession-errors" ".davfs2/" "./" ".zsh-update" ".xinputrc" ".bash_logout" ".zoom/" ".xsession-errors.old" ".zcompdump" ".tooling/" ".lein/" ".compiz/" ".pencil/" "VirtualBox VMs/" ".Rhistory" ".mozilla/" "Pobrane/" "bin/" ".bazel/" ".fonts/" ".oh-my-zsh/" "Devel/" ".local/" ".bashrc" ".dbus/" ".swt/" ".gimp-2.8/" ".ssh/" ".gconf/" ".AMD/" ".macromedia/" ".viminfo" "Szablony/" "Desktop/" "Dokumenty/" ".install4j" ".atom/" ".Rprofile" ".xournal/" ".pki/" ".gnupg/" "Temp/" ".gksu.lock" ".Xauthority" "Obrazy/" ".Mathematica/" ".sane/" ".thunderbird/" ".rstudio-desktop/" ".AnnotationHub/" "eclipse-workspace/" ".IdeaIC2017.2/" ".zshrc" ".IdeaIC2016.3/" ".zsh_history" ".java/" "workspace-jee/" ".gtkrc-2.0" ".psql_history" "R/" ".putty/" ".smex-items" ".ghc/" "../" ".config/" ".themes/" ".supertux/" ".stack/" ".gitconfig" ".xfce4-session.verbose-log" ".filezilla/" ".android/" ".conkyrc" ".npm/" ".selected_editor" "Cppsoft/" ".gnome/" ".vscode/" ".xfce4-session.verbose-log.last" ".eclipse/" "jee-workspace/" ".adobe/" "examples.desktop" ".hplip/" "Arch/" ".zcompdump-hp470-5.0.2" "Muzyka/" ".xscreensaver" "Mathematica/" "Javasoft/" ".cache/" "Pulpit/" "Wideo/")
 
- ("/home/kongra/" (22998 37835 265819 691000) ".thumbnails/" "Publiczny/" ".oracle_jre_usage/" ".IdeaIC2017.1/" ".p2/" ".emacs" ".gstreamer-0.10/" ".emacs.d/" ".m2/" ".odps.studio/" ".rnd" ".dmrc" ".texmf-var/" ".elm/" ".ICEauthority" ".zshrc.pre-oh-my-zsh" ".profile" ".bash_history" ".synaptic/" ".xsession-errors" ".davfs2/" "./" ".zsh-update" ".xinputrc" ".bash_logout" ".zoom/" ".xsession-errors.old" ".zcompdump" ".lein/" ".compiz/" "VirtualBox VMs/" ".Rhistory" ".mozilla/" "Pobrane/" "bin/" ".bazel/" ".oh-my-zsh/" "Devel/" ".local/" ".bashrc" ".dbus/" ".swt/" ".gimp-2.8/" ".ssh/" ".gconf/" ".AMD/" ".macromedia/" ".viminfo" "Szablony/" "Desktop/" "Dokumenty/" ".install4j" ".atom/" ".Rprofile" ".xournal/" ".pki/" ".gnupg/" "Temp/" ".gksu.lock" ".Xauthority" "Obrazy/" ".Mathematica/" ".sane/" ".thunderbird/" ".rstudio-desktop/" ".AnnotationHub/" ".IdeaIC2017.2/" ".zshrc" ".IdeaIC2016.3/" ".zsh_history" ".java/" "workspace-jee/" ".gtkrc-2.0" ".psql_history" "R/" ".putty/" ".smex-items" ".ghc/" "../" ".config/" ".themes/" ".supertux/" ".stack/" ".gitconfig" ".xfce4-session.verbose-log" ".filezilla/" ".android/" ".conkyrc" ".npm/" ".selected_editor" "Cppsoft/" ".gnome/" ".vscode/" ".xfce4-session.verbose-log.last" ".eclipse/" "jee-workspace/" ".adobe/" "examples.desktop" ".hplip/" "Arch/" ".zcompdump-hp470-5.0.2" "Muzyka/" ".xscreensaver" "Mathematica/" "Javasoft/" ".cache/" "Pulpit/" "Wideo/")
+ ("/home/kongra/Pulpit/" (23040 21964 987403 470000) "./" "JDK9/" "Titanic/" "TI/" "notes.md" "../" "scr/")
+
+ ("/home/kongra/Devel/Projects/Present/aptell/" (23036 53164 602488 999000) ".gitignore" "./" "doc/" ".git/" "bin/" ".idea/" "antlr4-gen.sh" "build.xml" "classes/" "../" "lib/" "aptell.iml" "src/" "build.number")
+
+ ("/home/kongra/Devel/Projects/Present/" (23022 63324 689387 391000) "vds/" "ch/" "WawaJava2/" "./" "cpp/" "WawaJava/" "StreamOne/" "nc3/" "retemp/" "settings/" "chR/" "gsom/" "pf/" "kask/" "../" "aptell/" "kongRa/" "WebOne/" "rticles/" "prelude/")
+
+ ("/home/kongra/Pobrane/" (23031 18362 724093 942000) "2017 10 10 Download/" "./" "wydruk1508319397896.pdf" "DZIAL 1 - anjZatrudnienia.pdf" "100_1209.JPG" "56f13cf004dc8_o,size,933x0,q,70,h,4aed6b.jpg" "main-qimg-153422721654d1163a45ab090f0b22e6-c.jpg" "../" "aptell/")
+
+ ("/home/kongra/Pobrane/aptell/" (23031 16707 268123 588000) ".project" ".gitignore" "Setup.hs" "./" "haskell/" "README.md" ".git/" ".classpath" "bin/" "recompile.sh" "target/" "build.xml" "classes/" "../" "java/" "install.sh" "lint.sh" "antlr4-grammars/" "sandbox-init.sh" "lib/" "aptell.cabal" "LICENSE" "build.number")
+
+ ("/home/kongra/Pobrane/aptell/java/" (23031 16630 820124 957000) "./" "../" "aptell/")
+
+ ("/home/kongra/Pobrane/aptell/java/aptell/" (23031 16630 820124 957000) "./" "Stopwatch.java" "IO.java" "../" "java/")
+
+ ("/home/kongra/Pobrane/aptell/java/aptell/java/" (23031 19396 784075 424000) ".#JavaAptellGen.java" "JavaListener.java" "./" "JavaParser.java" "Processor.java" "JavaBaseListener.java" "../" "NonTerminal.java" "JavaLexer.java" "#JavaAptellGen.java#" "JavaAptellGen.java")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/" (23012 23881 517099 727000) ".Rproj.user/" ".gitignore" "./" "data-origin/" "Compensation.Rproj" ".git/" "DESCRIPTION" ".Rhistory" "reports/" "www/" "server.R" "R-scripts/" "R/" "../" ".Rbuildignore" "data/" "NAMESPACE" "man/" "rsconnect/" "ui.R")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/R/" (22989 16300 399970 562000) "utils.R" "./" "shiny/" "cens/" "../" "emcehi/")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/R/cens/" (23008 34702 208292 929000) "./" "2017-09-08 07_34_24 CEST projections.R" "2017-09-06 11_41_45 CEST payroll dates.R" "2017-08-25 10_45_09 CEST consts.R" "2017-10-11 10_11_14 CEST props.R" "2017-09-18 13_31_11 CEST cens.R" "../" "archive/")
+
+ ("/home/kongra/Devel/Projects/Rocky/" (22949 6671 932601 126000) "./" "Antsle/" "Konrad_20170430.xlsx" "../" "Konrad_20170531.xlsx" "Sharon/")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/" (22971 35411 559486 416000) "./" "Compensation Reports/" "TSRI/" "Work Hours and Description/" "Compensation/" "../" "Confidentiality Agreement/")
+
+ ("/home/kongra/Temp/" (23007 26094 844353 753000) "Tabliczka mnożenia w ANSI C/" "./" "loopperf/" "rtlwifi_new/" "1/" "fibperf/" "Otodom/" "InternetPopulation2011_HexCartogram_v6_2_LD.png" "0/" "I0000000.jpg" "../" "Czy Polska będzie mistrzem świata w piłce nożnej_ - 3obieg.pl _ 3obieg.pdf" "2/" "az-wniosek.zip")
+
+ ("/home/kongra/Temp/loopperf/" (23007 31386 448258 990000) "loopcpp-clang" "loop.cpp" "./" "loopcpp" "../" ".#loop.cpp")
 
  ("/home/kongra/Devel/Projects/" (22896 39911 301958 19000) "Makolab, TME, CSP.org" "./" "Present/" "Nauka.org" "Old/" "Rocky/" "TODO.org" "../" "Elements of Style.org")
-
- ("/home/kongra/Devel/Projects/Rocky/" (22862 26407 18814 951000) "./" "Antsle/" "Konrad_20170430.xlsx" "../" "Konrad_20170531.xlsx" "Sharon/")
 
  ("/home/kongra/Devel/Projects/Rocky/Antsle/" (22862 26414 526814 817000) "./" "ant-reg/" "../")
 
@@ -54,15 +81,11 @@
 
  ("/home/kongra/Devel/Projects/Rocky/Antsle/ant-reg/test/clj/features/" (22864 65152 92101 564000) "./" "Login.feature" "Logout.feature" "../" "Registration.feature")
 
- ("/home/kongra/Pobrane/" (22866 17383 961713 228000) "./" "CreateAntletFromSnapshot.feature" "teamviewer_12.0.76279_i386.deb" "ebook-top-10-java-performance-problems.pdf" "100WebsitesthatRuletheInternet_58c2e422bd9e6.jpeg" "ant-reg/" "Employee Census Report Master 2017 06 23.xls" "Impersonalni S04E18.PL.rmvb" "Timesheet-Antsle.xlsx" "../" "Impersonalni S04E17.PL.rmvb")
-
  ("/home/kongra/Devel/Projects/Present/TSRI/" (22821 37272 427776 89000) "plots/" ".Rproj.user/" ".gitignore" "TSRI.Rproj" ".git/" "DESCRIPTION" ".Rhistory" "reports/" "docs/" "R/" ".Rbuildignore" "data/" "tests/" "NAMESPACE" "man/" "../" "./")
 
  ("/home/kongra/Devel/Projects/Present/TSRI/R/" (22821 37223 479776 965000) "errorplots.R" "report-raw-enrollment+evals.R" "./" "data-evals-SurveyMonkey.R" "report-raw-enrollment+evals/" "runall.R" "data-evals-0-responses-fix.R" "data-courses+evals-2013-Excel.R" "data-evals-cource(sic)-topic-fix.R" "../" "data/" "data.R" "errorplots/")
 
  ("/home/kongra/Devel/" (22648 49278 978826 827000) "./" "Projects/" "Misc/" "Libs/" "../")
-
- ("/home/kongra/Devel/Projects/Present/" (22808 43463 606738 207000) "vds/" "ch/" "./" "WawaJava/" "StreamOne/" "nc3/" "TSRI/" "retemp/" "settings/" "chR/" "gsom/" "kask/" "../" "aptell/" "kongRa/" "WebOne/" "rticles/" "prelude/")
 
  ("/home/" (22648 46567 379802 940000) "./" "lost+found/" "../" "kongra/")
 
