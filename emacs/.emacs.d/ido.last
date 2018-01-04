@@ -24,6 +24,7 @@
 ;; ----- ido-work-file-list -----
 (
  ".emacs"
+ ".profile"
  "notes.md"
  "dicts.R"
  "Elements of Style.org"
@@ -32,14 +33,13 @@
  ".zshrc"
  "J8.org"
  "meetup.org"
- "notes"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/kongra/" (23045 30035 776034 303000) ".thumbnails/" "Publiczny/" ".oracle_jre_usage/" ".IdeaIC2017.1/" ".p2/" ".emacs" ".gstreamer-0.10/" ".emacs.d/" ".m2/" ".odps.studio/" ".rnd" ".dmrc" ".texmf-var/" ".elm/" ".ICEauthority" ".zshrc.pre-oh-my-zsh" ".profile" ".bash_history" ".synaptic/" ".xsession-errors" ".davfs2/" "./" ".zsh-update" ".xinputrc" ".bash_logout" ".zoom/" ".xsession-errors.old" ".zcompdump" ".tooling/" ".lein/" ".compiz/" ".pencil/" "VirtualBox VMs/" ".Rhistory" ".mozilla/" "Pobrane/" "bin/" ".bazel/" ".fonts/" ".oh-my-zsh/" "Devel/" ".local/" ".bashrc" ".dbus/" ".swt/" ".gimp-2.8/" ".ssh/" ".gconf/" ".AMD/" ".macromedia/" ".viminfo" "Szablony/" "Desktop/" "Dokumenty/" ".install4j" ".atom/" ".Rprofile" ".xournal/" ".pki/" ".gnupg/" "Temp/" ".gksu.lock" ".Xauthority" "Obrazy/" ".Mathematica/" ".sane/" ".thunderbird/" ".rstudio-desktop/" ".AnnotationHub/" "eclipse-workspace/" ".IdeaIC2017.2/" ".zshrc" ".IdeaIC2016.3/" ".zsh_history" ".java/" "workspace-jee/" ".gtkrc-2.0" ".psql_history" "R/" ".putty/" ".smex-items" ".ghc/" "../" ".config/" ".themes/" ".supertux/" ".stack/" ".gitconfig" ".xfce4-session.verbose-log" ".filezilla/" ".android/" ".conkyrc" ".npm/" ".selected_editor" "Cppsoft/" ".gnome/" ".vscode/" ".xfce4-session.verbose-log.last" ".eclipse/" "jee-workspace/" ".adobe/" "examples.desktop" ".hplip/" "Arch/" ".zcompdump-hp470-5.0.2" "Muzyka/" ".xscreensaver" "Mathematica/" "Javasoft/" ".cache/" "Pulpit/" "Wideo/")
+ ("/home/kongra/" (23118 34658 564291 520000) ".thumbnails/" "Publiczny/" ".oracle_jre_usage/" ".IdeaIC2017.1/" ".p2/" ".emacs" ".gstreamer-0.10/" ".emacs.d/" ".m2/" ".odps.studio/" ".rnd" ".dmrc" ".composer/" ".texmf-var/" ".elm/" ".ICEauthority" ".zshrc.pre-oh-my-zsh" ".profile" ".bash_history" ".synaptic/" ".xsession-errors" ".davfs2/" "./" ".zsh-update" ".xinputrc" ".bash_logout" ".keras/" ".zoom/" ".xsession-errors.old" ".zcompdump" ".tooling/" ".lein/" ".compiz/" ".pencil/" "VirtualBox VMs/" ".Rhistory" ".mozilla/" "Pobrane/" "bin/" ".bazel/" ".fonts/" ".oh-my-zsh/" ".vagrant.d/" "Devel/" ".local/" ".bashrc" ".dbus/" ".swt/" ".gimp-2.8/" ".emacs~" ".ssh/" ".gconf/" ".AMD/" ".macromedia/" ".viminfo" "Programy/" "Szablony/" "Desktop/" "Dokumenty/" ".install4j" ".atom/" ".Rprofile" ".distlib/" ".xournal/" ".pki/" ".gnupg/" "Temp/" ".gksu.lock" ".tlaplus/" ".Xauthority" "Obrazy/" "Simplicity-build.properties" ".Mathematica/" ".sane/" ".thunderbird/" ".rstudio-desktop/" ".AnnotationHub/" "eclipse-workspace/" ".IdeaIC2017.2/" ".zshrc" ".IdeaIC2016.3/" ".zsh_history" ".java/" "workspace-jee/" ".gtkrc-2.0" ".psql_history" "R/" ".putty/" ".hedgewars/" ".smex-items" ".ghc/" "../" ".virtualenvs/" ".config/" ".themes/" ".supertux/" ".stack/" ".gitconfig" ".xfce4-session.verbose-log" ".filezilla/" ".android/" ".conkyrc" ".npm/" ".selected_editor" "Cppsoft/" ".gnome/" ".vscode/" ".xfce4-session.verbose-log.last" ".eclipse/" "jee-workspace/" ".adobe/" "examples.desktop" ".hplip/" "Arch/" ".zcompdump-hp470-5.0.2" "Muzyka/" ".xscreensaver" "Mathematica/" "Javasoft/" ".cache/" "Pulpit/" "Wideo/")
 
- ("/home/kongra/Pulpit/" (23040 21964 987403 470000) "./" "JDK9/" "Titanic/" "TI/" "notes.md" "../" "scr/")
+ ("/home/kongra/Pulpit/" (23094 60996 414411 120000) "./" "JDK9/" "Titanic/" "notes.md" "../" "obliczenia.R" "TLA1/")
 
  ("/home/kongra/Devel/Projects/Present/aptell/" (23036 53164 602488 999000) ".gitignore" "./" "doc/" ".git/" "bin/" ".idea/" "antlr4-gen.sh" "build.xml" "classes/" "../" "lib/" "aptell.iml" "src/" "build.number")
 
