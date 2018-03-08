@@ -40,6 +40,9 @@
              '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/"))
 (package-initialize)
 
+;; AUTO REVERT MODE (RELOAD ON CHANGE)
+(global-auto-revert-mode t)
+
 ;; DEFAULT BROWSER
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "opera")
@@ -604,9 +607,12 @@
 ;;             (ess-set-style 'GNU 'quiet)
 ;;             (setq ess-arg-function-offset nil)))
 
-(global-set-key (kbd "M-m") 'ess-eval-line-and-step)
-(global-set-key (kbd "M--") (lambda () (interactive) (insert "<- ")))
-(global-set-key [f12]       (lambda () (interactive) (insert "runApp(launch.browser = FALSE)")))
+;; (global-set-key (kbd "M-m") 'ess-eval-line-and-step)
+;; (global-set-key (kbd "M--") (lambda () (interactive) (insert "<- ")))
+;; (global-set-key (kbd "M-m") 'ess-eval-line-and-step)
+
+(global-set-key [f7] 'ess-eval-line-and-step)
+(global-set-key (kbd "C-n") (lambda () (interactive) (insert "%>% ")))
 
 (add-hook 'perl-mode-hook
       (lambda () (setq perl-indent-level 2)))
