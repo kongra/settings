@@ -375,6 +375,11 @@
 		 'py-beginning-of-def-or-class)
 	    (setq outline-regexp "def\\|class ")))
 
+;; RUST MODE
+(add-to-list 'load-path "~/.emacs.d/elisp/rust-mode")
+(autoload 'rust-mode "rust-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
+
 ;; USE IDO ...
 (ido-mode t)
 (setq ido-enable-flex-matching t) ;; enable fuzzy matching
