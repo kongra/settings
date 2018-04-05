@@ -1,0 +1,12 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Mariana.tmTheme",
+	"font_face": "Ubuntu Mono",
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"tab_size": 2,
+	"theme": "Adaptive.sublime-theme",
+	"trim_trailing_white_space_on_save": true
+}

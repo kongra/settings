@@ -1,0 +1,515 @@
+{
+	"folder_history":
+	[
+		"/home/kongra/Devel/Projects/Present/nc3",
+		"/home/kongra/Temp/fibperf",
+		"/home/kongra/Devel/Projects/Present/vds/bts"
+	],
+	"last_version": 3143,
+	"last_window_id": 6,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 0.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"chu",
+						"chunks"
+					],
+					[
+						"us",
+						"usize"
+					],
+					[
+						"str",
+						"struct-tuple\tstruct …(…);"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 354.0,
+				"last_filter": "Packa",
+				"selected_items":
+				[
+					[
+						"Packa",
+						"Package Control: Install Package"
+					],
+					[
+						"rustf",
+						"RustFmt: Format Buffer"
+					],
+					[
+						"Rust",
+						"RustFmt: Format Buffer"
+					],
+					[
+						"Package",
+						"Package Control: Install Package"
+					],
+					[
+						"Package con",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 513.0
+			},
+			"console":
+			{
+				"height": 277.0,
+				"history":
+				[
+					"2 ** 1000",
+					"2 ** 100",
+					"2 ** 10",
+					"34",
+					"1 + 2",
+					"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/kongra/Temp/fibperf/Rust/fib/src/main.rs",
+				"/home/kongra/Arch/Różne/Adresy maile telefony/iPKO",
+				"/home/kongra/Temp/fibperf/Rust/fib/Cargo.toml",
+				"/home/kongra/Temp/fibperf/Rust/fib/rustfmt.toml",
+				"/home/kongra/Temp/fibperf/Pow.hs",
+				"/home/kongra/Devel/Projects/Present/nc3/src/main.rs",
+				"/home/kongra/Devel/Projects/Present/nc3/Cargo.lock",
+				"/home/kongra/Devel/Projects/Present/vds/bts/src/clj/bts/csp/assignment.clj",
+				"/home/kongra/.themes/spacemacs-colors-sublime/Spacemacs.tmTheme",
+				"/home/kongra/.themes/spacemacs-colors-sublime/README.md"
+			],
+			"find":
+			{
+				"height": 24.0
+			},
+			"find_in_files":
+			{
+				"height": 101.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"unsafe",
+					"where",
+					"UnsafeCell",
+					"struct"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 24.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.unsaved_changes":
+			{
+				"height": 108.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 44.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 240.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 0.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"chu",
+						"chunks"
+					],
+					[
+						"us",
+						"usize"
+					],
+					[
+						"str",
+						"struct-tuple\tstruct …(…);"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/kongra/Devel/Projects/Present/nc3/src/main.rs",
+					"settings":
+					{
+						"buffer_size": 1989,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/kongra/Devel/Projects/Present/nc3/rustfmt.toml",
+					"settings":
+					{
+						"buffer_size": 258,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 392.0,
+				"last_filter": "Packa",
+				"selected_items":
+				[
+					[
+						"Packa",
+						"Package Control: Install Package"
+					],
+					[
+						"rustf",
+						"RustFmt: Format Buffer"
+					],
+					[
+						"Rust",
+						"RustFmt: Format Buffer"
+					],
+					[
+						"Package",
+						"Package Control: Install Package"
+					],
+					[
+						"Package con",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 461.0
+			},
+			"console":
+			{
+				"height": 277.0,
+				"history":
+				[
+					"2 ** 1000",
+					"2 ** 100",
+					"2 ** 10",
+					"34",
+					"1 + 2",
+					"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"expanded_folders":
+			[
+				"/home/kongra/Devel/Projects/Present/nc3"
+			],
+			"file_history":
+			[
+				"/home/kongra/Temp/fibperf/Rust/fib/src/main.rs",
+				"/home/kongra/Arch/Różne/Adresy maile telefony/iPKO",
+				"/home/kongra/Temp/fibperf/Rust/fib/Cargo.toml",
+				"/home/kongra/Temp/fibperf/Rust/fib/rustfmt.toml",
+				"/home/kongra/Temp/fibperf/Pow.hs",
+				"/home/kongra/Devel/Projects/Present/nc3/src/main.rs",
+				"/home/kongra/Devel/Projects/Present/nc3/Cargo.lock",
+				"/home/kongra/Devel/Projects/Present/vds/bts/src/clj/bts/csp/assignment.clj",
+				"/home/kongra/.themes/spacemacs-colors-sublime/Spacemacs.tmTheme",
+				"/home/kongra/.themes/spacemacs-colors-sublime/README.md"
+			],
+			"find":
+			{
+				"height": 24.0
+			},
+			"find_in_files":
+			{
+				"height": 101.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/home/kongra/Devel/Projects/Present/nc3"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/kongra/Devel/Projects/Present/nc3/src/main.rs",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1989,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										230,
+										230
+									]
+								],
+								"settings":
+								{
+									"git_gutter_is_enabled": true,
+									"syntax": "Packages/Rust/Rust.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/kongra/Devel/Projects/Present/nc3/rustfmt.toml",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 258,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										150,
+										150
+									]
+								],
+								"settings":
+								{
+									"git_gutter_is_enabled": true,
+									"syntax": "Packages/TOML/TOML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 24.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.unsaved_changes":
+			{
+				"height": 108.0
+			},
+			"pinned_build_system": "",
+			"position": "0,1,0,0,0,0,25,1600,872,1600,900",
+			"project": "",
+			"replace":
+			{
+				"height": 44.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 240.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 6,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

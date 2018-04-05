@@ -1,0 +1,16 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"GitGutter",
+		"Materialize",
+		"Package Control",
+		"Rust Enhanced",
+		"RustFmt",
+		"TOML",
+		"zenburn"
+	]
+}
