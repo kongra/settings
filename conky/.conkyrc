@@ -76,17 +76,17 @@ $membar
 # ${color 777777}Swap:$color $alignr $swap/$swapmax - $swapperc%
 # $stippled_hr
 
-${color 777777}eth0: $color $alignr ${addr eth0}
-${color 777777}Down: $color $alignr ${downspeed eth0}/s - Total: ${totaldown eth0}
-${color 777777}Up:   $color $alignr ${upspeed eth0}/s - Total: ${totalup eth0}
+${color 777777}eth:  $color $alignr ${addr enp8s0}
+${color 777777}Down: $color $alignr ${downspeed enp8s0}/s - Total: ${totaldown enp8s0}
+${color 777777}Up:   $color $alignr ${upspeed enp8s0}/s - Total: ${totalup enp8s0}
 
-${color 777777}wlan0: $color $alignr ${addr wlan0}
-${color 777777}Down:  $color $alignr ${downspeed wlan0}/s - Total: ${totaldown wlan0}
-${color 777777}Up:    $color $alignr ${upspeed wlan0}/s - Total: ${totalup wlan0}
+${color 777777}wlan: $color $alignr ${addr wlo1}
+${color 777777}Down: $color $alignr ${downspeed wlo1}/s - Total: ${totaldown wlo1}
+${color 777777}Up:   $color $alignr ${upspeed wlo1}/s - Total: ${totalup wlo1}
 
-${color 777777}ppp0: $color $alignr ${addr ppp0}
-${color 777777}Down: $color $alignr ${downspeed ppp0}/s - Total: ${totaldown ppp0}
-${color 777777}Up:   $color $alignr ${upspeed ppp0}/s - Total: ${totalup ppp0}
+${color 777777}ppp : $color $alignr ${addr wwx001e101f0000}
+${color 777777}Down: $color $alignr ${downspeed wwx001e101f0000}/s - Total: ${totaldown wwx001e101f0000}
+${color 777777}Up:   $color $alignr ${upspeed wwx001e101f0000}/s - Total: ${totalup wwx001e101f0000}
 # $color$stippled_hr
 
 ${color 777777}SSD: $color $alignr ${fs_used /}/${fs_size /}
