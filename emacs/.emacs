@@ -1,30 +1,38 @@
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(ada-language-version (quote ada2005))
  '(blink-cursor-mode nil)
  '(case-fold-search t)
  '(column-number-mode t)
  '(current-language-environment "Polish")
+ '(git-gutter:lighter " GG")
  '(global-font-lock-mode t nil (font-lock))
  '(global-hl-line-mode nil)
+ '(haskell-process-log t)
+ '(haskell-process-type (quote stack-ghci))
+ '(inferior-haskell-wait-and-jump t)
  '(inhibit-startup-screen t)
+ '(package-selected-packages
+   (quote
+    (clojure-mode-extra-font-locking ac-cider cider magit zenburn-theme spinner smex smart-tabs-mode seq queue pkg-info paredit hi2 haskell-mode git-gutter feature-mode elm-mode auto-complete)))
  '(safe-local-variable-values
-   (quote ((syntax . COMMON-LISP)
-	   (Package . "CCL")
-	   (Syntax . Common-lisp)
-	   (Package ANSI-LOOP "COMMON-LISP")
-	   (Lowercase . T)
-	   (Package ARCH :use CL)
-	   (Package . CCL)
-	   (Package . Maxima)
-	   (Base . 10)
-	   (Syntax . Common-Lisp)
-	   (Package . cells)
-	   (Package . KERNEL)
-	   (Log . code\.log))))
+   (quote
+    ((syntax . COMMON-LISP)
+     (Package . "CCL")
+     (Syntax . Common-lisp)
+     (Package ANSI-LOOP "COMMON-LISP")
+     (Lowercase . T)
+     (Package ARCH :use CL)
+     (Package . CCL)
+     (Package . Maxima)
+     (Base . 10)
+     (Syntax . Common-Lisp)
+     (Package . cells)
+     (Package . KERNEL)
+     (Log . code\.log))))
  '(show-paren-mode t nil (paren)))
 
 ;; ADDITIONAL LOAD PATHS
@@ -92,9 +100,12 @@
 
 ;; MATCHING PARENS COLORS (USE WITH ZENBURN AND SPACEMACS)
 (custom-set-faces
-  '(show-paren-match ((t (:background "CornflowerBlue" :foreground "white"))))
-    '(show-paren-mismatch ((((class color))
- 			 (:background "red" :foreground "white")))))
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(show-paren-match ((t (:background "CornflowerBlue" :foreground "white"))))
+ '(show-paren-mismatch ((((class color)) (:background "red" :foreground "white")))))
 
 ;; POWERLINE
 (require 'powerline)
@@ -253,7 +264,8 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; CLOJURE via CIDER
-(add-to-list 'load-path "~/.emacs.d/elisp/cider")
+;; (add-to-list 'load-path "~/.emacs.d/elisp/clojure-mode")
+;; (add-to-list 'load-path "~/.emacs.d/elisp/cider")
 (require 'cider)
 (add-hook 'cider-mode-hook                #'eldoc-mode)
 (add-hook 'cider-repl-mode-hook           #'paredit-mode)
@@ -379,6 +391,7 @@
 (add-to-list 'load-path "~/.emacs.d/elisp/rust-mode")
 (autoload 'rust-mode "rust-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
+(add-to-list 'ac-modes 'rust-mode)
 
 ;; USE IDO ...
 (ido-mode t)
@@ -541,11 +554,7 @@
 
 (require 'hs-lint)    ;; https://gist.github.com/1241059
 
-(custom-set-variables
- '(haskell-process-log t)
- ;; '(haskell-process-type (quote cabal-repl)) ;; use cabal repl instead of ghci
- '(haskell-process-type (quote stack-ghci)) ;; use stack ghci
- '(inferior-haskell-wait-and-jump t))
+
 
 (require 'hi2)
 (add-hook 'haskell-mode-hook 'turn-on-hi2)
@@ -635,7 +644,7 @@
 ;; GIT GUTTER
 (require 'git-gutter)
 (global-git-gutter-mode t)
-(custom-set-variables '(git-gutter:lighter " GG"))
+
 
 (set-face-foreground 'git-gutter:modified "BlueViolet")
 (set-face-foreground 'git-gutter:added    "ForestGreen")

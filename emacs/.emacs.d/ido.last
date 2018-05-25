@@ -26,26 +26,36 @@
 ;; ----- ido-work-file-list -----
 (
  ".emacs"
+ ".conkyrc"
+ "notes.clj"
+ "notes.txt"
+ "Rpretest.txt"
  ".profile"
  "notes.md"
  "consts.R"
  "2018-01-19 Spotkanie Klastra ICT.org"
  "dicts.R"
- "Elements of Style.org"
- "notes.org"
- "sample.txt"
- ".zshrc"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/kongra/" (23216 50794 274472 432000) ".thumbnails/" "Publiczny/" ".oracle_jre_usage/" ".p2/" ".emacs" ".gnome2_private/" ".gstreamer-0.10/" ".emacs.d/" ".m2/" ".odps.studio/" ".rnd" ".dmrc" ".composer/" ".texmf-var/" ".elm/" ".ICEauthority" ".zshrc.pre-oh-my-zsh" ".profile" ".bash_history" ".synaptic/" ".xsession-errors" ".davfs2/" "./" ".zsh-update" ".cargo/" ".xinputrc" ".bash_logout" ".keras/" ".zoom/" ".xsession-errors.old" ".zcompdump" ".tooling/" ".lein/" ".compiz/" ".pencil/" "VirtualBox VMs/" ".Rhistory" ".mozilla/" "Pobrane/" "bin/" ".bazel/" ".fonts/" ".oh-my-zsh/" ".IdeaIC2017.3/" ".vagrant.d/" "Devel/" ".local/" ".bashrc" ".dbus/" ".swt/" ".gimp-2.8/" ".ssh/" ".gconf/" ".AMD/" ".macromedia/" ".viminfo" "Programy/" "Szablony/" "Desktop/" ".rustup/" "Dokumenty/" ".install4j" ".atom/" ".Rprofile" ".distlib/" ".xournal/" ".pki/" ".gnupg/" "Temp/" ".phpls/" ".gksu.lock" ".tlaplus/" ".Xauthority" "Obrazy/" "Simplicity-build.properties" ".Mathematica/" ".sane/" ".thunderbird/" ".rstudio-desktop/" ".AnnotationHub/" ".multirust/" "eclipse-workspace/" ".zshrc" ".zsh_history" ".java/" "workspace-jee/" ".gtkrc-2.0" ".psql_history" "R/" ".putty/" ".hedgewars/" ".smex-items" ".ghc/" "../" ".virtualenvs/" ".config/" ".themes/" ".supertux/" ".zprofile" ".stack/" ".gitconfig" ".xfce4-session.verbose-log" ".filezilla/" ".android/" ".conkyrc" ".npm/" ".selected_editor" "Cppsoft/" ".gnome/" ".vscode/" ".xfce4-session.verbose-log.last" ".gnome2/" ".eclipse/" "jee-workspace/" ".adobe/" "examples.desktop" ".hplip/" "Arch/" ".zcompdump-hp470-5.0.2" "Muzyka/" ".xscreensaver" "Mathematica/" "Javasoft/" ".cache/" "Pulpit/" "Wideo/")
+ ("/home/kongra/" (23299 63388 761804 978000) "eclipse-workspace/" ".dbus/" ".wget-hsts" ".ipython/" "snap/" ".android/" "Pulpit/" "Temp/" ".bash_history" "Wideo/" ".zcompdump-HP-470-5.4.2" ".xsession-errors" "../" ".profile" "Music/" ".supertux/" "Publiczny/" ".fonts.conf" ".gnupg/" ".Rprofile" ".smex-items" ".pki/" "Dokumenty/" ".davfs2/" "Obrazy/" "R/" ".sudo_as_admin_successful" ".gitconfig" ".ICEauthority" ".emacs" ".zsh_history" "Javasoft/" "Downloads/" ".themes/" ".xsession-errors.old" ".IdeaIC2018.1/" ".Xauthority" ".lein/" ".thumbnails/" "bin/" ".jedit/" "Muzyka/" ".viminfo" ".virtualenvs/" "Pictures/" ".rstudio-desktop/" "Pobrane/" ".cache/" "./" ".selected_editor" ".oracle_jre_usage/" "Szablony/" ".zshrc.pre-oh-my-zsh" "Templates/" "examples.desktop" "Arch/" ".elm/" ".filezilla/" ".fonts/" "Documents/" ".icons/" ".mozilla/" "Videos/" ".zcompdump" ".Rhistory" "Devel/" "VirtualBox VMs/" ".zoom/" ".zshrc" "Desktop/" ".xinputrc" ".java/" ".zprofile" ".zsh-update" "Programy/" "Public/" ".local/" ".conkyrc" ".emacs.d/" ".oh-my-zsh/" ".config/")
 
- ("/home/kongra/Pulpit/" (23207 37560 67702 285000) "AI/" "./" "JDK9/" "2018-01-19 Spotkanie Klastra ICT.org" "Dla prof. Rutkowskiego.org" "notes.md" "../")
+ ("/home/kongra/Devel/" (23226 56097 873755 362000) "Projects/" "../" "Libs/" "Misc/" "./")
 
- ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/R/shiny/" (23138 23672 347316 280000) "./" "ui/" "plots.R" "libs.R" "logic/" "consts.R" "logic.R" "../" "data.R" "ui.R")
+ ("/home/kongra/Devel/Projects/" (23275 30204 679771 831000) "Old/" "../" "Elements of Style.org" "TODO.org" "Rocky/" "Nauka.org" "./" "Makolab, TME, CSP.org" "Present/")
 
- ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/" (23139 1350 855360 189000) ".Rproj.user/" ".gitignore" "./" "data-origin/" "Compensation.Rproj" ".git/" "DESCRIPTION" ".Rhistory" "reports/" "www/" "server.R" "R-scripts/" "R/" "../" ".Rbuildignore" "data/" "NAMESPACE" "man/" "rsconnect/" "ui.R")
+ ("/home/kongra/Devel/Projects/Rocky/" (23226 56374 497750 409000) "Sharon/" "../" "Konrad_20170430.xlsx" "./" "Antsle/" "Konrad_20170531.xlsx")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/" (23299 57420 445247 999000) "TSRI/" "Confidentiality Agreement/" "Publications/" "../" "Sharon (2018-05-22 z office.com).zip" "Compensation/" "./" "Sharon - Work Hours (2018-05-22 z office.com).xlsx")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/" (23299 63463 384156 536000) "rsconnect/" "NAMESPACE" "../" ".Rproj.user/" "R/" "data-origin/" ".Rbuildignore" ".gitignore" "R-scripts/" "DESCRIPTION" "./" "doc/" "data/" "Compensation.Rproj" "reports/" "www/" ".git/" "app.R" ".Rhistory" "archive/")
+
+ ("/home/kongra/Pulpit/" (23286 49809 612823 801000) "2018-04-29/" "../" "Baza/" "chRgreps.sh" "notes.clj" "./" "wawa.sql")
+
+ ("/home/kongra/Pobrane/" (23268 62115 950029 77000) "Casey Hsiung Final for Presentation 2018 04 12.xlsx" "Using Git repositories in Windows.docx" "../" "4.03.04/" "aptell-Clojure/" "JAVA post-test grupa1.pdf" "Brandon Lightbourn Final for Presentation 2018 04 12.xlsx" "Sharon - Work Hours.xlsx" "JAVA post-test grupa1.docx" "Inovatica/" "mpdf.pdf" "./" "Final.Report.PA1.JW1.docx")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/R/shiny/" (23265 33765 216955 974000) "../" "ui.R" "data.R" "./" "libs.R" "logic/" "consts.R")
 
  ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/R/" (23127 15126 366893 744000) "utils.R" "./" "help/" "shiny/" "cens/" "../" "emcehi/")
 
@@ -54,12 +64,6 @@
  ("/home/kongra/Devel/Projects/Present/koR/" (23128 38394 513175 125000) ".Rproj.user/" ".gitignore" "./" "README.md" ".git/" "koR.Rproj" "DESCRIPTION" ".Rhistory" "R/" "../" ".Rbuildignore" "NAMESPACE" "man/" "src/")
 
  ("/home/kongra/bin/" (23119 32800 856316 922000) "findgrep" "data-instalacji-systemu" "LAN-unarch.sh" "stud" "fujitsu.sh" "utwórz-skrót-aplikacji.sh" "rmvb2avi" "luyten" "emacs-client.sh" "findwc" "xp.sh" "99-hdd-ugly-fix.sh" "profile-dotemacs.el" "rename_files.py" "makolab.sh" "ANTLRWorks.sh" "clear-cached-memory.sh" "lein" "usuń.metacity.wireframe.sh" "ccl64" "lameall.sh" "LAN-arch.sh" "nah.sh" "calc" "clj" "backup/" "git-dirty.sh" "jedit" "fujitsu-root.sh" "nginx.stop" "LAN.sh" "parkowanieglowicy.py" "screenruler.sh" "unload_kvm.sh" "zewnetrzny.ekran.sh" "hddparkcron.py" "grep-sed-replace" "img-diffs.sh" "pdf2eps" "minimap-rm.sh" "nginx.start" "startconky.sh" "hslint" "jar-classes.sh" "TSRI-mount.sh" "bazel" "./" "TSRI-umount.sh" "eclipsefix.sh" "../" "lhs2TeX/" "javac-all.sh" "emacsnw.sh" "ANTLRJavaTree.sh" "gentoo.sh" "drop-caches.sh" "pdf2cmyk" "hddpark.py" "my-desktop" "capslock.ctrl.sh" "zeny.sh")
-
- ("/home/kongra/Pobrane/" (23137 51246 241899 875000) "aptell-Clojure/" "./" "test.R" "ClientQuestionnaire.pdf" "2017-12 Rozliczenie godzin.xlsx" "../" "Breaking Bad S01E01 Lektor PL.avi" "sample.pdf")
-
- ("/home/kongra/Devel/Projects/" (23123 6765 711802 402000) "Makolab, TME, CSP.org" "./" "Present/" "Nauka.org" "Old/" "Rocky/" "TODO.org" "../" "Elements of Style.org")
-
- ("/home/kongra/Devel/Projects/Rocky/Sharon/" (23125 10717 6083 910000) "./" "Compensation Reports/" "TSRI/" "Work Hours and Description/" "Publications/" "Compensation/" "../" "Confidentiality Agreement/")
 
  ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/data/" (23127 11663 654955 754000) "notes/" "./" "help/" "cens/" "absences/" "../" "payroll dates/" "emcehi/" "retro/")
 
@@ -76,8 +80,6 @@
  ("/home/kongra/Pobrane/aptell/java/aptell/java/" (23031 19396 784075 424000) ".#JavaAptellGen.java" "JavaListener.java" "./" "JavaParser.java" "Processor.java" "JavaBaseListener.java" "../" "NonTerminal.java" "JavaLexer.java" "#JavaAptellGen.java#" "JavaAptellGen.java")
 
  ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/R/cens/" (23008 34702 208292 929000) "./" "2017-09-08 07_34_24 CEST projections.R" "2017-09-06 11_41_45 CEST payroll dates.R" "2017-08-25 10_45_09 CEST consts.R" "2017-10-11 10_11_14 CEST props.R" "2017-09-18 13_31_11 CEST cens.R" "../" "archive/")
-
- ("/home/kongra/Devel/Projects/Rocky/" (22949 6671 932601 126000) "./" "Antsle/" "Konrad_20170430.xlsx" "../" "Konrad_20170531.xlsx" "Sharon/")
 
  ("/home/kongra/Temp/" (23007 26094 844353 753000) "Tabliczka mnożenia w ANSI C/" "./" "loopperf/" "rtlwifi_new/" "1/" "fibperf/" "Otodom/" "InternetPopulation2011_HexCartogram_v6_2_LD.png" "0/" "I0000000.jpg" "../" "Czy Polska będzie mistrzem świata w piłce nożnej_ - 3obieg.pl _ 3obieg.pdf" "2/" "az-wniosek.zip")
 
@@ -96,8 +98,6 @@
  ("/home/kongra/Devel/Projects/Present/TSRI/" (22821 37272 427776 89000) "plots/" ".Rproj.user/" ".gitignore" "TSRI.Rproj" ".git/" "DESCRIPTION" ".Rhistory" "reports/" "docs/" "R/" ".Rbuildignore" "data/" "tests/" "NAMESPACE" "man/" "../" "./")
 
  ("/home/kongra/Devel/Projects/Present/TSRI/R/" (22821 37223 479776 965000) "errorplots.R" "report-raw-enrollment+evals.R" "./" "data-evals-SurveyMonkey.R" "report-raw-enrollment+evals/" "runall.R" "data-evals-0-responses-fix.R" "data-courses+evals-2013-Excel.R" "data-evals-cource(sic)-topic-fix.R" "../" "data/" "data.R" "errorplots/")
-
- ("/home/kongra/Devel/" (22648 49278 978826 827000) "./" "Projects/" "Misc/" "Libs/" "../")
 
  ("/home/" (22648 46567 379802 940000) "./" "lost+found/" "../" "kongra/")
 )

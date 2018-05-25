@@ -1,7 +1,7 @@
 {:user {:plugins [[lein-pprint        "1.2.0"]
                   [lein-ancient      "0.6.15"]
-                  [lein-bikeshed      "0.5.0"]
-                  [jonase/eastwood    "0.2.5"]
+                  [lein-bikeshed      "0.5.1"]
+                  [jonase/eastwood    "0.2.6"]
                   [lein-kibit         "0.1.6"
                    :exclusions
                    [org.clojure/tools.namespace
