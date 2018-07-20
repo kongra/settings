@@ -544,7 +544,8 @@
 ;; (add-to-list 'load-path "~/.emacs.d/elisp/haskell-mode/")
 ;; (load "haskell-mode-autoloads.el")
 (require 'haskell-mode)
-(setq haskell-process-args-stack-ghci '("--ghci-options=-ferror-spans"))
+(setq haskell-process-args-stack-ghci '("--ghci-options=-ferror-spans -fshow-loaded-modules"))
+;; (setq haskell-process-args-stack-ghci '("--ghci-options=-ferror-spans"))
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 (add-hook 'haskell-mode-hook 'haskell-doc-mode)
 ;; (define-key haskell-mode-map (kbd "SPC") 'haskell-mode-contextual-space)
@@ -553,8 +554,6 @@
 (add-hook 'haskell-mode-hook 'auto-complete-mode)
 
 (require 'hs-lint)    ;; https://gist.github.com/1241059
-
-
 
 (require 'hi2)
 (add-hook 'haskell-mode-hook 'turn-on-hi2)
