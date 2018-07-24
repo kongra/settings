@@ -1,10 +1,10 @@
 ;;; elm-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "elm-format" "elm-format.el" (22630 62746 302446
-;;;;;;  304000))
+;;;### (autoloads nil "elm-format" "elm-format.el" (23382 15093 532773
+;;;;;;  982000))
 ;;; Generated autoloads from elm-format.el
 
 (autoload 'elm-mode-format-buffer "elm-format" "\
@@ -14,8 +14,8 @@ Apply `elm-format' to the current buffer.
 
 ;;;***
 
-;;;### (autoloads nil "elm-indent" "elm-indent.el" (22630 62746 278446
-;;;;;;  305000))
+;;;### (autoloads nil "elm-indent" "elm-indent.el" (23382 15093 520773
+;;;;;;  831000))
 ;;; Generated autoloads from elm-indent.el
 
 (autoload 'turn-on-elm-indent "elm-indent" "\
@@ -44,8 +44,8 @@ Invokes `elm-indent-hook' if not nil.
 
 ;;;***
 
-;;;### (autoloads nil "elm-interactive" "elm-interactive.el" (22630
-;;;;;;  62746 254446 305000))
+;;;### (autoloads nil "elm-interactive" "elm-interactive.el" (23382
+;;;;;;  15093 500773 577000))
 ;;; Generated autoloads from elm-interactive.el
 
 (autoload 'elm-interactive-mode "elm-interactive" "\
@@ -195,8 +195,8 @@ Run the elm-test command on the current project.
 
 ;;;***
 
-;;;### (autoloads nil "elm-mode" "elm-mode.el" (22630 62746 266446
-;;;;;;  305000))
+;;;### (autoloads nil "elm-mode" "elm-mode.el" (23382 15093 512773
+;;;;;;  729000))
 ;;; Generated autoloads from elm-mode.el
 
 (autoload 'elm-mode "elm-mode" "\
@@ -208,8 +208,8 @@ Major mode for editing Elm source code.
 
 ;;;***
 
-;;;### (autoloads nil "elm-tags" "elm-tags.el" (22630 62746 294446
-;;;;;;  305000))
+;;;### (autoloads nil "elm-tags" "elm-tags.el" (23382 15093 528773
+;;;;;;  931000))
 ;;; Generated autoloads from elm-tags.el
 
 (autoload 'elm-mode-goto-tag-at-point "elm-tags" "\
@@ -225,7 +225,7 @@ Generate a TAGS file for the current project.
 ;;;***
 
 ;;;### (autoloads nil nil ("elm-font-lock.el" "elm-imenu.el" "elm-mode-pkg.el"
-;;;;;;  "elm-util.el") (22630 62746 323231 618000))
+;;;;;;  "elm-util.el") (23382 15093 524773 881000))
 
 ;;;***
 

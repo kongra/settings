@@ -1,9 +1,9 @@
 ;;; hi2-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "hi2" "hi2.el" (22630 62722 342446 734000))
+;;;### (autoloads nil "hi2" "hi2.el" (23377 56357 116711 770000))
 ;;; Generated autoloads from hi2.el
 
 (autoload 'hi2-mode "hi2" "\

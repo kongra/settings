@@ -45,7 +45,7 @@
 (add-to-list 'package-archives
              '("gnu" . "http://elpa.gnu.org/packages/"))
 (add-to-list 'package-archives
-             '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/"))
+             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
 
 ;; AUTO REVERT MODE (RELOAD ON CHANGE)

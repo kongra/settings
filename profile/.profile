@@ -25,7 +25,6 @@ PATH=.:$PATH:$HOME/.local/bin
 
 # Java
 JAVA_HOME=$HOME/Javasoft/jdk
-# CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar
 ANT_HOME=$HOME/Javasoft/ant
 
 PATH=$JAVA_HOME/bin:$PATH:$ANT_HOME/bin
@@ -46,7 +45,7 @@ PATH=$PATH:$GNAT_HOME/bin
 
 # LLVM
 LLVM_HOME=$HOME/Cppsoft/clang
-PATH=$PATH:$LLVM_HOME/bin
+PATH=$LLVM_HOME/bin:$PATH
 
 # CMAKE
 PATH=$PATH:$HOME/Devel/Libs/cmake/bin
@@ -69,4 +68,9 @@ PATH=$PATH:$HOME/.composer/vendor/bin
 # Rust/cargo
 PATH=$PATH:$HOME/.cargo/bin
 
+# Node.js
+PATH=$PATH:$HOME/node_modules/.bin:$HOME/node_modules/elm_format/bin:$HOME/node_modules/elm_oracle/bin
+
 export PATH JAVA_HOME ANT_HOME M2_HOME M2 MAVEN_OPTS ANTLR4_HOME GNAT_HOME LLVM_HOME IBUS_ENABLE_SYNC_MODE
+
+export PATH="$HOME/.cargo/bin:$PATH"

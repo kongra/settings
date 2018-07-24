@@ -14,9 +14,9 @@
 (
  "/home/kongra/"
  "/home/kongra/Pulpit/"
+ "/home/kongra/Pobrane/"
  "/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/R/shiny/"
  "/home/kongra/Devel/Projects/"
- "/home/kongra/Pobrane/"
  "/ssh:127.0.0.1#2222:"
  "/ssh:konrad@127.0.0.1#2222/"
  "/ssh:konrad@127.0.0.1:/"
@@ -26,20 +26,34 @@
 ;; ----- ido-work-file-list -----
 (
  ".emacs"
- ".conkyrc"
+ ".profile"
  "notes.clj"
+ "compose.clj"
+ ".conkyrc"
  "notes.txt"
  "Rpretest.txt"
- ".profile"
  "notes.md"
  "consts.R"
  "2018-01-19 Spotkanie Klastra ICT.org"
- "dicts.R"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/kongra/" (23299 63388 761804 978000) "eclipse-workspace/" ".dbus/" ".wget-hsts" ".ipython/" "snap/" ".android/" "Pulpit/" "Temp/" ".bash_history" "Wideo/" ".zcompdump-HP-470-5.4.2" ".xsession-errors" "../" ".profile" "Music/" ".supertux/" "Publiczny/" ".fonts.conf" ".gnupg/" ".Rprofile" ".smex-items" ".pki/" "Dokumenty/" ".davfs2/" "Obrazy/" "R/" ".sudo_as_admin_successful" ".gitconfig" ".ICEauthority" ".emacs" ".zsh_history" "Javasoft/" "Downloads/" ".themes/" ".xsession-errors.old" ".IdeaIC2018.1/" ".Xauthority" ".lein/" ".thumbnails/" "bin/" ".jedit/" "Muzyka/" ".viminfo" ".virtualenvs/" "Pictures/" ".rstudio-desktop/" "Pobrane/" ".cache/" "./" ".selected_editor" ".oracle_jre_usage/" "Szablony/" ".zshrc.pre-oh-my-zsh" "Templates/" "examples.desktop" "Arch/" ".elm/" ".filezilla/" ".fonts/" "Documents/" ".icons/" ".mozilla/" "Videos/" ".zcompdump" ".Rhistory" "Devel/" "VirtualBox VMs/" ".zoom/" ".zshrc" "Desktop/" ".xinputrc" ".java/" ".zprofile" ".zsh-update" "Programy/" "Public/" ".local/" ".conkyrc" ".emacs.d/" ".oh-my-zsh/" ".config/")
+ ("/home/kongra/" (23382 15097 624825 740000) ".dbus/" ".gitconfig" "Public/" ".filezilla/" ".android/" ".zsh_history" "bin/" "examples.desktop" "Music/" "snap/" ".viminfo" "elm-package.json" ".selected_editor" ".config/" ".gnupg/" ".emacs" "package-lock.json" "../" ".zshrc" ".oh-my-zsh/" "Dokumenty/" ".zoom/" ".launchpadlib/" ".hplip/" ".conkyrc" ".bash_history" ".mozilla/" ".emacs.d/" ".zcompdump" "elm-stuff/" ".Rhistory" ".ipython/" "R/" ".xournal/" ".xsession-errors.old" ".zshrc.pre-oh-my-zsh" ".m2/" ".cache/" "Devel/" ".wget-hsts" "Pulpit/" ".themes/" "Arch/" ".supertux/" ".fonts.conf" "Szablony/" ".npm/" "Temp/" "VirtualBox VMs/" ".local/" ".pki/" "Programy/" "Videos/" "Javasoft/" ".fonts/" "./" ".Rprofile" ".thunderbird/" ".sudo_as_admin_successful" ".elm/" ".davfs2/" ".ghc/" ".icons/" ".zcompdump-HP-470-5.4.2" "Downloads/" "Documents/" ".oracle_jre_usage/" ".profile" "RStudio/" ".smex-items" "Pobrane/" ".java/" "eclipse-workspace/" ".texlive2017/" ".rstudio-desktop/" ".Xauthority" "node_modules/" ".thumbnails/" "Desktop/" ".xinputrc" "Pictures/" ".stack/" ".zprofile" ".psql_history" "Wideo/" ".gnome/" "Muzyka/" ".ICEauthority" ".sane/" ".lein/" "Templates/" "Cppsoft/" ".jedit/" "Publiczny/" ".virtualenvs/" "Obrazy/" ".IdeaIC2018.1/" ".xsession-errors")
+
+ ("/home/kongra/Pulpit/" (23369 12320 682741 767000) "2018-04-29/" "../" "./" "chRgreps.sh" "html-font-px-widths.js" "Baza/" "notes.clj")
+
+ ("/home/" (23348 51269 847858 454000) "../" "lost+found/" "./" "kongra/")
+
+ ("/home/kongra/Arch/" (23348 52867 598028 922000) "Dydaktyka/" "../" "Sprawy bieżące/" "Doc/" "Krzysio/" "./" "Różne/" "Daria/" "Praca naukowa/")
+
+ ("/home/kongra/Arch/Dydaktyka/" (23348 52499 287905 42000) "../" "WSH/" "SAN (SWSPiZ)/" "APO/" "Clark/" "./" "Różne/" "PUW/" "WSHE/")
+
+ ("/home/kongra/Arch/Dydaktyka/SAN (SWSPiZ)/" (23364 24031 931693 293000) "Przedmioty/" "../" "Syllabusy/" "Uzupełnienia ocen/" "Uchwały Senatu/" "Kursy i szkolenia/" "Dyplomowanie/" "Książki i oprogramowanie w projekcie/" "Projekty/" "./" "Studia podyplomowe/" "Semestry/" "Różne/" "Klaster/" "PAKA/" "Notka biograficzna na stronę SAN/" "Doktoryzowanie/" "Potoki/" "Informacje/" "ITI/" "Siatki/")
+
+ ("/home/kongra/Arch/Dydaktyka/SAN (SWSPiZ)/ITI/" (23348 52435 458786 27000) "Profesorowie i kontakty na uczelniach" "Fujitsu, konta i hasła pracowników ITI.org" "PBN.org" "../" "Parametryzacja 2017 (za lata 2013-2016)/" "Dokumenty/" "2014 SAN ITI działalność statutowa/" "2017 Działalności statutowa/" "./" "Terminy seminariów.org" "Spotkania/" "Fujitsu, moodle.org" "Dostęp do ITI, SAN i inne.org" "Składy zakładów.org")
+
+ ("/home/kongra/Pobrane/" (23326 9744 561511 53000) "Using Git repositories in Windows.docx" "../" "aptell-Clojure/" "JAVA post-test grupa1.pdf" "compose.clj" "JAVA post-test grupa1.docx" ".hiddens/" "./" "DclMiIoX4AA6D5J.jpg:large.jpeg" "Konrad To Do All 2018 06 04.docx" "CV-KG.doc" "fstab" "Final.Report.PA1.JW1.docx")
 
  ("/home/kongra/Devel/" (23226 56097 873755 362000) "Projects/" "../" "Libs/" "Misc/" "./")
 
@@ -50,10 +64,6 @@
  ("/home/kongra/Devel/Projects/Rocky/Sharon/" (23299 57420 445247 999000) "TSRI/" "Confidentiality Agreement/" "Publications/" "../" "Sharon (2018-05-22 z office.com).zip" "Compensation/" "./" "Sharon - Work Hours (2018-05-22 z office.com).xlsx")
 
  ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/" (23299 63463 384156 536000) "rsconnect/" "NAMESPACE" "../" ".Rproj.user/" "R/" "data-origin/" ".Rbuildignore" ".gitignore" "R-scripts/" "DESCRIPTION" "./" "doc/" "data/" "Compensation.Rproj" "reports/" "www/" ".git/" "app.R" ".Rhistory" "archive/")
-
- ("/home/kongra/Pulpit/" (23286 49809 612823 801000) "2018-04-29/" "../" "Baza/" "chRgreps.sh" "notes.clj" "./" "wawa.sql")
-
- ("/home/kongra/Pobrane/" (23268 62115 950029 77000) "Casey Hsiung Final for Presentation 2018 04 12.xlsx" "Using Git repositories in Windows.docx" "../" "4.03.04/" "aptell-Clojure/" "JAVA post-test grupa1.pdf" "Brandon Lightbourn Final for Presentation 2018 04 12.xlsx" "Sharon - Work Hours.xlsx" "JAVA post-test grupa1.docx" "Inovatica/" "mpdf.pdf" "./" "Final.Report.PA1.JW1.docx")
 
  ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/R/shiny/" (23265 33765 216955 974000) "../" "ui.R" "data.R" "./" "libs.R" "logic/" "consts.R")
 
@@ -98,8 +108,6 @@
  ("/home/kongra/Devel/Projects/Present/TSRI/" (22821 37272 427776 89000) "plots/" ".Rproj.user/" ".gitignore" "TSRI.Rproj" ".git/" "DESCRIPTION" ".Rhistory" "reports/" "docs/" "R/" ".Rbuildignore" "data/" "tests/" "NAMESPACE" "man/" "../" "./")
 
  ("/home/kongra/Devel/Projects/Present/TSRI/R/" (22821 37223 479776 965000) "errorplots.R" "report-raw-enrollment+evals.R" "./" "data-evals-SurveyMonkey.R" "report-raw-enrollment+evals/" "runall.R" "data-evals-0-responses-fix.R" "data-courses+evals-2013-Excel.R" "data-evals-cource(sic)-topic-fix.R" "../" "data/" "data.R" "errorplots/")
-
- ("/home/" (22648 46567 379802 940000) "./" "lost+found/" "../" "kongra/")
 )
 
 ;; ----- ido-unc-hosts-cache -----
