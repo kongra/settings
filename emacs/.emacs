@@ -263,6 +263,10 @@
 ;; DELETE TRAILING SPACES ON EVERY SAVE
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+;; SAVE ALL BUFFERS
+(defun save-all-buffs () (interactive) (save-some-buffers t))
+(global-set-key (kbd "C-x C-a") 'save-all-buffs)
+
 ;; CLOJURE via CIDER
 ;; (add-to-list 'load-path "~/.emacs.d/elisp/clojure-mode")
 ;; (add-to-list 'load-path "~/.emacs.d/elisp/cider")
