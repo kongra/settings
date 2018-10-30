@@ -26,22 +26,30 @@
 ;; ----- ido-work-file-list -----
 (
  ".emacs"
- ".profile"
  "notes.clj"
+ "2018-09-13 Przygotowanie PAKA.org"
+ "2018-09-13.org"
+ ".profile"
+ "html-font-px-widths.js"
  "compose.clj"
  ".conkyrc"
  "notes.txt"
  "Rpretest.txt"
- "notes.md"
- "consts.R"
- "2018-01-19 Spotkanie Klastra ICT.org"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/kongra/" (23382 15097 624825 740000) ".dbus/" ".gitconfig" "Public/" ".filezilla/" ".android/" ".zsh_history" "bin/" "examples.desktop" "Music/" "snap/" ".viminfo" "elm-package.json" ".selected_editor" ".config/" ".gnupg/" ".emacs" "package-lock.json" "../" ".zshrc" ".oh-my-zsh/" "Dokumenty/" ".zoom/" ".launchpadlib/" ".hplip/" ".conkyrc" ".bash_history" ".mozilla/" ".emacs.d/" ".zcompdump" "elm-stuff/" ".Rhistory" ".ipython/" "R/" ".xournal/" ".xsession-errors.old" ".zshrc.pre-oh-my-zsh" ".m2/" ".cache/" "Devel/" ".wget-hsts" "Pulpit/" ".themes/" "Arch/" ".supertux/" ".fonts.conf" "Szablony/" ".npm/" "Temp/" "VirtualBox VMs/" ".local/" ".pki/" "Programy/" "Videos/" "Javasoft/" ".fonts/" "./" ".Rprofile" ".thunderbird/" ".sudo_as_admin_successful" ".elm/" ".davfs2/" ".ghc/" ".icons/" ".zcompdump-HP-470-5.4.2" "Downloads/" "Documents/" ".oracle_jre_usage/" ".profile" "RStudio/" ".smex-items" "Pobrane/" ".java/" "eclipse-workspace/" ".texlive2017/" ".rstudio-desktop/" ".Xauthority" "node_modules/" ".thumbnails/" "Desktop/" ".xinputrc" "Pictures/" ".stack/" ".zprofile" ".psql_history" "Wideo/" ".gnome/" "Muzyka/" ".ICEauthority" ".sane/" ".lein/" "Templates/" "Cppsoft/" ".jedit/" "Publiczny/" ".virtualenvs/" "Obrazy/" ".IdeaIC2018.1/" ".xsession-errors")
+ ("/home/kongra/" (23512 19218 278989 957000) ".dbus/" ".gitconfig" "Public/" ".filezilla/" ".android/" ".zsh_history" "bin/" "examples.desktop" "Music/" "snap/" ".viminfo" "elm-package.json" ".selected_editor" ".config/" ".jackdrc" ".gnupg/" ".emacs" "package-lock.json" "../" ".zshrc" ".oh-my-zsh/" ".R/" "Dokumenty/" ".zoom/" ".pencil/" ".launchpadlib/" ".hplip/" ".conkyrc" ".bash_history" ".mozilla/" ".emacs.d/" ".zcompdump" "elm-stuff/" ".Rhistory" ".ipython/" ".rustup/" ".gconf/" "R/" ".xournal/" ".xsession-errors.old" ".clojure/" ".zshrc.pre-oh-my-zsh" ".m2/" ".docker/" ".cache/" "Devel/" ".wget-hsts" "Pulpit/" ".cargo/" ".themes/" "Arch/" ".supertux/" ".fonts.conf" ".dia/" "Szablony/" ".npm/" ".audacity-data/" "Temp/" "VirtualBox VMs/" ".local/" ".pki/" ".IdeaIC2018.2/" ".vscode/" "Programy/" "Videos/" "Javasoft/" ".fonts/" "./" ".Rprofile" ".thunderbird/" ".sudo_as_admin_successful" ".elm/" ".davfs2/" ".ghc/" ".icons/" ".zcompdump-HP-470-5.4.2" "Downloads/" "Documents/" ".oracle_jre_usage/" ".profile" "RStudio/" ".smex-items" "Pobrane/" ".java/" "eclipse-workspace/" ".texlive2017/" ".install4j" ".rstudio-desktop/" ".Xauthority" "node_modules/" ".thumbnails/" "Desktop/" ".xinputrc" "Pictures/" ".stack/" ".zprofile" ".psql_history" "Wideo/" ".gnome/" "Muzyka/" ".ICEauthority" ".sane/" ".lein/" "Templates/" "Cppsoft/" ".jedit/" "Publiczny/" ".virtualenvs/" "Obrazy/" ".hedgewars/" ".gphoto/" ".IdeaIC2018.1/" ".xsession-errors" ".multirust/")
 
- ("/home/kongra/Pulpit/" (23369 12320 682741 767000) "2018-04-29/" "../" "./" "chRgreps.sh" "html-font-px-widths.js" "Baza/" "notes.clj")
+ ("/home/kongra/Pulpit/" (23499 12305 473177 219000) "2018-04-29/" "../" "./" "chRgreps.sh" "html-font-px-widths.js" "2018-10-20.clark" "Baza/" "2018-10-13 euler1.R" "euler.py" "notes.clj")
+
+ ("/home/kongra/bin/" (23434 34001 436386 945000) "profile-dotemacs.el" "jedit" "TSRI-mount.sh" "nah.sh" "hddpark.py" "luyten" "xp.sh" "ccl64" "lhs2TeX/" "LAN-unarch.sh" "../" "findgrep" "grep-sed-replace" "usuń.metacity.wireframe.sh" "calc" "stud" "data-instalacji-systemu" "img-diffs.sh" "clj" "minimap-rm.sh" "TSRI-umount.sh" "fujitsu-root.sh" "findwc" "nginx.start" "utwórz-skrót-aplikacji.sh" "99-hdd-ugly-fix.sh" "zewnetrzny.ekran.sh" "fujitsu.sh" "LAN-arch.sh" "jar-classes.sh" "./" "pdf2cmyk" "hddparkcron.py" "hslint" "eclipsefix.sh" "lameall.sh" "zeny.sh" "emacsnw.sh" "emacs-client.sh" "capslock.ctrl.sh" "LAN.sh" "clear-cached-memory.sh" "backup/" "rmvb2avi" "makolab.sh" "parkowanieglowicy.py" "rename_files.py" "drop-caches.sh" "unload_kvm.sh" "ANTLRWorks.sh" "ANTLRJavaTree.sh" "gentoo.sh" "nginx.stop" "git-dirty.sh" "pdf2eps" "javac-all.sh" "my-desktop" "lein" "startconky.sh" "screenruler.sh")
+
+ ("/home/kongra/Devel/Projects/" (23348 53163 431274 267000) "../" "Nauka.org" "Old/" "Makolab, TME, CSP.org" "Elements of Style.org" "Present/" "Rocky/" "./" "TODO.org")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/R/shiny/" (23385 43951 251979 921000) "../" "ui.R" "consts.R" "./" "logic/" "data.R" "libs.R" "data safe.R")
+
+ ("/home/kongra/Pobrane/" (23450 9805 447035 824000) "../" "Non Disclosure Agreement Music Educ.2018.08.19.docx" "Lists of All Written Scales/" "cw_2018_06_43326.pdf" "DclMiIoX4AA6D5J.jpg:large.jpeg" "fstab" "./" "Final.Report.PA1.JW1.docx" "JAVA post-test grupa1.docx" "aptell-Clojure/" "Using Git repositories in Windows.docx" "music_player_app_interface.jpg" "GRADUATE-2016-17.doc")
 
  ("/home/" (23348 51269 847858 454000) "../" "lost+found/" "./" "kongra/")
 
@@ -53,11 +61,7 @@
 
  ("/home/kongra/Arch/Dydaktyka/SAN (SWSPiZ)/ITI/" (23348 52435 458786 27000) "Profesorowie i kontakty na uczelniach" "Fujitsu, konta i hasła pracowników ITI.org" "PBN.org" "../" "Parametryzacja 2017 (za lata 2013-2016)/" "Dokumenty/" "2014 SAN ITI działalność statutowa/" "2017 Działalności statutowa/" "./" "Terminy seminariów.org" "Spotkania/" "Fujitsu, moodle.org" "Dostęp do ITI, SAN i inne.org" "Składy zakładów.org")
 
- ("/home/kongra/Pobrane/" (23326 9744 561511 53000) "Using Git repositories in Windows.docx" "../" "aptell-Clojure/" "JAVA post-test grupa1.pdf" "compose.clj" "JAVA post-test grupa1.docx" ".hiddens/" "./" "DclMiIoX4AA6D5J.jpg:large.jpeg" "Konrad To Do All 2018 06 04.docx" "CV-KG.doc" "fstab" "Final.Report.PA1.JW1.docx")
-
  ("/home/kongra/Devel/" (23226 56097 873755 362000) "Projects/" "../" "Libs/" "Misc/" "./")
-
- ("/home/kongra/Devel/Projects/" (23275 30204 679771 831000) "Old/" "../" "Elements of Style.org" "TODO.org" "Rocky/" "Nauka.org" "./" "Makolab, TME, CSP.org" "Present/")
 
  ("/home/kongra/Devel/Projects/Rocky/" (23226 56374 497750 409000) "Sharon/" "../" "Konrad_20170430.xlsx" "./" "Antsle/" "Konrad_20170531.xlsx")
 
@@ -65,15 +69,11 @@
 
  ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/" (23299 63463 384156 536000) "rsconnect/" "NAMESPACE" "../" ".Rproj.user/" "R/" "data-origin/" ".Rbuildignore" ".gitignore" "R-scripts/" "DESCRIPTION" "./" "doc/" "data/" "Compensation.Rproj" "reports/" "www/" ".git/" "app.R" ".Rhistory" "archive/")
 
- ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/R/shiny/" (23265 33765 216955 974000) "../" "ui.R" "data.R" "./" "libs.R" "logic/" "consts.R")
-
  ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/R/" (23127 15126 366893 744000) "utils.R" "./" "help/" "shiny/" "cens/" "../" "emcehi/")
 
  ("/home/kongra/Devel/Projects/Present/" (23135 12505 142281 730000) "vds/" "ch/" "WawaJava2/" "./" "SAN/" "cpp/" "StreamOne/" "retemp/" "settings/" "chR/" "gsom/" "pf/" "kask/" "koR/" "../" "aptell/" "WebOne/" "rticles/" "prelude/")
 
  ("/home/kongra/Devel/Projects/Present/koR/" (23128 38394 513175 125000) ".Rproj.user/" ".gitignore" "./" "README.md" ".git/" "koR.Rproj" "DESCRIPTION" ".Rhistory" "R/" "../" ".Rbuildignore" "NAMESPACE" "man/" "src/")
-
- ("/home/kongra/bin/" (23119 32800 856316 922000) "findgrep" "data-instalacji-systemu" "LAN-unarch.sh" "stud" "fujitsu.sh" "utwórz-skrót-aplikacji.sh" "rmvb2avi" "luyten" "emacs-client.sh" "findwc" "xp.sh" "99-hdd-ugly-fix.sh" "profile-dotemacs.el" "rename_files.py" "makolab.sh" "ANTLRWorks.sh" "clear-cached-memory.sh" "lein" "usuń.metacity.wireframe.sh" "ccl64" "lameall.sh" "LAN-arch.sh" "nah.sh" "calc" "clj" "backup/" "git-dirty.sh" "jedit" "fujitsu-root.sh" "nginx.stop" "LAN.sh" "parkowanieglowicy.py" "screenruler.sh" "unload_kvm.sh" "zewnetrzny.ekran.sh" "hddparkcron.py" "grep-sed-replace" "img-diffs.sh" "pdf2eps" "minimap-rm.sh" "nginx.start" "startconky.sh" "hslint" "jar-classes.sh" "TSRI-mount.sh" "bazel" "./" "TSRI-umount.sh" "eclipsefix.sh" "../" "lhs2TeX/" "javac-all.sh" "emacsnw.sh" "ANTLRJavaTree.sh" "gentoo.sh" "drop-caches.sh" "pdf2cmyk" "hddpark.py" "my-desktop" "capslock.ctrl.sh" "zeny.sh")
 
  ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/data/" (23127 11663 654955 754000) "notes/" "./" "help/" "cens/" "absences/" "../" "payroll dates/" "emcehi/" "retro/")
 

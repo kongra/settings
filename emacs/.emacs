@@ -648,7 +648,6 @@
 (require 'git-gutter)
 (global-git-gutter-mode t)
 
-
 (set-face-foreground 'git-gutter:modified "BlueViolet")
 (set-face-foreground 'git-gutter:added    "ForestGreen")
 (set-face-foreground 'git-gutter:deleted  "red")
