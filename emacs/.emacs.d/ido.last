@@ -2,17 +2,21 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/kongra/Arch/Różne/" . "Adresy maile telefony/")
+ ("/home/kongra/Arch/" . "Różne/")
  ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/R/" . "shiny/")
  ("/home/" . "kongra/")
  ("/home/kongra/Devel/" . "Projects/")
  ("/ssh:konrad@127.0.0.1#2222:/" . "/")
  ("/ssh:konrad@127.0.0.1:" . "2222/")
- ("/home/kongra/" . "Pulpit/")
+ ("/home/kongra/" . "Arch/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
  "/home/kongra/"
+ "/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/mused/src/main/clojure/cljs/mused/"
+ "/home/kongra/Arch/Różne/Adresy maile telefony/"
  "/home/kongra/Pulpit/"
  "/home/kongra/Pobrane/"
  "/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/R/shiny/"
@@ -26,6 +30,8 @@
 ;; ----- ido-work-file-list -----
 (
  ".emacs"
+ "player.cljs"
+ "iPKO"
  "notes.clj"
  "2018-09-13 Przygotowanie PAKA.org"
  "2018-09-13.org"
@@ -33,23 +39,27 @@
  "html-font-px-widths.js"
  "compose.clj"
  ".conkyrc"
- "notes.txt"
- "Rpretest.txt"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/kongra/" (23512 19218 278989 957000) ".dbus/" ".gitconfig" "Public/" ".filezilla/" ".android/" ".zsh_history" "bin/" "examples.desktop" "Music/" "snap/" ".viminfo" "elm-package.json" ".selected_editor" ".config/" ".jackdrc" ".gnupg/" ".emacs" "package-lock.json" "../" ".zshrc" ".oh-my-zsh/" ".R/" "Dokumenty/" ".zoom/" ".pencil/" ".launchpadlib/" ".hplip/" ".conkyrc" ".bash_history" ".mozilla/" ".emacs.d/" ".zcompdump" "elm-stuff/" ".Rhistory" ".ipython/" ".rustup/" ".gconf/" "R/" ".xournal/" ".xsession-errors.old" ".clojure/" ".zshrc.pre-oh-my-zsh" ".m2/" ".docker/" ".cache/" "Devel/" ".wget-hsts" "Pulpit/" ".cargo/" ".themes/" "Arch/" ".supertux/" ".fonts.conf" ".dia/" "Szablony/" ".npm/" ".audacity-data/" "Temp/" "VirtualBox VMs/" ".local/" ".pki/" ".IdeaIC2018.2/" ".vscode/" "Programy/" "Videos/" "Javasoft/" ".fonts/" "./" ".Rprofile" ".thunderbird/" ".sudo_as_admin_successful" ".elm/" ".davfs2/" ".ghc/" ".icons/" ".zcompdump-HP-470-5.4.2" "Downloads/" "Documents/" ".oracle_jre_usage/" ".profile" "RStudio/" ".smex-items" "Pobrane/" ".java/" "eclipse-workspace/" ".texlive2017/" ".install4j" ".rstudio-desktop/" ".Xauthority" "node_modules/" ".thumbnails/" "Desktop/" ".xinputrc" "Pictures/" ".stack/" ".zprofile" ".psql_history" "Wideo/" ".gnome/" "Muzyka/" ".ICEauthority" ".sane/" ".lein/" "Templates/" "Cppsoft/" ".jedit/" "Publiczny/" ".virtualenvs/" "Obrazy/" ".hedgewars/" ".gphoto/" ".IdeaIC2018.1/" ".xsession-errors" ".multirust/")
+ ("/home/kongra/" (23580 51625 407828 121000) ".dbus/" ".gitconfig" "Public/" ".filezilla/" ".android/" ".zsh_history" "bin/" "examples.desktop" ".gitkraken/" "Music/" "snap/" ".viminfo" "elm-package.json" ".selected_editor" ".config/" ".jackdrc" ".gnupg/" ".emacs" "package-lock.json" "../" ".zshrc" ".oh-my-zsh/" ".tooling/" ".R/" "Dokumenty/" ".zoom/" ".pencil/" ".launchpadlib/" ".hplip/" ".conkyrc" ".bash_history" ".mozilla/" ".emacs.d/" ".zcompdump" "elm-stuff/" ".Rhistory" ".ipython/" ".rustup/" ".gconf/" "R/" ".xournal/" ".xsession-errors.old" ".clojure/" ".zshrc.pre-oh-my-zsh" ".m2/" ".docker/" ".cache/" "Devel/" ".wget-hsts" "Pulpit/" ".cargo/" ".ssr/" ".themes/" "Arch/" ".supertux/" ".fonts.conf" ".dia/" "Szablony/" ".npm/" ".audacity-data/" "Temp/" "VirtualBox VMs/" ".local/" ".pki/" ".vscode/" "Programy/" "Videos/" "Javasoft/" ".fonts/" "./" ".Rprofile" ".thunderbird/" ".sudo_as_admin_successful" ".elm/" ".davfs2/" ".ghc/" ".icons/" ".zcompdump-HP-470-5.4.2" "Downloads/" "Documents/" ".oracle_jre_usage/" ".profile" ".wajig/" ".IntelliJIdea2018.3/" "RStudio/" ".smex-items" "Pobrane/" ".java/" "eclipse-workspace/" ".texlive2017/" ".pylint.d/" ".install4j" ".rstudio-desktop/" ".Xauthority" "node_modules/" ".thumbnails/" "Desktop/" ".ssh/" ".xinputrc" "Pictures/" ".zprofile" ".psql_history" "Wideo/" ".gnome/" "Muzyka/" ".ICEauthority" ".sane/" ".lein/" "Templates/" "Cppsoft/" ".jedit/" "Publiczny/" ".virtualenvs/" "Obrazy/" ".keras/" ".hedgewars/" ".gphoto/" ".xsession-errors" ".multirust/")
 
- ("/home/kongra/Pulpit/" (23499 12305 473177 219000) "2018-04-29/" "../" "./" "chRgreps.sh" "html-font-px-widths.js" "2018-10-20.clark" "Baza/" "2018-10-13 euler1.R" "euler.py" "notes.clj")
+ ("/home/kongra/bin/" (23567 49040 667922 280000) "profile-dotemacs.el" "jedit" "TSRI-mount.sh" "nah.sh" "hddpark.py" "luyten" "xp.sh" "ccl64" "run_vp_integration_nb" "lhs2TeX/" "LAN-unarch.sh" "../" "findgrep" "grep-sed-replace" "Visual_Paradigm_Update" "usuń.metacity.wireframe.sh" "calc" "stud" "data-instalacji-systemu" "img-diffs.sh" "clj" "minimap-rm.sh" "TSRI-umount.sh" "fujitsu-root.sh" "findwc" "nginx.start" "utwórz-skrót-aplikacji.sh" "99-hdd-ugly-fix.sh" "zewnetrzny.ekran.sh" "fujitsu.sh" "LAN-arch.sh" "jar-classes.sh" "run_vp_integration_ec" "./" "pdf2cmyk" "hddparkcron.py" "Visual_Paradigm" "hslint" "eclipsefix.sh" "Visual_Paradigm_Product_Selector" "lameall.sh" "zeny.sh" "emacsnw.sh" "run_vp_integration_ij" "emacs-client.sh" "capslock.ctrl.sh" "LAN.sh" "clear-cached-memory.sh" "backup/" "rmvb2avi" "makolab.sh" "parkowanieglowicy.py" "rename_files.py" "drop-caches.sh" "unload_kvm.sh" "ANTLRWorks.sh" "ANTLRJavaTree.sh" "gentoo.sh" "nginx.stop" "git-dirty.sh" "pdf2eps" "javac-all.sh" "my-desktop" "lein" "startconky.sh" "screenruler.sh")
 
- ("/home/kongra/bin/" (23434 34001 436386 945000) "profile-dotemacs.el" "jedit" "TSRI-mount.sh" "nah.sh" "hddpark.py" "luyten" "xp.sh" "ccl64" "lhs2TeX/" "LAN-unarch.sh" "../" "findgrep" "grep-sed-replace" "usuń.metacity.wireframe.sh" "calc" "stud" "data-instalacji-systemu" "img-diffs.sh" "clj" "minimap-rm.sh" "TSRI-umount.sh" "fujitsu-root.sh" "findwc" "nginx.start" "utwórz-skrót-aplikacji.sh" "99-hdd-ugly-fix.sh" "zewnetrzny.ekran.sh" "fujitsu.sh" "LAN-arch.sh" "jar-classes.sh" "./" "pdf2cmyk" "hddparkcron.py" "hslint" "eclipsefix.sh" "lameall.sh" "zeny.sh" "emacsnw.sh" "emacs-client.sh" "capslock.ctrl.sh" "LAN.sh" "clear-cached-memory.sh" "backup/" "rmvb2avi" "makolab.sh" "parkowanieglowicy.py" "rename_files.py" "drop-caches.sh" "unload_kvm.sh" "ANTLRWorks.sh" "ANTLRJavaTree.sh" "gentoo.sh" "nginx.stop" "git-dirty.sh" "pdf2eps" "javac-all.sh" "my-desktop" "lein" "startconky.sh" "screenruler.sh")
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/R/shiny/" (23528 24492 792292 225000) "../" "ui.R" "consts.R" "./" "logic/" "data.R" "libs.R" "data safe.R")
+
+ ("/home/kongra/Pobrane/" (23572 64298 691518 200000) "flag-down.png" "hidden hscroll.png" "Design/" "../" "To Do Music Education App 2018 11 05.docx" "OdpadyEdukacja.ppt" "Fixed notes/" "Cloud_download_font_awesome.svg" "flag-up.png" "Dotted_eighth_note_stem_up.svg.png" "fstab" "./" "Final.Report.PA1.JW1.docx" "128/" "JAVA post-test grupa1.docx" "aptell-Clojure/" "Using Git repositories in Windows.docx" "Compensation RETRO/" "plastik-zdrowie-1.ppt")
+
+ ("/home/kongra/Pulpit/" (23571 40258 241605 142000) "2018-04-29/" "../" ".Rhistory" "./" "chRgreps.sh" "html-font-px-widths.js" "Baza/" "notes.clj")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/mused/src/main/clojure/cljs/mused/" (23572 54296 434397 453000) "../" "log.cljs" "utils.cljs" "ui.cljs" "core.cljs" "ui/" "player.cljs" "music_theory.cljs" "macros.clj" "./" "web_audio.cljs")
+
+ ("/home/kongra/Arch/Różne/Adresy maile telefony/" (23543 5773 220829 779000) "Lokator, telewizja" "Samochód" "Neostrada" "T-mobile" "../" "TPSA (Orange)" "Rachunki.xlsx" "Plus" "Emilka" "Elektryczne" "Mama" "SAN (SWSPiZ)" "Przychodnia ul. Getta Żydowskiego" "Getin" "./" "Toyota" "Masterclear programator instrukcja.pdf" "Hydraulika.org" "Opłaty" "Medycyna Praktyczna" "Plus - promocje, Bliskie numery i inne/" "Daria" "iPKO" "Taryfa nocna" "Szkoła Muzyczna" "WSHE/" "ASUS" "Tchibo")
+
+ ("/home/kongra/Arch/Różne/" (23348 52859 621591 197000) "Dieta/" "Remonty, farby/" "Stomatolog.txt" "Praca/" "MIKULIN A. Aktywna długowieczność'84.pdf" "C/" "Kodeks honorowy Boziewicza/" "Chomiki/" "Waldemar Rajca/" "Ślub/" "Nostalgia.pl/" "Stephen King/" "Samochód/" "Strategie opcyjne.pdf" "../" "Fujifilm Finepix JZ 100/" "Dawid/" "Terapia wewnetrznego dziecka-Pawel Karpowicz.pdf" "TupTup/" "Wujo Walaszczyk ablacja/" "AMG.net/" "Seagate Expansion Drive/" "Witamina B17/" "ITA Puzzles/" "Centum im A. Smitha/" "Makolab/" "Poczta archiwa/" "Vertigo/" "Mama/" "Elżbieta Grzanek/" "fm_21-76_us_army_survival_manual_2006.pdf" "Andrzej Konstantynowicz/" "Krzysio/" "Fujitsu/" "./" "USG stawów biodrowych/" "Wychowanie/" "Polityka/" "SK/" "Ziemkiewicz/" "Panasonic Viera/" "IPT/" "Daria biodro/" "Historia/" "Smartfon/" "Chirurgia ręki/" "Panda/" "Św. Kościół Katolicki/" "RM/" "Robert Glover - No More Mr Nice Guy.pdf" "Podgrzewacz Mister/" "Kryzys finansów publicznych/" "Fonts/" "Pioneer/" "Michalkiewicz/" "Fortis Bank/" "Złotnicki/" "SerwizFIAT.txt" "HP ProBook/" "KS/" "Kręgosłup szyjny Konrad/" "Dowód osobisty/" "Daria/" "Wolniewicz/" "PITy/" "Chesterton/" "Dermatolog/" "JKM/" "Kalendarz Pirelli/" "PKP/" "WSHE/" "Adresy maile telefony/" "Baśń jak niedźwiedź/" "Muzyka/" "PCTEL/" "DVD Ripping/" "ASUS/" "Jędrzej Giertych/" "USG Stawów biodrowych.txt" "ssh na Wega/" "Bad Piggies/" "PEKAES/" "Kama/" "Dzialka/")
 
  ("/home/kongra/Devel/Projects/" (23348 53163 431274 267000) "../" "Nauka.org" "Old/" "Makolab, TME, CSP.org" "Elements of Style.org" "Present/" "Rocky/" "./" "TODO.org")
-
- ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/R/shiny/" (23385 43951 251979 921000) "../" "ui.R" "consts.R" "./" "logic/" "data.R" "libs.R" "data safe.R")
-
- ("/home/kongra/Pobrane/" (23450 9805 447035 824000) "../" "Non Disclosure Agreement Music Educ.2018.08.19.docx" "Lists of All Written Scales/" "cw_2018_06_43326.pdf" "DclMiIoX4AA6D5J.jpg:large.jpeg" "fstab" "./" "Final.Report.PA1.JW1.docx" "JAVA post-test grupa1.docx" "aptell-Clojure/" "Using Git repositories in Windows.docx" "music_player_app_interface.jpg" "GRADUATE-2016-17.doc")
 
  ("/home/" (23348 51269 847858 454000) "../" "lost+found/" "./" "kongra/")
 
