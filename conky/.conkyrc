@@ -1,53 +1,43 @@
-# set to yes if you want Conky to be forked in the background
-background no
+conky.config = {
+  alignment              = 'top_right',
+  background             = false,
+  cpu_avg_samples        = 1,
+  net_avg_samples        = 2,
+  out_to_console         = false,
+  use_xft                = true,
+  font                   = 'Ubuntu:size=9',
+  imlib_cache_size       =  0,
 
-cpu_avg_samples 1
-net_avg_samples 1
+  override_utf8_locale   = true,
+  text_buffer_size       = 2048,
+  xftalpha               = 0.8,
+  update_interval        = 1.0,
 
-out_to_console no
+  own_window             = true,
+  own_window_class       = 'Conky',
+  own_window_type        = 'desktop',
+  own_window_transparent = true,
+  own_window_hints       = 'undecorated,below,sticky,skip_taskbar,skip_pager',
 
-use_xft yes
-imlib_cache_size 0
+  double_buffer          = true,
+  draw_shades            = false,
+  draw_outline           = false,
+  draw_borders           = false,
+  default_color          = 'AAAAAA',
 
-xftfont Ubuntu:size=9
+  gap_x                  = 20,
+  gap_y                  = 70,
 
-override_utf8_locale yes
-text_buffer_size 2048
-xftalpha 0.8
-mail spool
-mail_spool $MAIL
+  use_spacer             = 'none',
+  no_buffers             = true,
 
-update_interval 1.0
+  uppercase              = false,
 
-own_window yes
-own_window_type override
-own_window_transparent yes
-own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+  minimum_width          = 240,
+  maximum_width          = 240
+}
 
-double_buffer yes
-draw_shades no
-draw_outline no
-draw_borders no
-default_color AAAAAA
-lcolor 777777
-
-gap_x 20
-gap_y 70
-alignment top_right
-
-# Add spaces to keep things from moving about?  This only affects certain objects.
-use_spacer none
-
-# Subtract file system buffers from used memory?
-no_buffers yes
-
-uppercase no
-
-minimum_size 240 240
-maximum_width 240
-
-TEXT
-$nodename $alignr ${time %H:%M}
+conky.text = [[
 $stippled_hr
 ${color 777777}Today: $color $alignr ${time %a} ${time %e %b %G}
 ${color 777777}Uptime: $color $alignr $uptime_short
@@ -73,8 +63,6 @@ ${color 777777}Core 3 Usage: $color $alignr ${cpu cpu4}%
 ${color 777777}${cpugraph 000000 ffffff}
 ${color 777777}RAM: $alignr $color$mem/$memmax - $memperc%
 $membar
-# ${color 777777}Swap:$color $alignr $swap/$swapmax - $swapperc%
-# $stippled_hr
 
 ${color 777777}eth:  $color $alignr ${addr enp8s0}
 ${color 777777}Down: $color $alignr ${downspeed enp8s0}/s - Total: ${totaldown enp8s0}
@@ -96,3 +84,4 @@ ${color 777777}HDD: $color $alignr ${fs_used /home}/${fs_size /home}
 ${fs_bar /home}
 
 ${color 777777}Battery: $color $alignr ${battery BAT0} ${battery_time BAT0}
+]]
