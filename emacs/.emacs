@@ -3,7 +3,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ada-language-version (quote ada2005))
  '(blink-cursor-mode nil)
  '(case-fold-search t)
  '(column-number-mode t)
@@ -17,7 +16,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (clojure-mode-extra-font-locking ac-cider cider magit zenburn-theme spinner smex smart-tabs-mode seq queue pkg-info paredit hi2 haskell-mode git-gutter feature-mode elm-mode auto-complete)))
+    (clojure-mode-extra-font-locking cider magit zenburn-theme spinner smex smart-tabs-mode seq queue pkg-info paredit hi2 haskell-mode git-gutter feature-mode elm-mode)))
  '(safe-local-variable-values
    (quote
     ((syntax . COMMON-LISP)
@@ -114,11 +113,8 @@
 (add-to-list 'default-frame-alist '(height . 39))
 (add-to-list 'default-frame-alist '(width . 80))
 
-;; ;; AUTO-COMPLETION
-;; (global-set-key (kbd "M-/") 'hippie-expand)
-
-;; BELL
-;; (setq visible-bell 1)
+;; COMPANY AUTO COMPLETE
+(add-hook 'after-init-hook 'global-company-mode)
 
 ;; TOOL-TIPS OFF
 (tooltip-mode -1)
@@ -275,41 +271,6 @@
 (add-hook 'cider-repl-mode-hook           #'paredit-mode)
 (setq      cider-repl-display-help-banner nil)
 
-;; CLJ-REFACTOR
-;; (require 'clj-refactor)
-
-;; (defun my-clojure-mode-hook ()
-;;     (clj-refactor-mode 1)
-;;     (yas-minor-mode 1) ; for adding require/use/import statements
-;;     ;; This choice of keybinding leaves cider-macroexpand-1 unbound
-;;     (cljr-add-keybindings-with-prefix "C-c C-m"))
-
-;; (add-hook 'clojure-mode-hook #'my-clojure-mode-hook)
-
-;; AC-MODE CIDER AUTO-COMPLETE
-(add-to-list 'load-path "~/.emacs.d/elisp/ac-cider")
-(require 'ac-cider)
-(add-hook 'cider-mode-hook 'ac-flyspell-workaround)
-(add-hook 'cider-mode-hook 'ac-cider-setup)
-(add-hook 'cider-repl-mode-hook 'ac-cider-setup)
-(eval-after-load "auto-complete"
-  '(progn
-     (add-to-list 'ac-modes 'cider-mode)
-     (add-to-list 'ac-modes 'cider-repl-mode)))
-
-;; CLOJURE INDENTATION (CUSTOM FORMS)
-(put-clojure-indent 'clongra.oloops/forever 0)
-(put-clojure-indent 'oloo/forever 0)
-
-(put-clojure-indent 'clongra.oloops/dotimes 1)
-(put-clojure-indent 'oloo/dotimes 1)
-
-(put-clojure-indent 'clongra.oloops/doarray 1)
-(put-clojure-indent 'oloo/doarray 1)
-
-(put-clojure-indent 'clongra.oloops/for 1)
-(put-clojure-indent 'oloo/for 1)
-
 ;; CLOJURE SLAMHOUND
 (require 'slamhound)
 
@@ -395,7 +356,10 @@
 (add-to-list 'load-path "~/.emacs.d/elisp/rust-mode")
 (autoload 'rust-mode "rust-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
-(add-to-list 'ac-modes 'rust-mode)
+
+;; UPDATED ada-mode
+(add-to-list 'load-path "~/.emacs.d/elisp/ada-mode")
+;; (require 'ada-mode)
 
 ;; USE IDO ...
 (ido-mode t)
@@ -536,14 +500,6 @@
 	(tab-mark 9 [9655 9] [92 9])	; tab, ▷
 	))
 
-;; AUTO-COMPLETE MODE
-(require 'auto-complete)
-(require 'auto-complete-config)
-(ac-config-default)
-(global-auto-complete-mode)
-(setq ac-auto-start 2)      ; Start auto-completion after 2 characters of a word
-(setq ac-ignore-case nil)   ; Case sensitivity is important when finding matches
-
 ;; HASKELL MODE
 ;; (add-to-list 'load-path "~/.emacs.d/elisp/haskell-mode/")
 ;; (load "haskell-mode-autoloads.el")
@@ -554,7 +510,6 @@
 (add-hook 'haskell-mode-hook 'haskell-doc-mode)
 ;; (define-key haskell-mode-map (kbd "SPC") 'haskell-mode-contextual-space)
 (add-to-list 'completion-ignored-extensions ".hi")
-(add-to-list 'ac-modes 'haskell-mode)
 (add-hook 'haskell-mode-hook 'auto-complete-mode)
 
 (require 'hs-lint)    ;; https://gist.github.com/1241059
@@ -610,23 +565,13 @@
 (setq lpr-page-header-switches (quote ("-o6")))
 
 ;; ESS
-;; (require 'ess-site)
-;; (add-hook 'ess-mode-hook
-;;           (lambda ()
-;;             ;;                                 DEF GNU BSD K&R C++
-;;             ;; ess-indent-level                  2   2   8   5   4
-;;             ;; ess-continued-statement-offset    2   2   8   5   4
-;;             ;; ess-brace-offset                  0   0  -8  -5  -4
-;;             ;; ess-arg-function-offset           2   4   0   0   0
-;;             ;; ess-expression-offset             4   2   8   5   4
-;;             ;; ess-else-offset                   0   0   0   0   0
-;;             ;; ess-close-brace-offset            0   0   0   0   0
-;;             (ess-set-style 'GNU 'quiet)
-;;             (setq ess-arg-function-offset nil)))
-
 ;; (global-set-key (kbd "M-m") 'ess-eval-line-and-step)
 ;; (global-set-key (kbd "M--") (lambda () (interactive) (insert "<- ")))
 ;; (global-set-key (kbd "M-m") 'ess-eval-line-and-step)
+(add-hook 'find-file-hook 'my-R-style-hook)
+(defun my-R-style-hook ()
+  (when (string-match (file-name-extension buffer-file-name) "[r|R]$")
+    (ess-set-style 'RStudio)))
 
 (global-set-key [f7] 'ess-eval-line-and-step)
 (global-set-key (kbd "C-n") (lambda () (interactive) (insert "%>% ")))

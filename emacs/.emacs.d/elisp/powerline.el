@@ -24,7 +24,15 @@
 (set-face-attribute 'mode-line nil
                     ;; :background "#8080C9" ;; FOR MY THEME
                     ;; :background "#495C49" ;; FOR ZENBURN
-                       :background "#5D4D7A" ;; FOR SPACEMACS-DARK
+
+                    ;; MOJE ULUBIONE:
+                    ;; * Java
+                    :background "#5D4D7A"
+
+                    ;; * Linux Mint Green
+                    ;; :background "#8BB158"
+                    ;; :foreground "#ffffff"
+
                     ;; :background "#546954"
                     ;; :background "#6100FF"
                     ;; :background "#8C96CF"
