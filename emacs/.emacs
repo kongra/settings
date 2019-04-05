@@ -267,12 +267,20 @@
 ;; (add-to-list 'load-path "~/.emacs.d/elisp/clojure-mode")
 ;; (add-to-list 'load-path "~/.emacs.d/elisp/cider")
 (require 'cider)
-(add-hook 'cider-mode-hook                #'eldoc-mode)
+(add-hook 'cider-mode-hook                  #'eldoc-mode)
 (add-hook 'cider-repl-mode-hook           #'paredit-mode)
-(setq      cider-repl-display-help-banner nil)
+(setq      cider-repl-display-help-banner            nil)
+;; Cider auto-completion:
+(add-hook 'cider-repl-mode-hook #'cider-company-enable-fuzzy-completion)
+(add-hook 'cider-mode-hook      #'cider-company-enable-fuzzy-completion)
+;; Cider's dynamic syntax highlighting:
+(setq cider-font-lock-dynamically '(macro core function var))
+;; Let's disable Cider's fading out reader's conditionals - we need this cause
+;; we work with cljc files:
+(setq cider-font-lock-reader-conditionals nil)
 
 ;; CLOJURE SLAMHOUND
-(require 'slamhound)
+;; (require 'slamhound)
 
 ;; PAREDIT
 (require 'paredit)

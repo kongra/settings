@@ -53,7 +53,7 @@ ${color 777777}Core 1 Temp: $color $alignr ${execi 10 sensors | grep 'Core 0:' |
 ${color 777777}Core 2 Temp: $color $alignr ${execi 10 sensors | grep 'Core 1:' | cut -c15-24 | head -1}
 ${color 777777}ACPI 1 Temp: $color $alignr ${execi 10 sensors | grep 'temp1:'  | cut -c15-22 | head -1}
 ${color 777777}ACPI 5 Temp: $color $alignr ${execi 10 sensors | grep 'temp5:'  | cut -c15-22 | head -1}
-${color 777777}ACPI 6 Temp: $color $alignr${execi 10 sensors | grep 'temp6:'  | cut -c15-22 | head -1}
+${color 777777}ACPI 6 Temp: $color $alignr ${execi 10 sensors | grep 'temp6:'  | cut -c15-22 | head -1}
 
 ${color 777777}Core 1 Usage: $color $alignr ${cpu cpu1}%
 ${color 777777}Core 2 Usage: $color $alignr ${cpu cpu2}%

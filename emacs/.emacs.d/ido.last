@@ -34,20 +34,36 @@
 ;; ----- ido-work-file-list -----
 (
  ".emacs"
+ ".profile"
  "notes.org"
  "Compensation.Rproj"
  ".conkyrc"
  "conky.conf"
  "chRgreps.sh"
  "notes.clj"
- ".profile"
  "drop-caches.sh"
  "player.cljs"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/kongra/" (23715 10716 326345 447000) ".dbus/" ".bashrc" ".gimp-2.8/" ".gitconfig" "Public/" ".filezilla/" ".android/" ".zsh_history" "bin/" ".swt/" ".gitkraken/" "Music/" ".pgAdmin4.startup.log" "snap/" ".viminfo" ".linuxmint/" ".config/" ".gnupg/" ".emacs" "../" ".zshrc" ".oh-my-zsh/" ".tooling/" ".R/" "Dokumenty/" ".zoom/" ".conkyrc" ".bash_history" ".mozilla/" ".emacs.d/" ".zcompdump" "elm-stuff/" ".Rhistory" ".ipython/" ".gconf/" "R/" ".xsession-errors.old" ".clojure/" ".bash_logout" ".zshrc.pre-oh-my-zsh" ".m2/" ".netrc" ".zcompdump-ProBook-470-5.4.2" ".cache/" "Devel/" ".wget-hsts" "Pulpit/" ".themes/" "Arch/" "Szablony/" "Temp/" "VirtualBox VMs/" ".local/" ".pki/" ".vscode/" ".eclipse/" ".r/" "Programy/" "Videos/" "Adasoft/" "Javasoft/" ".IdeaIC2018.3/" ".fonts/" "./" ".Rprofile" ".cinnamon/" ".sudo_as_admin_successful" ".davfs2/" "var/" ".icons/" "Downloads/" "Documents/" ".dmrc" ".profile" ".IntelliJIdea2018.3/" ".pgadmin/" ".rnd" "RStudio/" ".smex-items" "Pobrane/" ".java/" "eclipse-workspace/" ".texlive2017/" ".rstudio-desktop/" ".gtkrc-2.0" ".p2/" ".Xauthority" "node_modules/" "IdeaProjects/" ".thumbnails/" "missfont.log" "Desktop/" "Pictures/" ".zprofile" ".psql_history" "Wideo/" ".gnome/" "Muzyka/" ".ICEauthority" ".lein/" "Templates/" "Cppsoft/" ".jedit/" ".gtkrc-xfce" "Publiczny/" ".virtualenvs/" "Obrazy/" ".keras/" ".gphoto/" ".xsession-errors")
+ ("/home/" (23716 37852 577883 773000) "../" ".cache/" "lost+found/" "linuxbrew/" "./" "kongra/")
+
+ ("/home/kongra/" (23718 64327 660248 44000) ".dbus/" ".bashrc" ".gimp-2.8/" ".gitconfig" "Public/" ".filezilla/" ".android/" ".zsh_history" "bin/" ".swt/" ".gitkraken/" "Music/" ".pgAdmin4.startup.log" "snap/" ".viminfo" ".linuxmint/" ".config/" ".gnupg/" ".emacs" "../" ".zshrc" ".oh-my-zsh/" ".tooling/" ".R/" "Dokumenty/" ".zoom/" ".conkyrc" ".bash_history" ".mozilla/" ".emacs.d/" ".zcompdump" "elm-stuff/" ".Rhistory" ".ipython/" ".gconf/" "R/" ".xsession-errors.old" ".clojure/" ".bash_logout" ".zshrc.pre-oh-my-zsh" ".m2/" ".netrc" ".zcompdump-ProBook-470-5.4.2" ".cache/" "Devel/" ".wget-hsts" "Pulpit/" ".themes/" "Arch/" "Szablony/" "Temp/" "VirtualBox VMs/" ".local/" ".pki/" ".vscode/" ".eclipse/" ".r/" "Programy/" "Videos/" "Adasoft/" "Javasoft/" ".IdeaIC2018.3/" ".fonts/" "./" ".Rprofile" ".cinnamon/" ".sudo_as_admin_successful" ".davfs2/" "var/" ".icons/" "Downloads/" "Documents/" ".dmrc" ".profile" ".IntelliJIdea2018.3/" ".pgadmin/" ".rnd" "RStudio/" ".smex-items" "Pobrane/" ".java/" "eclipse-workspace/" ".texlive2017/" ".rstudio-desktop/" ".gtkrc-2.0" ".p2/" ".Xauthority" "node_modules/" "IdeaProjects/" ".thumbnails/" "missfont.log" "Desktop/" "Pictures/" ".zprofile" ".psql_history" "Wideo/" ".gnome/" "Muzyka/" ".ICEauthority" ".sane/" ".lein/" "Templates/" "Cppsoft/" ".jedit/" ".gtkrc-xfce" "Publiczny/" ".virtualenvs/" "Obrazy/" ".keras/" ".gphoto/" ".xsession-errors")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/" (23681 39758 983831 956000) "../" "js303/" "Music Education v4/" "nutune/" "./" "Music Education/" "Music Education v2/")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/nutune/" (23718 64143 573600 446000) "system.properties" "target/" "../" "postgres.sh" "run.sh" ".gitignore" "garden.sh" "README.md" "scripts/" "cider.sh" "heroku-deploy.sh" "uberjar.sh" "dev.cljs.edn" "./" "resources/" "fig.sh" ".nrepl-port" ".rebel_readline_history" ".eastwood" "src/" "cljsbuild-min.sh" "project.clj" "docs/" "Procfile" ".git/")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/nutune/src/" (23433 12494 147328 724000) "main/" "../" "./")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/nutune/src/main/" (23718 24050 297252 795000) "../" "garden/" "clj/" "cljc/" "./" "sql/")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/nutune/src/main/cljc/" (23718 24050 293252 320000) "../" "cljc/" "./")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/nutune/src/main/cljc/cljc/" (23718 24050 293252 320000) "../" "nutune/" "./")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/nutune/src/main/cljc/cljc/nutune/" (23718 64192 646119 173000) "pub.cljc" "music_theory.cljc" "../" "recorder.cljc" "commerce.cljc" "log.cljc" "web_audio.cljc" "auth/" "ui/" "nbvcxz.cljc" "./" "service.cljc" "player.cljc" "sendgrid.cljc" "utils.cljc" "core.cljc" "auth.cljc" "db.cljc" "ui.cljc")
 
  ("/home/kongra/.emacs.d/" (23715 10329 421952 121000) "../" "ido.last" "ac-comphist.dat" "session.10b55ea12f8e8b4fee155249204791721200000203890061" "tramp" "elisp/" "./" "elpa/" "auto-save-list/" "session.10c34f1fdc3b6a90f0155265135524666000000022760059" "session.10b6c80f40756e5e08155409916394016400000012320055")
 
@@ -70,8 +86,6 @@
  ("/etc/conky/" (23681 33217 876038 256000) "../" "conky_no_x11.conf" "./" "conky.conf")
 
  ("/etc/" (23681 33452 465032 481000) "lintianrc" "networkd-dispatcher/" "dictionaries-common/" "calendar/" "openal/" "fstab" "sane.d/" "magic" "bluetooth/" "cron.d/" "vim/" "issue" "mc/" "wildmidi/" "apm/" "modprobe.d/" "casper.conf" "machine-id" "firefox/" "NetworkManager/" "java-11-openjdk/" "gufw/" "ifplugd/" "ldap/" "UPower/" "modules" "default/" "menu-methods/" "pm/" "brlapi.key" "alternatives/" "login.defs" "skel/" "cron.weekly/" "sensors3.conf" "perl/" "speech-dispatcher/" "ssl/" "profile.d/" "manpath.config" "old.fstab" "adduser.conf" "ucf.conf" "lightdm/" "selinux/" "appstream.conf" "gss/" "grub.d/" "sysctl.d/" "groff/" "os-release" "polkit-1/" "pam.conf" "bash_completion.d/" "cracklib/" "adjtime" "guest-session/" "logcheck/" "bash.bashrc" "gconf/" "hosts.allow" "dkms/" "cron.hourly/" "libblockdev/" "rc2.d/" "kerneloops.conf" "gai.conf" "ssh/" "inputrc" "PackageKit/" "mke2fs.conf" "hddtemp.db" "chromium-browser/" "vtrgb" "linuxmint/" "apparmor.d/" "gimp/" "networks" "mtools.conf" "fuse.conf" "locale.alias" "subuid" "passwd-" "cryptsetup-initramfs/" "openvpn/" "python2.7/" "gshadow" "logrotate.d/" "acpi/" "xdg/" "bash_completion" "timeshift.json" "libreoffice/" "rc4.d/" "init/" "thermald/" "hdparm.conf" "chatscripts/" "brltty.conf" "tmpfiles.d/" "gnome/" "nanorc" "rsyslog.conf" "localtime" "deluser.conf" "request-key.d/" "zsh_command_not_found" "cron.monthly/" "securetty" "obex-data-server/" "rcS.d/" "gdb/" "rpc" "mime.types" "group" "gtk-3.0/" "systemd/" "crontab" "update-motd.d/" "conky/" "rc6.d/" "ltrace.conf" "binfmt.d/" "pki/" "brltty/" "resolv.conf" "apt/" "subgid" "usb_modeswitch.d/" "xml/" "thunderbird/" "bindresvport.blacklist" "python/" "wgetrc" "papersize" "udev/" "rc0.d/" "wpa_supplicant/" "passwd" "mono/" "dbus-1/" "profile" "timezone" "lsb-release" "console-setup/" "fonts/" "geoclue/" "upstream-release/" "apport/" ".pwd.lock" "mailcap" "request-key.conf" "network/" "cron.daily/" "doc-base/" "rc1.d/" "legal" "usb_modeswitch.conf" "ld.so.conf" "inxi.conf" "pnm2ppa.conf" "dpkg/" "hostname" "apparmor/" "init.d/" "mtab" "sysctl.conf" "rmt" "kernel-img.conf" "rc5.d/" "ca-certificates/" "samba/" "magic.mime" "issue.net" "pam.d/" "glvnd/" "libao.conf" "sensors.d/" "lvm/" "pulse/" "gtk-2.0/" "X11/" "sudoers" "subuid-" "updatedb.conf" "shadow-" "terminfo/" "drirc" "emacs/" "protocols" "cups/" "vdpau_wrapper.cfg" "python3/" "printcap" "rc3.d/" "iproute2/" "cifs-utils/" "ufw/" "subgid-" "hosts" "ld.so.conf.d/" "resolvconf/" "initramfs-tools/" "rsyslog.d/" "shadow" "ppp/" "services" "avahi/" "netplan/" "sgml/" "security/" "apg.conf" "ghostscript/" "libpaper.d/" "depmod.d/" "gnome-app-install/" "logrotate.conf" "zsh/" "nsswitch.conf" "ca-certificates.conf" "group-" "debconf.conf" "opt/" "modules-load.d/" "ImageMagick-6/" "sudoers.d/" "environment" "newt/" "fwupd/" "kernel/" ".java/" "emacs25/" "host.conf" "libnl-3/" "hp/" "hosts.deny" "cupshelpers/" "anacrontab" "libaudit.conf" "mailcap.order" "dhcp/" "locale.gen" "gshadow-" "ld.so.cache" "udisks2/" "python3.6/" "debian_version" "shells" "pcmcia/" "../" "./")
-
- ("/home/" (23681 19537 313841 799000) "../" ".cache/" "lost+found/" "./" "kongra/")
 
  ("/home/kongra/bin/" (23620 24847 242586 746000) "profile-dotemacs.el" "jedit" "TSRI-mount.sh" "nah.sh" "hddpark.py" "luyten" "xp.sh" "ccl64" "run_vp_integration_nb" "lhs2TeX/" "LAN-unarch.sh" "../" "findgrep" "grep-sed-replace" "Visual_Paradigm_Update" "usuń.metacity.wireframe.sh" "calc" "stud" "data-instalacji-systemu" "img-diffs.sh" "clj" "minimap-rm.sh" "TSRI-umount.sh" "fujitsu-root.sh" "findwc" "nginx.start" "utwórz-skrót-aplikacji.sh" "99-hdd-ugly-fix.sh" "zewnetrzny.ekran.sh" "fujitsu.sh" "LAN-arch.sh" "jar-classes.sh" "postgresql-start.sh" "run_vp_integration_ec" "./" "pdf2cmyk" "hddparkcron.py" "Visual_Paradigm" "hslint" "eclipsefix.sh" "Visual_Paradigm_Product_Selector" "lameall.sh" "zeny.sh" "emacsnw.sh" "run_vp_integration_ij" "emacs-client.sh" "capslock.ctrl.sh" "LAN.sh" "clear-cached-memory.sh" "backup/" "rmvb2avi" "makolab.sh" "parkowanieglowicy.py" "postgresql-stop.sh" "rename_files.py" "drop-caches.sh" "unload_kvm.sh" "ANTLRWorks.sh" "ANTLRJavaTree.sh" "gentoo.sh" "nginx.stop" "git-dirty.sh" "pdf2eps" "javac-all.sh" "my-desktop" "lein" "startconky.sh" "screenruler.sh")
 
