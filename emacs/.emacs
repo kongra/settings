@@ -9,7 +9,7 @@
  '(current-language-environment "Polish")
  '(git-gutter:lighter " GG")
  '(global-font-lock-mode t nil (font-lock))
- '(global-hl-line-mode nil)
+ '(global-hl-line-mode t)
  '(haskell-process-log t)
  '(haskell-process-type (quote stack-ghci))
  '(inferior-haskell-wait-and-jump t)
@@ -64,6 +64,10 @@
 ;; SPACEMACS THEME
 (add-to-list 'load-path "~/.emacs.d/elisp/spacemacs-theme")
 (require 'spacemacs-dark-theme)
+
+;; CUSTOM CURSOR/LINE COLOR
+(set-cursor-color             "#eead0e") ;; orange
+(set-face-background 'hl-line "#212026") ;; grey
 
 ;; POWERLINE
 ;; (add-to-list 'load-path "~/.emacs.d/elisp/powerline")
@@ -355,6 +359,7 @@
 ;; SWIPER
 (require 'swiper)
 (global-set-key "\C-s" 'swiper)
+(global-set-key "\C-f" 'swiper-isearch-thing-at-point)
 
 ;; COLOR (M)OCCUR
 (require 'color-moccur)
