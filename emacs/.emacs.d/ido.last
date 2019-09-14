@@ -11,18 +11,18 @@
  ("/home/kongra/Devel/" . "Projects/")
  ("/ssh:konrad@127.0.0.1#2222:/" . "/")
  ("/ssh:konrad@127.0.0.1:" . "2222/")
- ("/home/kongra/" . ".emacs.d/")
+ ("/home/kongra/" . "Arch/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
  "/home/kongra/"
+ "/home/kongra/Arch/Różne/Adresy maile telefony/"
  "/home/kongra/Pulpit/"
  "/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/"
  "/etc/conky/"
  "/home/kongra/bin/"
  "/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/mused/src/main/clojure/cljs/mused/"
- "/home/kongra/Arch/Różne/Adresy maile telefony/"
  "/home/kongra/Pobrane/"
  "/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/R/shiny/"
  "/home/kongra/Devel/Projects/"
@@ -34,26 +34,40 @@
 ;; ----- ido-work-file-list -----
 (
  ".emacs"
- ".profile"
+ "iPKO"
  "notes.org"
+ "notes.clj"
+ ".profile"
  "Compensation.Rproj"
  ".conkyrc"
  "conky.conf"
  "chRgreps.sh"
- "notes.clj"
  "drop-caches.sh"
- "player.cljs"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/kongra/" (23932 54073 391773 293000) ".dbus/" ".bashrc" ".gimp-2.8/" ".gitconfig" "Public/" ".filezilla/" ".android/" ".zsh_history" "bin/" ".swt/" ".gitkraken/" ".pgAdmin4.startup.log" "snap/" ".viminfo" ".linuxmint/" ".selected_editor" ".config/" ".gnupg/" ".emacs" "../" ".zshrc" ".oh-my-zsh/" ".tooling/" ".R/" ".vimrc" "Dokumenty/" ".zoom/" ".pencil/" ".IdeaIC2019.2/" ".hplip/" ".conkyrc" ".bash_history" ".mozilla/" ".emacs.d/" ".zcompdump" "elm-stuff/" ".Rhistory" ".ipython/" ".gvfs/" ".rustup/" ".gconf/" "R/" ".xournal/" ".xsession-errors.old" ".clojure/" ".bash_logout" ".zshrc.pre-oh-my-zsh" ".zcompdump-hp-470-5.4.2" ".m2/" ".netrc" ".adobe/" ".zcompdump-ProBook-470-5.4.2" ".cache/" "Devel/" ".wget-hsts" "Pulpit/" ".cargo/" ".themes/" "Arch/" ".emacs.d.spacemacs/" "Szablony/" ".npm/" ".audacity-data/" "Temp/" "VirtualBox VMs/" ".local/" ".pki/" ".spacemacs" ".vscode/" ".eclipse/" ".r/" "Programy/" "Videos/" "Adasoft/" "Javasoft/" ".fonts/" "./" ".Rprofile" ".cinnamon/" ".sudo_as_admin_successful" ".elm/" ".davfs2/" ".ghc/" "var/" ".icons/" "Downloads/" "Documents/" ".macromedia/" ".dmrc" "Postman/" ".profile" ".ngrok2/" ".pgadmin/" ".rnd" "RStudio/" ".smex-items" "Pobrane/" ".java/" "eclipse-workspace/" ".texlive2017/" ".rstudio-desktop/" ".gtkrc-2.0" ".p2/" ".Xauthority" "node_modules/" "IdeaProjects/" ".thumbnails/" ".gradle/" "missfont.log" "Desktop/" ".ssh/" "Pictures/" ".stack/" ".zprofile" ".psql_history" "Wideo/" ".gnome/" "Muzyka/" ".zcompdump-kongra-HP-ProBook-470-G2-5.4.2" ".ICEauthority" ".sane/" ".lein/" "Templates/" "Cppsoft/" ".jedit/" ".gtkrc-xfce" "Publiczny/" ".virtualenvs/" ".python_history" "Obrazy/" ".keras/" ".hedgewars/" ".gphoto/" ".xsession-errors")
+
+ ("/home/kongra/Devel/" (23868 5987 744616 708000) "Projects/" "Misc/" "../" "./" "Libs/")
+
+ ("/home/kongra/Devel/Projects/" (23761 41034 77714 493000) "../" "Nauka.org" "Old/" "Makolab, TME, CSP.org" "Elements of Style.org" "Present/" "Rocky/" "./" "TODO.org" "Full Stack.org")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/" (23774 34479 777304 788000) "Inovatica/" "Confidentiality Agreement/" "../" "TSRI/" "Publications/" "Compensation/" "./" "Music Education/" "shinyapps.io")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/nutune/" (23932 53150 699502 280000) "deploy-nutune-staging.sh" "system.properties" "run-localhost.sh" "../" "postgres.sh" ".gitignore" "cloc.excluded" "Procfile.nutunemusic" "README.md" "ngrok.sh" "scripts/" "Procfile.nutune-staging" "nREPL.sh" "uberjar.sh" "dev.cljs.edn" "./" "data-origin/" "resources/" "fig.sh" "cloc.sh" ".rebel_readline_history" "deploy-nutunemusic.sh" ".eastwood" "src/" "cljsbuild-min.sh" "project.clj" "docs/" ".git/" "serveo.net")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/nutune/src/main/cljc/cljc/nutune/" (23932 36902 470068 15000) "pub.cljc" "music_theory.cljc" "../" "commerce.cljc" "log.cljc" "rec.cljc" "web_audio.cljc" "auth/" "ui/" "nbvcxz.cljc" "./" "profile.cljc" "service.cljc" "player.cljc" "sendgrid.cljc" "utils.cljc" "core.cljc" "stats.cljc" "adm.cljc" "auth.cljc" "db.cljc" "ui.cljc")
+
+ ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/" (23733 32059 449839 392000) "R-scripts/" "../" "doc/" "data/" "DESCRIPTION" ".gitignore" ".Rhistory" "rsconnect/" "R/" "Compensation.Rproj" "www/" ".Rbuildignore" "./" "data-origin/" ".Rproj.user/" "NAMESPACE" "archive/" ".git/" "app.R" "reports/")
+
+ ("/home/kongra/Arch/Różne/Adresy maile telefony/" (23699 57665 862844 874000) "Lokator, telewizja" "Samochód" "Neostrada" "T-mobile" "../" "TPSA (Orange)" "Plus" "Emilka" "Elektryczne" "Mama" "SAN (SWSPiZ)" "Przychodnia ul. Getta Żydowskiego" "Getin" "./" "Toyota" "Masterclear programator instrukcja.pdf" "Hydraulika.org" "Opłaty" "Medycyna Praktyczna" "Plus - promocje, Bliskie numery i inne/" "Daria" "iPKO" "Taryfa nocna" "Szkoła Muzyczna" "WSHE/" "ASUS" "Tchibo")
+
+ ("/home/kongra/Pulpit/" (23724 50889 52954 875000) "../" "Projekt - marzec, Konrad Grzanek.pdf" "notes.org" "./" "notes.clj")
+
  ("/home/" (23716 37852 577883 773000) "../" ".cache/" "lost+found/" "linuxbrew/" "./" "kongra/")
 
- ("/home/kongra/" (23718 64327 660248 44000) ".dbus/" ".bashrc" ".gimp-2.8/" ".gitconfig" "Public/" ".filezilla/" ".android/" ".zsh_history" "bin/" ".swt/" ".gitkraken/" "Music/" ".pgAdmin4.startup.log" "snap/" ".viminfo" ".linuxmint/" ".config/" ".gnupg/" ".emacs" "../" ".zshrc" ".oh-my-zsh/" ".tooling/" ".R/" "Dokumenty/" ".zoom/" ".conkyrc" ".bash_history" ".mozilla/" ".emacs.d/" ".zcompdump" "elm-stuff/" ".Rhistory" ".ipython/" ".gconf/" "R/" ".xsession-errors.old" ".clojure/" ".bash_logout" ".zshrc.pre-oh-my-zsh" ".m2/" ".netrc" ".zcompdump-ProBook-470-5.4.2" ".cache/" "Devel/" ".wget-hsts" "Pulpit/" ".themes/" "Arch/" "Szablony/" "Temp/" "VirtualBox VMs/" ".local/" ".pki/" ".vscode/" ".eclipse/" ".r/" "Programy/" "Videos/" "Adasoft/" "Javasoft/" ".IdeaIC2018.3/" ".fonts/" "./" ".Rprofile" ".cinnamon/" ".sudo_as_admin_successful" ".davfs2/" "var/" ".icons/" "Downloads/" "Documents/" ".dmrc" ".profile" ".IntelliJIdea2018.3/" ".pgadmin/" ".rnd" "RStudio/" ".smex-items" "Pobrane/" ".java/" "eclipse-workspace/" ".texlive2017/" ".rstudio-desktop/" ".gtkrc-2.0" ".p2/" ".Xauthority" "node_modules/" "IdeaProjects/" ".thumbnails/" "missfont.log" "Desktop/" "Pictures/" ".zprofile" ".psql_history" "Wideo/" ".gnome/" "Muzyka/" ".ICEauthority" ".sane/" ".lein/" "Templates/" "Cppsoft/" ".jedit/" ".gtkrc-xfce" "Publiczny/" ".virtualenvs/" "Obrazy/" ".keras/" ".gphoto/" ".xsession-errors")
-
  ("/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/" (23681 39758 983831 956000) "../" "js303/" "Music Education v4/" "nutune/" "./" "Music Education/" "Music Education v2/")
-
- ("/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/nutune/" (23718 64143 573600 446000) "system.properties" "target/" "../" "postgres.sh" "run.sh" ".gitignore" "garden.sh" "README.md" "scripts/" "cider.sh" "heroku-deploy.sh" "uberjar.sh" "dev.cljs.edn" "./" "resources/" "fig.sh" ".nrepl-port" ".rebel_readline_history" ".eastwood" "src/" "cljsbuild-min.sh" "project.clj" "docs/" "Procfile" ".git/")
 
  ("/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/nutune/src/" (23433 12494 147328 724000) "main/" "../" "./")
 
@@ -63,25 +77,13 @@
 
  ("/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/nutune/src/main/cljc/cljc/" (23718 24050 293252 320000) "../" "nutune/" "./")
 
- ("/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/nutune/src/main/cljc/cljc/nutune/" (23718 64192 646119 173000) "pub.cljc" "music_theory.cljc" "../" "recorder.cljc" "commerce.cljc" "log.cljc" "web_audio.cljc" "auth/" "ui/" "nbvcxz.cljc" "./" "service.cljc" "player.cljc" "sendgrid.cljc" "utils.cljc" "core.cljc" "auth.cljc" "db.cljc" "ui.cljc")
-
  ("/home/kongra/.emacs.d/" (23715 10329 421952 121000) "../" "ido.last" "ac-comphist.dat" "session.10b55ea12f8e8b4fee155249204791721200000203890061" "tramp" "elisp/" "./" "elpa/" "auto-save-list/" "session.10c34f1fdc3b6a90f0155265135524666000000022760059" "session.10b6c80f40756e5e08155409916394016400000012320055")
 
  ("/home/kongra/Devel/Projects/Present/" (23687 35943 874416 923000) "kask/" "../" "settings/" "ch/" "vds/" "gsom/" "closnippets/" "Rbc/" "koR/" "./" "rticles/" "retemp/" "SAN/" "chR/" "Pakamera/" "prelude/" "aptell/" "Adaprj/" "nc3/")
 
  ("/home/kongra/Devel/Projects/Present/ch/" (23715 9718 453686 79000) "target/" ".lein-failures" "../" ".gitignore" "LICENSE" "README.md" "cider.sh" "dev.cljs.edn" "./" "resources/" "fig.sh" ".lein-repl-history" ".nrepl-port" ".hgignore" ".rebel_readline_history" "pom.xml.asc" "src/" "test/" "cljsbuild-min.sh" "project.clj" "pom.xml" ".git/" "CHANGELOG.md" "figwheel_server.log")
 
- ("/home/kongra/Pulpit/" (23708 31707 23672 162000) "../" "notes.org" "./" "notes.clj")
-
- ("/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/" (23707 45370 36689 865000) "R-scripts/" "../" "doc/" "data/" "DESCRIPTION" ".gitignore" ".Rhistory" "rsconnect/" "R/" "Compensation.Rproj" "www/" ".Rbuildignore" "./" "data-origin/" ".Rproj.user/" "NAMESPACE" "archive/" ".git/" "app.R" "reports/")
-
- ("/home/kongra/Devel/" (23640 30051 974151 924000) "Projects/" "Misc/" "../" "./" "Libs/")
-
- ("/home/kongra/Devel/Projects/" (23637 28183 946853 399000) "../" "Nauka.org" "Old/" "Makolab, TME, CSP.org" "Elements of Style.org" "Present/" "Rocky/" "./" "TODO.org")
-
  ("/home/kongra/Devel/Projects/Rocky/" (23348 53163 671067 340000) "../" "./" "Sharon/" "Antsle/" "Konrad_20170531.xlsx" "Konrad_20170430.xlsx")
-
- ("/home/kongra/Devel/Projects/Rocky/Sharon/" (23419 5617 409358 951000) "Inovatica/" "Confidentiality Agreement/" "../" "TSRI/" "Publications/" "Compensation/" "./" "Music Education/" "shinyapps.io")
 
  ("/etc/conky/" (23681 33217 876038 256000) "../" "conky_no_x11.conf" "./" "conky.conf")
 
@@ -94,8 +96,6 @@
  ("/home/kongra/Pobrane/" (23572 64298 691518 200000) "flag-down.png" "hidden hscroll.png" "Design/" "../" "To Do Music Education App 2018 11 05.docx" "OdpadyEdukacja.ppt" "Fixed notes/" "Cloud_download_font_awesome.svg" "flag-up.png" "Dotted_eighth_note_stem_up.svg.png" "fstab" "./" "Final.Report.PA1.JW1.docx" "128/" "JAVA post-test grupa1.docx" "aptell-Clojure/" "Using Git repositories in Windows.docx" "Compensation RETRO/" "plastik-zdrowie-1.ppt")
 
  ("/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/mused/src/main/clojure/cljs/mused/" (23572 54296 434397 453000) "../" "log.cljs" "utils.cljs" "ui.cljs" "core.cljs" "ui/" "player.cljs" "music_theory.cljs" "macros.clj" "./" "web_audio.cljs")
-
- ("/home/kongra/Arch/Różne/Adresy maile telefony/" (23543 5773 220829 779000) "Lokator, telewizja" "Samochód" "Neostrada" "T-mobile" "../" "TPSA (Orange)" "Rachunki.xlsx" "Plus" "Emilka" "Elektryczne" "Mama" "SAN (SWSPiZ)" "Przychodnia ul. Getta Żydowskiego" "Getin" "./" "Toyota" "Masterclear programator instrukcja.pdf" "Hydraulika.org" "Opłaty" "Medycyna Praktyczna" "Plus - promocje, Bliskie numery i inne/" "Daria" "iPKO" "Taryfa nocna" "Szkoła Muzyczna" "WSHE/" "ASUS" "Tchibo")
 
  ("/home/kongra/Arch/Różne/" (23348 52859 621591 197000) "Dieta/" "Remonty, farby/" "Stomatolog.txt" "Praca/" "MIKULIN A. Aktywna długowieczność'84.pdf" "C/" "Kodeks honorowy Boziewicza/" "Chomiki/" "Waldemar Rajca/" "Ślub/" "Nostalgia.pl/" "Stephen King/" "Samochód/" "Strategie opcyjne.pdf" "../" "Fujifilm Finepix JZ 100/" "Dawid/" "Terapia wewnetrznego dziecka-Pawel Karpowicz.pdf" "TupTup/" "Wujo Walaszczyk ablacja/" "AMG.net/" "Seagate Expansion Drive/" "Witamina B17/" "ITA Puzzles/" "Centum im A. Smitha/" "Makolab/" "Poczta archiwa/" "Vertigo/" "Mama/" "Elżbieta Grzanek/" "fm_21-76_us_army_survival_manual_2006.pdf" "Andrzej Konstantynowicz/" "Krzysio/" "Fujitsu/" "./" "USG stawów biodrowych/" "Wychowanie/" "Polityka/" "SK/" "Ziemkiewicz/" "Panasonic Viera/" "IPT/" "Daria biodro/" "Historia/" "Smartfon/" "Chirurgia ręki/" "Panda/" "Św. Kościół Katolicki/" "RM/" "Robert Glover - No More Mr Nice Guy.pdf" "Podgrzewacz Mister/" "Kryzys finansów publicznych/" "Fonts/" "Pioneer/" "Michalkiewicz/" "Fortis Bank/" "Złotnicki/" "SerwizFIAT.txt" "HP ProBook/" "KS/" "Kręgosłup szyjny Konrad/" "Dowód osobisty/" "Daria/" "Wolniewicz/" "PITy/" "Chesterton/" "Dermatolog/" "JKM/" "Kalendarz Pirelli/" "PKP/" "WSHE/" "Adresy maile telefony/" "Baśń jak niedźwiedź/" "Muzyka/" "PCTEL/" "DVD Ripping/" "ASUS/" "Jędrzej Giertych/" "USG Stawów biodrowych.txt" "ssh na Wega/" "Bad Piggies/" "PEKAES/" "Kama/" "Dzialka/")
 

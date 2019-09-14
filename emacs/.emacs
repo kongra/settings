@@ -61,38 +61,6 @@
 (global-set-key (kbd "C-+") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
 
-;; ;; MY THEME: CURSOR COLOR
-;; (set-cursor-color "IndianRed")
-;; (add-to-list 'default-frame-alist '(cursor-color . "IndianRed"))
-
-;; ;; MY THEME: CUSTOM COLORS FOR SYNTAX HIGHLIGHTING
-;; (set-face-attribute 'font-lock-comment-delimiter-face nil :foreground "#8080C9")
-;; (set-face-attribute 'font-lock-comment-face           nil :foreground "#8080C9")
-;; (set-face-attribute 'font-lock-doc-face               nil :foreground "#8080C9" :weight 'bold)
-;; (set-face-attribute 'font-lock-keyword-face           nil :foreground "#0000FF" :weight 'bold)
-;; (set-face-attribute 'font-lock-string-face            nil :foreground "#6100FF")
-;; (set-face-attribute 'font-lock-type-face              nil :foreground "#008289")
-;; (set-face-attribute 'font-lock-function-name-face     nil :foreground "#363636" :weight 'bold)
-;; (set-face-attribute 'font-lock-variable-name-face     nil :foreground "#363636" :weight 'bold)
-
-;; ;; MY THEME: CURRENT LINE HIGHLIGHT
-;; (add-hook 'text-mode-hook 'turn-off-visual-line-mode)
-;; (set-face-background 'hl-line "gray89")
-
-;; ;; MY THEME: BACKGROUND
-;; ;; M-x list-faces-display
-;; ;; Colors available:
-;; ;; http://www.geocities.com/kensanata/colors.htlm
-;; (setq default-frame-alist
-;;       (cons
-;;        '(background-color  . "#DBDBDB")
-;;        default-frame-alist))
-
-;; ZENBURN COLOR THEME
-;; (load-theme 'zenburn t)
-;; (require 'color-theme-zenburn)
-;; (color-theme-zenburn)
-
 ;; SPACEMACS THEME
 (add-to-list 'load-path "~/.emacs.d/elisp/spacemacs-theme")
 (require 'spacemacs-dark-theme)
@@ -111,7 +79,7 @@
 
 ;; INITIAL FRAME SIZE
 (add-to-list 'default-frame-alist '(height . 39))
-(add-to-list 'default-frame-alist '(width . 80))
+(add-to-list 'default-frame-alist '(width .  80))
 
 ;; COMPANY AUTO COMPLETE
 (add-hook 'after-init-hook 'global-company-mode)
@@ -224,7 +192,6 @@
 (global-set-key (kbd "M-u")   'undo             ) ; was upcase-word
 (global-unset-key "\C-_"                        )
 (global-set-key (kbd "M-a")   'mark-whole-buffer)
-(global-set-key [C-f4]        'kill-this-buffer )
 (global-set-key (kbd "C-x g") 'goto-line        )
 
 ;; MOVING LINES UP/DOWN
@@ -264,33 +231,28 @@
 (global-set-key (kbd "C-x C-a") 'save-all-buffs)
 
 ;; CLOJURE via CIDER
-;; (add-to-list 'load-path "~/.emacs.d/elisp/clojure-mode")
-;; (add-to-list 'load-path "~/.emacs.d/elisp/cider")
 (require 'cider)
 (add-hook 'cider-mode-hook                  #'eldoc-mode)
 (add-hook 'cider-repl-mode-hook           #'paredit-mode)
 (setq      cider-repl-display-help-banner            nil)
+
 ;; Cider auto-completion:
 (add-hook 'cider-repl-mode-hook #'cider-company-enable-fuzzy-completion)
 (add-hook 'cider-mode-hook      #'cider-company-enable-fuzzy-completion)
-;; Cider's dynamic syntax highlighting:
-(setq cider-font-lock-dynamically '(macro core function var))
+
 ;; Let's disable Cider's fading out reader's conditionals - we need this cause
 ;; we work with cljc files:
 (setq cider-font-lock-reader-conditionals nil)
-
-;; CLOJURE SLAMHOUND
-;; (require 'slamhound)
 
 ;; PAREDIT
 (require 'paredit)
 (autoload 'paredit-mode "paredit"
   "Minor mode for pseudo-structurally editing Lisp code." t)
 
-(add-hook 'emacs-lisp-mode-hook       (lambda () (paredit-mode +1)))
-(add-hook 'lisp-mode-hook             (lambda () (paredit-mode +1)))
 (add-hook 'clojure-mode-hook          (lambda () (paredit-mode +1)))
+(add-hook 'emacs-lisp-mode-hook       (lambda () (paredit-mode +1)))
 (add-hook 'lisp-interaction-mode-hook (lambda () (paredit-mode +1)))
+(add-hook 'lisp-mode-hook             (lambda () (paredit-mode +1)))
 (add-hook 'slime-repl-mode-hook       (lambda () (paredit-mode +1)))
 
 (setq skeleton-pair t)
@@ -322,10 +284,6 @@
 ;; BACKUP
 (setq backup-inhibited t)
 
-;; SMART-TABS-MODE
-;; (smart-tabs-insinuate 'c 'c++ 'java 'javascript 'cperl 'python
-;;                        'ruby 'nxml)
-
 ;; MANAGING BOOKMARKS
 (global-set-key [f8] 'bookmark-set)
 (global-set-key [f9] 'bookmark-jump)
@@ -345,7 +303,6 @@
 (setq         c-default-style "gnu")
 
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
-;; (setq-default tab-width 2)
 
 ;; PYTHON-MODE
 (autoload 'python-mode "python-mode" "Python Mode." t)
@@ -427,10 +384,6 @@
 
     ("mathfunarrow"   "↦" nil 0)))
 
-;; LET'S GO INTO SERVER MODE
-;; (server-start)
-;; (remove-hook 'kill-buffer-query-functions 'server-kill-buffer-query-function)
-
 ;; NXML MODE
 (add-to-list 'auto-mode-alist '("\\.xml\\'" . nxml-mode))
 
@@ -509,14 +462,10 @@
 	))
 
 ;; HASKELL MODE
-;; (add-to-list 'load-path "~/.emacs.d/elisp/haskell-mode/")
-;; (load "haskell-mode-autoloads.el")
 (require 'haskell-mode)
 (setq haskell-process-args-stack-ghci '("--ghci-options=-ferror-spans -fshow-loaded-modules"))
-;; (setq haskell-process-args-stack-ghci '("--ghci-options=-ferror-spans"))
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 (add-hook 'haskell-mode-hook 'haskell-doc-mode)
-;; (define-key haskell-mode-map (kbd "SPC") 'haskell-mode-contextual-space)
 (add-to-list 'completion-ignored-extensions ".hi")
 (add-hook 'haskell-mode-hook 'auto-complete-mode)
 
@@ -528,12 +477,6 @@
 ;; ELM MODE ...
 (require  'elm-mode)
 (add-hook 'elm-mode-hook 'turn-on-hi2)
-
-;; ... WITH FLYCHECK
-;; (require  'flycheck-elm)
-;; (add-hook 'flycheck-mode-hook 'flycheck-elm-setup)
-;; (with-eval-after-load 'flycheck
-;;   '(add-hook 'flycheck-mode-hook #'flycheck-elm-setup))
 
 ;; TURN ON ABBREV MODE GLOBALLY
 (setq default-abbrev-mode t)
@@ -592,11 +535,6 @@
 (require 'highlight)
 (global-set-key [f1] 'highlight-symbol-at-point)
 
-;; (global-set-key [(control f3)] 'highlight-symbol)
-;; (global-set-key [f3] 'highlight-symbol-next)
-;; (global-set-key [(shift f3)] 'highlight-symbol-prev)
-;; (global-set-key [(meta f3)] 'highlight-symbol-query-replace)
-
 ;; GIT GUTTER
 (require 'git-gutter)
 (global-git-gutter-mode t)
@@ -615,10 +553,6 @@
 ;; ESS (Emacs Speaks Statistics)
 (add-to-list 'load-path "~/.emacs.d/elisp/ess/lisp/")
 (require 'ess-site)
-;; (setq ess-indent-level 2)
-;; (setq ess-arg-function-offset 4)
-;; (setq ess-else-offset  2)
-
 (add-hook 'ess-mode-hook
           (lambda ()
             ;;                                 DEF GNU BSD K&R C++
