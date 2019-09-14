@@ -65,6 +65,11 @@
 (add-to-list 'load-path "~/.emacs.d/elisp/spacemacs-theme")
 (require 'spacemacs-dark-theme)
 
+;; POWERLINE
+;; (add-to-list 'load-path "~/.emacs.d/elisp/powerline")
+;; (require 'powerline)
+;; (powerline-center-theme)
+
 ;; MATCHING PARENS COLORS (USE WITH ZENBURN AND SPACEMACS)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -73,9 +78,6 @@
  ;; If there is more than one, they won't work right.
  '(show-paren-match ((t (:background "CornflowerBlue" :foreground "white"))))
  '(show-paren-mismatch ((((class color)) (:background "red" :foreground "white")))))
-
-;; POWERLINE
-(require 'powerline)
 
 ;; INITIAL FRAME SIZE
 (add-to-list 'default-frame-alist '(height . 39))
