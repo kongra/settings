@@ -11,12 +11,13 @@
  ("/home/kongra/Devel/" . "Projects/")
  ("/ssh:konrad@127.0.0.1#2222:/" . "/")
  ("/ssh:konrad@127.0.0.1:" . "2222/")
- ("/home/kongra/" . "Arch/")
+ ("/home/kongra/" . "Devel/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
  "/home/kongra/"
+ "/home/kongra/Devel/Projects/"
  "/home/kongra/Arch/Różne/Adresy maile telefony/"
  "/home/kongra/Pulpit/"
  "/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/"
@@ -25,7 +26,6 @@
  "/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/mused/src/main/clojure/cljs/mused/"
  "/home/kongra/Pobrane/"
  "/home/kongra/Devel/Projects/Rocky/Sharon/Compensation/R/shiny/"
- "/home/kongra/Devel/Projects/"
  "/ssh:127.0.0.1#2222:"
  "/ssh:konrad@127.0.0.1#2222/"
  "/ssh:konrad@127.0.0.1:/"
@@ -34,6 +34,7 @@
 ;; ----- ido-work-file-list -----
 (
  ".emacs"
+ "Elements of Style.org"
  "iPKO"
  "notes.org"
  "notes.clj"
@@ -42,12 +43,11 @@
  ".conkyrc"
  "conky.conf"
  "chRgreps.sh"
- "drop-caches.sh"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/kongra/" (23932 58327 918196 904000) ".dbus/" ".bashrc" ".gimp-2.8/" ".gitconfig" "Public/" ".filezilla/" ".android/" ".zsh_history" "bin/" ".swt/" ".gitkraken/" ".pgAdmin4.startup.log" "snap/" ".viminfo" ".linuxmint/" ".selected_editor" ".config/" ".gnupg/" ".emacs" "../" ".zshrc" ".oh-my-zsh/" ".tooling/" ".R/" ".vimrc" "Dokumenty/" ".zoom/" ".pencil/" ".IdeaIC2019.2/" ".hplip/" ".conkyrc" ".bash_history" ".mozilla/" ".emacs.d/" ".zcompdump" "elm-stuff/" ".Rhistory" ".ipython/" ".gvfs/" ".rustup/" ".gconf/" "R/" ".xournal/" ".xsession-errors.old" ".clojure/" ".bash_logout" ".zshrc.pre-oh-my-zsh" ".zcompdump-hp-470-5.4.2" ".m2/" ".netrc" ".adobe/" ".zcompdump-ProBook-470-5.4.2" ".cache/" "Devel/" ".wget-hsts" "Pulpit/" ".cargo/" ".themes/" "Arch/" "Szablony/" ".npm/" ".audacity-data/" "Temp/" "VirtualBox VMs/" ".local/" ".pki/" ".vscode/" ".eclipse/" ".r/" "Programy/" "Videos/" "Adasoft/" "Javasoft/" ".fonts/" "./" ".Rprofile" ".cinnamon/" ".sudo_as_admin_successful" ".elm/" ".davfs2/" ".ghc/" "var/" ".icons/" "Downloads/" "Documents/" ".macromedia/" ".dmrc" "Postman/" ".profile" ".ngrok2/" ".pgadmin/" ".rnd" "RStudio/" ".smex-items" "Pobrane/" ".java/" "eclipse-workspace/" ".texlive2017/" ".rstudio-desktop/" ".gtkrc-2.0" ".p2/" ".Xauthority" "node_modules/" "IdeaProjects/" ".thumbnails/" ".gradle/" "missfont.log" "Desktop/" ".ssh/" "Pictures/" ".stack/" ".zprofile" ".psql_history" "Wideo/" ".gnome/" "Muzyka/" ".zcompdump-kongra-HP-ProBook-470-G2-5.4.2" ".ICEauthority" ".sane/" ".lein/" "Templates/" "Cppsoft/" ".jedit/" ".gtkrc-xfce" "Publiczny/" ".virtualenvs/" ".python_history" "Obrazy/" ".keras/" ".hedgewars/" ".gphoto/" ".xsession-errors")
+ ("/home/kongra/" (23933 17534 723043 23000) ".dbus/" ".bashrc" ".gimp-2.8/" ".gitconfig" "Public/" ".filezilla/" ".android/" ".zsh_history" "bin/" ".swt/" ".gitkraken/" ".pgAdmin4.startup.log" "snap/" ".viminfo" ".linuxmint/" ".selected_editor" ".config/" ".gnupg/" ".emacs" "../" ".zshrc" ".oh-my-zsh/" ".tooling/" ".R/" ".vimrc" "Dokumenty/" ".zoom/" ".pencil/" ".IdeaIC2019.2/" ".hplip/" ".conkyrc" ".bash_history" ".mozilla/" ".emacs.d/" ".zcompdump" "elm-stuff/" ".Rhistory" ".ipython/" ".gvfs/" ".rustup/" ".gconf/" "R/" ".xournal/" ".xsession-errors.old" ".clojure/" ".bash_logout" ".zshrc.pre-oh-my-zsh" ".zcompdump-hp-470-5.4.2" ".m2/" ".netrc" ".adobe/" ".zcompdump-ProBook-470-5.4.2" ".cache/" "Devel/" ".wget-hsts" "Pulpit/" ".cargo/" ".themes/" "Arch/" ".emacs~" "Szablony/" ".npm/" ".audacity-data/" "Temp/" "VirtualBox VMs/" ".local/" ".pki/" ".vscode/" ".eclipse/" ".r/" "Programy/" "Videos/" "Adasoft/" "Javasoft/" ".fonts/" "./" ".Rprofile" ".cinnamon/" ".sudo_as_admin_successful" ".elm/" ".davfs2/" ".ghc/" "var/" ".icons/" "Downloads/" "Documents/" ".macromedia/" ".dmrc" "Postman/" ".profile" ".ngrok2/" ".pgadmin/" ".rnd" "RStudio/" ".smex-items" "Pobrane/" ".java/" "eclipse-workspace/" ".texlive2017/" ".rstudio-desktop/" ".gtkrc-2.0" ".p2/" ".Xauthority" "node_modules/" "IdeaProjects/" ".thumbnails/" ".gradle/" "missfont.log" "Desktop/" ".ssh/" "Pictures/" ".stack/" ".zprofile" ".psql_history" "Wideo/" ".gnome/" "Muzyka/" ".zcompdump-kongra-HP-ProBook-470-G2-5.4.2" ".ICEauthority" ".sane/" ".lein/" "Templates/" "Cppsoft/" ".jedit/" ".gtkrc-xfce" "Publiczny/" ".virtualenvs/" ".python_history" "Obrazy/" ".keras/" ".hedgewars/" ".gphoto/" ".xsession-errors")
 
  ("/home/kongra/Devel/Projects/Rocky/Sharon/Music Education/nutune/" (23932 57752 453152 724000) "deploy-nutune-staging.sh" "system.properties" "target/" "run-localhost.sh" "../" "postgres.sh" ".gitignore" "cloc.excluded" "Procfile.nutunemusic" "README.md" "ngrok.sh" "scripts/" "Procfile.nutune-staging" "nREPL.sh" "uberjar.sh" "dev.cljs.edn" "./" "data-origin/" "resources/" "fig.sh" ".nrepl-port" "cloc.sh" ".rebel_readline_history" "deploy-nutunemusic.sh" ".eastwood" "src/" "cljsbuild-min.sh" "project.clj" "docs/" ".git/" "serveo.net")
 

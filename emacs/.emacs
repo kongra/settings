@@ -16,7 +16,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (clojure-mode-extra-font-locking cider magit zenburn-theme spinner smex smart-tabs-mode seq queue pkg-info paredit hi2 haskell-mode git-gutter feature-mode elm-mode)))
+    (swiper ido-vertical-mode clojure-mode-extra-font-locking cider magit zenburn-theme spinner smex smart-tabs-mode seq queue pkg-info paredit hi2 haskell-mode git-gutter feature-mode elm-mode)))
  '(safe-local-variable-values
    (quote
     ((syntax . COMMON-LISP)
@@ -79,11 +79,18 @@
  '(show-paren-match ((t (:background "CornflowerBlue" :foreground "white"))))
  '(show-paren-mismatch ((((class color)) (:background "red" :foreground "white")))))
 
+;; RAINBOW DELIMITERS
+(require 'rainbow-delimiters)
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
 ;; INITIAL FRAME SIZE
 (add-to-list 'default-frame-alist '(height . 39))
 (add-to-list 'default-frame-alist '(width .  80))
 
 ;; COMPANY AUTO COMPLETE
+(require                               'company)
+(setq company-idle-delay                      0)
+(setq company-minimum-prefix-length           2)
 (add-hook 'after-init-hook 'global-company-mode)
 
 ;; TOOL-TIPS OFF
@@ -328,12 +335,15 @@
 (add-to-list 'load-path "~/.emacs.d/elisp/ada-mode")
 ;; (require 'ada-mode)
 
-;; USE IDO ...
-(ido-mode t)
-(setq ido-enable-flex-matching t) ;; enable fuzzy matching
-
-(global-set-key (kbd "M-<right>") 'ido-switch-buffer)
-(global-set-key (kbd "M-<left>")  'ido-switch-buffer)
+;; IDO ...
+(setq ido-enable-flex-matching      t) ;; enable fuzzy matching
+;; (setq ido-enable-flex-matching nil)
+(setq ido-create-new-buffer   'always)
+(setq ido-everywhere                t)
+(setq ido-vertical-show-count       t)
+(require           'ido-vertical-mode)
+(ido-mode                           1)
+(ido-vertical-mode                  1)
 
 ;; ... TOGETHER WITH SMEX
 (smex-initialize)
@@ -341,6 +351,10 @@
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+;; SWIPER
+(require 'swiper)
+(global-set-key "\C-s" 'swiper)
 
 ;; COLOR (M)OCCUR
 (require 'color-moccur)
