@@ -356,10 +356,22 @@
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
-;; SWIPER
+;; SEARCHING
+(require    'ivy)
 (require 'swiper)
-(global-set-key "\C-s" 'swiper)
-(global-set-key "\C-f" 'swiper-isearch-thing-at-point)
+
+(defun ivy-with-thing-at-point (cmd)
+  (let ((ivy-initial-inputs-alist
+         (list
+          (cons cmd (thing-at-point 'symbol)))))
+    (funcall cmd)))
+
+(defun counsel-rg-thing-at-point ()
+  (interactive)
+  (ivy-with-thing-at-point 'counsel-rg))
+
+(global-set-key "\C-s" 'swiper-isearch-thing-at-point)
+(global-set-key "\C-f"     'counsel-rg-thing-at-point)
 
 ;; COLOR (M)OCCUR
 (require 'color-moccur)
