@@ -9,8 +9,8 @@
  '(current-language-environment "Polish")
  '(git-gutter:lighter " GG")
  '(global-font-lock-mode t nil (font-lock))
- '(global-hl-line-mode t)
- '(haskell-process-log t)
+ '(global-hl-line-mode nil)
+ '(haskell-process-log   t)
  '(haskell-process-type (quote stack-ghci))
  '(inferior-haskell-wait-and-jump t)
  '(inhibit-startup-screen t)
@@ -357,8 +357,8 @@
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;; SEARCHING
-(require    'ivy)
 (require 'swiper)
+(require    'ivy)
 
 (defun ivy-with-thing-at-point (cmd)
   (let ((ivy-initial-inputs-alist
