@@ -107,6 +107,7 @@
 ;; SCROLLING
 (scroll-bar-mode -1)
 (setq scroll-step 2)
+(setq scoll-conservatively          100)
 (setq scroll-preserve-screen-position t)
 
 ;; SPACEMACS THEME
@@ -118,6 +119,11 @@
 ;; CURSOR
 (set-cursor-color "#eead0e") ;; orange
 (blink-cursor-mode        0)
+
+(use-package beacon
+  :ensure t
+  :init
+  (progn (beacon-mode 1)))
 
 ;; SHOW COLUMN NUMBER
 (setq column-number-mode t)
@@ -414,6 +420,13 @@
   :ensure t)
 
 (global-set-key [f1] 'highlight-symbol-at-point)
+
+;; DASHBOARD
+;; (use-package page-break-lines :ensure t)
+;; (use-package dashboard
+;;   :ensure t
+;;   :config
+;;   (dashboard-setup-startup-hook))
 
 ;; C/C++
 (setq-default indent-tabs-mode  nil)
