@@ -164,10 +164,9 @@
          (set-face-foreground 'git-gutter:added    "ForestGreen")
          (set-face-foreground 'git-gutter:deleted  "red")))
 
-;; RAINBOW DELIMITERS
-(use-package rainbow-delimiters
-  :ensure t
-  :init (add-hook 'prog-mode-hook #'rainbow-delimiters-mode))
+;; MAGIT
+(use-package magit
+  :ensure t)
 
 ;; COMPANY
 (use-package company
@@ -251,6 +250,11 @@
     (indent-according-to-mode)))
 
 (global-set-key (kbd "RET") 'autopairs-ret)
+
+;; RAINBOW DELIMITERS
+(use-package rainbow-delimiters
+  :ensure t
+  :init (add-hook 'prog-mode-hook #'rainbow-delimiters-mode))
 
 ;; HIGHLIGHT MATCHING PARENS
 (use-package mic-paren
