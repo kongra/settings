@@ -73,6 +73,9 @@
 (global-set-key (kbd   "M-<up>")   'move-line-up)
 (global-set-key (kbd "M-<down>") 'move-line-down)
 
+;; SUBWORD FOR M-f/M-b (forward-word/backward-word)
+(global-subword-mode 1)
+
 ;; SAVE ALL BUFFERS
 (defun save-all-buffs () (interactive) (save-some-buffers t))
 (global-set-key (kbd "C-x C-a") 'save-all-buffs)
@@ -368,6 +371,14 @@
 
 (global-set-key (kbd "C-.")'geosoft-forward-word)
 (global-set-key (kbd "C-,") 'geosoft-backward-word)
+
+;; KILL WHOLE WORD (BETTER <C-delete>)
+(defun kill-whole-word ()
+  (interactive)
+  (backward-word)
+  (kill-word 1))
+
+(global-set-key (kbd "<C-delete>") 'kill-whole-word)
 
 ;; ISPELL
 (setq ispell-program-name "aspell")
