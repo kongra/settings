@@ -16,10 +16,11 @@
   (which-key-mode))
 
 ;; SOME ESSENTIAL KEYS
-(global-set-key (kbd "M-u")   'undo             ) ; was upcase-word
-(global-unset-key "\C-_"                        )
-(global-set-key (kbd "M-a")   'mark-whole-buffer)
-(global-set-key (kbd "C-x g") 'goto-line        )
+(global-set-key (kbd "M-u") 'undo) ; was upcase-word
+(global-unset-key "\C-_")
+(global-set-key (kbd "M-a") 'mark-whole-buffer)
+(global-set-key (kbd "C-x g") 'goto-line)
+(global-set-key (kbd "C-x C-b") 'ibuffer)
 
 ;; DEFAULT WEB BROWSER
 (setq browse-url-browser-function 'browse-url-generic
