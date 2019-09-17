@@ -108,7 +108,6 @@
 ;; SCROLLING
 (scroll-bar-mode -1)
 (setq scroll-step 2)
-(setq scoll-conservatively          100)
 (setq scroll-preserve-screen-position t)
 
 ;; SPACEMACS THEME
@@ -472,6 +471,12 @@
   (progn
     (global-set-key [f7] 'ess-eval-line-and-step)
     (global-set-key (kbd "C-n") (lambda () (interactive) (insert "%>% ")))))
+
+;; RAINBOW MODE
+(use-package rainbow-mode
+  :ensure t
+  :init (progn (add-hook 'prog-mode-hook #'rainbow-mode)
+               (add-hook 'org-mode-hook  #'rainbow-mode)))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
