@@ -4,6 +4,11 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
 
+;; ADDITIONAL LOAD PATHS
+(setq load-path
+      (append (list nil "~/.emacs.d/elisp")
+              load-path))
+
 ;; USE-PACKAGE
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
@@ -21,6 +26,8 @@
 (global-set-key (kbd "M-a") 'mark-whole-buffer)
 (global-set-key (kbd "C-x g") 'goto-line)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
+
+(defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; DEFAULT WEB BROWSER
 (setq browse-url-browser-function 'browse-url-generic
@@ -220,6 +227,9 @@
 (defun counsel-rg-thing-at-point ()
   (interactive)
   (ivy-with-thing-at-point 'counsel-rg))
+
+(setq counsel-grep-base-command
+ "rg -i -M 120 --no-heading --line-number --color never '%s' %s")
 
 (use-package swiper
   :ensure t
@@ -438,6 +448,9 @@
 ;;   :config
 ;;   (dashboard-setup-startup-hook))
 
+;; DIRED+
+(require 'dired+)
+
 ;; C/C++
 (setq-default indent-tabs-mode  nil)
 (setq         c-basic-offset      2)
@@ -466,21 +479,36 @@
     (setq cider-font-lock-reader-conditionals nil)))
 
 ;; ESS (Emacs Speaks Statistics)
-;; (defun my-R-style-hook ()
-;;   (when (string-match (file-name-extension buffer-file-name) "[r|R]$")
-;;     (ess-set-style 'RStudio)))
 (add-hook
  'find-file-hook
  (lambda ()
    (when (string-match (file-name-extension buffer-file-name) "[r|R]$")
      (ess-set-style 'RStudio))))
 
+(setq inferior-ess-r-program "/usr/bin/R")
+(remove-hook 'flymake-diagnostic-functions
+             'flymake-proc-legacy-flymake)
+
 (use-package ess
   :ensure t
   :init
   (progn
-    (global-set-key [f7] 'ess-eval-line-and-step)
-    (global-set-key (kbd "C-n") (lambda () (interactive) (insert "%>% ")))))
+    (global-set-key (kbd "M-n") 'ess-eval-line-and-step)
+    (global-set-key (kbd "M-m") (lambda () (interactive) (insert "%>% ")))
+    (global-set-key (kbd "M--") (lambda () (interactive) (insert "<- " )))))
+
+(add-hook 'ess-mode-hook
+          (lambda ()
+            ;;                                 DEF GNU BSD K&R C++
+            ;; ess-indent-level                  2   2   8   5   4
+            ;; ess-continued-statement-offset    2   2   8   5   4
+            ;; ess-brace-offset                  0   0  -8  -5  -4
+            ;; ess-arg-function-offset           2   4   0   0   0
+            ;; ess-expression-offset             4   2   8   5   4
+            ;; ess-else-offset                   0   0   0   0   0
+            ;; ess-close-brace-offset            0   0   0   0   0
+            (ess-set-style 'GNU 'quiet)
+            (setq ess-arg-function-offset nil)))
 
 ;; RAINBOW MODE
 (use-package rainbow-mode
@@ -504,3 +532,4 @@
  ;; If there is more than one, they won't work right.
  '(show-paren-match ((t (:background "CornflowerBlue" :foreground "white"))))
  '(show-paren-mismatch ((((class color)) (:background "red" :foreground "white")))))
+(put 'dired-find-alternate-file 'disabled nil)
