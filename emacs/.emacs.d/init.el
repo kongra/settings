@@ -31,7 +31,7 @@
 
 ;; DEFAULT WEB BROWSER
 (setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "firefox")
+      browse-url-generic-program "/usr/bin/google-chrome")
 
 ;; ENCODING
 (prefer-coding-system 'utf-8)
@@ -127,7 +127,7 @@
   :init (require 'spacemacs-dark-theme))
 
 ;; CURSOR
-(set-cursor-color "#eead0e") ;; orange
+(set-cursor-color "#eead0e")
 (blink-cursor-mode        0)
 
 (use-package beacon
