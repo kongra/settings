@@ -1,3 +1,8 @@
+;; GC
+;; https://github.com/Fanael/init.el/blob/master/init.el
+(setq gc-cons-threshold (* 4 1024 1024))
+(setq gc-cons-percentage 0.3)
+
 ;; PACKAGES INITIALIZATION
 (require 'package)
 (setq package-enable-at-startup nil)
@@ -29,12 +34,21 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+;; UNDO LIMITS
+(setq undo-limit        (* 16 1024 1024))
+(setq undo-strong-limit (* 24 1024 1024))
+(setq undo-outer-limit  (* 64 1024 1024))
+
 ;; DEFAULT WEB BROWSER
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "/usr/bin/google-chrome")
 
 ;; ENCODING
-(prefer-coding-system 'utf-8)
+(prefer-coding-system                   'utf-8     )
+(set-language-environment               "UTF-8"    )
+(setq locale-coding-system              'utf-8     )
+(set-selection-coding-system            'utf-8     )
+(setq-default buffer-file-coding-system 'utf-8-unix)
 
 ;; CUA MODE
 (cua-mode)
@@ -116,9 +130,12 @@
 (tooltip-mode -1)
 
 ;; SCROLLING
-(scroll-bar-mode -1)
-(setq scroll-step 2)
-(setq scroll-preserve-screen-position t)
+(scroll-bar-mode                           -1)
+(setq scroll-step                           2)
+(setq mouse-wheel-progressive-speed       nil)
+(setq scroll-margin                         3)
+(setq scroll-conservatively            100000)
+(setq scroll-preserve-screen-position 'always)
 
 ;; SPACEMACS THEME
 (use-package spacemacs-theme
