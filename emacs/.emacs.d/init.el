@@ -1,7 +1,16 @@
 ;; GC
 ;; https://github.com/Fanael/init.el/blob/master/init.el
-(setq gc-cons-threshold (* 4 1024 1024))
+(setq gc-cons-threshold (* 16 1024 1024))
 (setq gc-cons-percentage 0.3)
+
+(defun my-minibuffer-setup-hook ()
+  (setq gc-cons-threshold most-positive-fixnum))
+
+(defun my-minibuffer-exit-hook ()
+  (setq gc-cons-threshold (* 16 1024 1024)))
+
+(add-hook 'minibuffer-setup-hook #'my-minibuffer-setup-hook)
+(add-hook 'minibuffer-exit-hook  #'my-minibuffer-exit-hook)
 
 ;; PACKAGES INITIALIZATION
 (require 'package)
@@ -41,7 +50,7 @@
 
 ;; DEFAULT WEB BROWSER
 (setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "/usr/bin/google-chrome")
+      browse-url-generic-program "/usr/bin/firefox")
 
 ;; ENCODING
 (prefer-coding-system                   'utf-8     )
