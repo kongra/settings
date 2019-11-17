@@ -35,6 +35,9 @@ M2=$M2_HOME/bin
 MAVEN_OPTS="-Xms256m -Xmx512m"
 PATH=$PATH:$M2
 
+# Gradle
+PATH=$PATH:$HOME/Javasoft/gradle/bin
+
 # Antlr4
 ANTLR4_HOME=$HOME/Devel/Libs/antlr4
 
@@ -68,13 +71,14 @@ PATH=$PATH:$HOME/.composer/vendor/bin
 PATH=$PATH:$HOME/.cargo/bin
 
 # Node.js
-PATH=$PATH:$HOME/node_modules/.bin:$HOME/node_modules/elm_format/bin:$HOME/node_modules/elm_oracle/bin
+PATH=$PATH:$HOME/Devel/Libs/node/bin:$HOME/node_modules/.bin:$HOME/node_modules/elm_format/bin:$HOME/node_modules/elm_oracle/bin
 
 # R
 R_ENABLE_JIT=3
 
-# BREW
-BREW_HOME=/home/linuxbrew/.linuxbrew
-PATH=$PATH:$BREW_HOME/bin
+# ANDROID
+ANDROID_HOME=$HOME/Devel/Libs/android-sdk
+PATH=$PATH:$ANDROID_HOME:$ANDROID_HOME/bin
+JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'
 
-export PATH JAVA_HOME ANT_HOME M2_HOME M2 MAVEN_OPTS ANTLR4_HOME GNAT_HOME LLVM_HOME IBUS_ENABLE_SYNC_MODE R_ENABLE_JIT BREW_HOME
+export PATH JAVA_HOME ANT_HOME M2_HOME M2 MAVEN_OPTS ANTLR4_HOME GNAT_HOME LLVM_HOME IBUS_ENABLE_SYNC_MODE R_ENABLE_JIT ANDROID_HOME JAVA_OPTS
