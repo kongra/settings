@@ -359,7 +359,7 @@
     ("righttack"      "⊢" nil 0)
     ("mathfunarrow"   "↦" nil 0)))
 
-(setq-default abbrev-mode t) ;; ABBREVS ALWAYS ON
+;; (setq-default abbrev-mode t) ;; ABBREVS ALWAYS ON
 
 ;; NXML MODE
 (add-to-list 'auto-mode-alist '("\\.xml\\'" . nxml-mode))
