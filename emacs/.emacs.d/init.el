@@ -489,7 +489,10 @@
 
 ;; CLOJURE/CIDER
 (use-package clojure-mode
-  :ensure t)
+  :ensure t
+  :init
+  (progn
+    (setq clojure-indent-style 'always-indent)))
 
 (use-package cider
   :ensure t
