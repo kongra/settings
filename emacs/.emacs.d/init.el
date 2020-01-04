@@ -163,8 +163,17 @@
   :init
   (progn (beacon-mode 1)))
 
-;; SHOW COLUMN NUMBER
+;; SHOW COLUMN NUMBERS
 (setq column-number-mode t)
+
+;; SHOW LINE NUMBERS
+(setq line-number-mode nil)
+(when (version<= "26.0.50" emacs-version )
+  (global-display-line-numbers-mode))
+
+(setq display-line-numbers-type 'relative)
+(set-face-background 'line-number              "#292b2e")
+(set-face-background 'line-number-current-line "#242629")
 
 ;; TRANSIENT-MARK MODE
 (transient-mark-mode 1)
