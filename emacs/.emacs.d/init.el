@@ -193,6 +193,12 @@
 ;; FILL COLUMN
 (setq-default fill-column 80)
 
+(use-package fill-column-indicator
+  :ensure t)
+
+(setq fci-rule-width 1)
+(setq fci-rule-color "#404347")
+
 ;; MAP THE WINDOW MANIPULATION KEYS TO META 0, 1, 2, O
 (global-set-key (kbd "M-3") 'split-window-horizontally)
 (global-set-key (kbd "M-2") 'split-window-vertically  )
@@ -575,7 +581,9 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" default)))
+    ("84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279"
+     "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa"
+     default)))
  '(package-selected-packages
    (quote
     (color-moccur spacemacs-theme which-key use-package))))
@@ -585,6 +593,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(show-paren-match ((t (:background "CornflowerBlue" :foreground "white"))))
- '(show-paren-mismatch ((((class color)) (:background "red" :foreground "white")))))
+ '(show-paren-match
+   ((t (:background "CornflowerBlue" :foreground "white"))))
+
+ '(show-paren-mismatch
+   ((((class color)) (:background "red" :foreground "white")))))
+
 (put 'dired-find-alternate-file 'disabled nil)
