@@ -183,7 +183,7 @@
 (when (version<= "26.0.50" emacs-version )
   (global-display-line-numbers-mode))
 
-(setq display-line-numbers-type 'relative)
+;; (setq display-line-numbers-type 'relative)
 (set-face-background 'line-number              "#292b2e")
 (set-face-background 'line-number-current-line "#222226")
 
