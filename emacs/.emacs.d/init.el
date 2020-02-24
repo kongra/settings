@@ -1,18 +1,18 @@
 ;; GC
 ;; https://github.com/Fanael/init.el/blob/master/init.el
-;; (setq gc-cons-threshold (* 16 1024 1024))
-;; (setq gc-cons-percentage 0.3)
+(setq gc-cons-threshold (* 16 1024 1024))
+(setq gc-cons-percentage 0.3)
 
-;; (defun my-minibuffer-setup-hook ()
-;;   (setq gc-cons-threshold most-positive-fixnum))
+(defun my-minibuffer-setup-hook ()
+  (setq gc-cons-threshold most-positive-fixnum))
 
-;; (defun my-minibuffer-exit-hook ()
-;;   (setq gc-cons-threshold (* 16 1024 1024)))
+(defun my-minibuffer-exit-hook ()
+  (setq gc-cons-threshold (* 16 1024 1024)))
 
-;; (add-hook 'minibuffer-setup-hook #'my-minibuffer-setup-hook)
-;; (add-hook 'minibuffer-exit-hook  #'my-minibuffer-exit-hook)
+(add-hook 'minibuffer-setup-hook #'my-minibuffer-setup-hook)
+(add-hook 'minibuffer-exit-hook  #'my-minibuffer-exit-hook)
 
-;; (setq garbage-collection-messages t)
+(setq garbage-collection-messages t)
 
 ;; PACKAGES INITIALIZATION
 (require 'package)
@@ -157,11 +157,12 @@
 
 ;; SCROLLING
 (scroll-bar-mode                           -1)
-;; (setq scroll-step                           2)
-;; (setq mouse-wheel-progressive-speed       nil)
-;; (setq scroll-margin                         3)
-;; (setq scroll-conservatively            100000)
-;; (setq scroll-preserve-screen-position 'always)
+;; (setq scroll-step                        2)
+;; (setq scroll-margin                      3)
+
+(setq mouse-wheel-progressive-speed       nil)
+(setq scroll-conservatively            100000)
+(setq scroll-preserve-screen-position 'always)
 
 ;; SPACEMACS THEME
 (use-package spacemacs-theme
