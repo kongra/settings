@@ -1,18 +1,18 @@
 ;; GC
 ;; https://github.com/Fanael/init.el/blob/master/init.el
-(setq gc-cons-threshold (* 16 1024 1024))
-(setq gc-cons-percentage 0.3)
+;; (setq gc-cons-threshold (* 16 1024 1024))
+;; (setq gc-cons-percentage 0.3)
 
-(defun my-minibuffer-setup-hook ()
-  (setq gc-cons-threshold most-positive-fixnum))
+;; (defun my-minibuffer-setup-hook ()
+;;   (setq gc-cons-threshold most-positive-fixnum))
 
-(defun my-minibuffer-exit-hook ()
-  (setq gc-cons-threshold (* 16 1024 1024)))
+;; (defun my-minibuffer-exit-hook ()
+;;   (setq gc-cons-threshold (* 16 1024 1024)))
 
-(add-hook 'minibuffer-setup-hook #'my-minibuffer-setup-hook)
-(add-hook 'minibuffer-exit-hook  #'my-minibuffer-exit-hook)
+;; (add-hook 'minibuffer-setup-hook #'my-minibuffer-setup-hook)
+;; (add-hook 'minibuffer-exit-hook  #'my-minibuffer-exit-hook)
 
-(setq garbage-collection-messages t)
+;; (setq garbage-collection-messages t)
 
 ;; PACKAGES INITIALIZATION
 (require 'package)
@@ -75,6 +75,9 @@
 
 ;; CLIPBOARD
 (setq x-select-enable-clipboard t)
+
+;; OPTIMIZE UP/DOWN LAGS
+(setq auto-window-vscroll nil)
 
 ;; MOVING LINES UP/DOWN
 ;; https://www.emacswiki.org/emacs/MoveLine
@@ -154,11 +157,11 @@
 
 ;; SCROLLING
 (scroll-bar-mode                           -1)
-(setq scroll-step                           2)
-(setq mouse-wheel-progressive-speed       nil)
-(setq scroll-margin                         3)
-(setq scroll-conservatively            100000)
-(setq scroll-preserve-screen-position 'always)
+;; (setq scroll-step                           2)
+;; (setq mouse-wheel-progressive-speed       nil)
+;; (setq scroll-margin                         3)
+;; (setq scroll-conservatively            100000)
+;; (setq scroll-preserve-screen-position 'always)
 
 ;; SPACEMACS THEME
 (use-package spacemacs-theme
@@ -170,18 +173,18 @@
 (set-cursor-color "#eead0e")
 (blink-cursor-mode        0)
 
-(use-package beacon
-  :ensure t
-  :init
-  (progn (beacon-mode 1)))
+;; (use-package beacon
+;;   :ensure t
+;;   :init
+;;   (progn (beacon-mode 1)))
 
 ;; SHOW COLUMN NUMBERS
 (setq column-number-mode t)
 
 ;; SHOW LINE NUMBERS
-(setq line-number-mode nil)
-(when (version<= "26.0.50" emacs-version )
-  (global-display-line-numbers-mode))
+(setq line-number-mode t)
+;; (when (version<= "26.0.50" emacs-version )
+;;   (global-display-line-numbers-mode))
 
 ;; (setq display-line-numbers-type 'relative)
 (set-face-background 'line-number              "#292b2e")
@@ -567,6 +570,16 @@
             ;; ess-close-brace-offset            0   0   0   0   0
             (ess-set-style 'GNU 'quiet)
             (setq ess-arg-function-offset nil)))
+
+;; PYTHON MODE
+(add-hook
+ 'python-mode-hook
+
+ '(lambda ()
+    (setq python-indent 2)
+    ;; (when (executable-find "ipython")
+    ;;   (setq python-shell-interpreter "ipython"))
+    ))
 
 ;; RAINBOW MODE
 (use-package rainbow-mode
