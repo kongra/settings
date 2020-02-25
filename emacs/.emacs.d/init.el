@@ -77,7 +77,7 @@
 (setq x-select-enable-clipboard t)
 
 ;; OPTIMIZE UP/DOWN LAGS
-(setq auto-window-vscroll nil)
+
 
 ;; MOVING LINES UP/DOWN
 ;; https://www.emacswiki.org/emacs/MoveLine
@@ -157,11 +157,9 @@
 
 ;; SCROLLING
 (scroll-bar-mode                           -1)
-;; (setq scroll-step                        2)
-;; (setq scroll-margin                      3)
-
+(setq auto-window-vscroll                 nil)
 (setq mouse-wheel-progressive-speed       nil)
-(setq scroll-conservatively            100000)
+(setq scroll-conservatively              1000)
 (setq scroll-preserve-screen-position 'always)
 
 ;; SPACEMACS THEME
