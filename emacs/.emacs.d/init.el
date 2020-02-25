@@ -609,3 +609,16 @@
  '(show-paren-mismatch ((((class color)) (:background "red" :foreground "white")))))
 
 (put 'dired-find-alternate-file 'disabled nil)
+
+;; COMPLETELY DISABLE BOLD FONTS
+(defun remap-faces-default-attributes ()
+   (let ((family (face-attribute 'default :family))
+         (height (face-attribute 'default :height)))
+     (mapcar (lambda (face)
+              (face-remap-add-relative
+               face :family family :weight 'normal :height height))
+          (face-list))))
+
+(when (display-graphic-p)
+   (add-hook 'minibuffer-setup-hook 'remap-faces-default-attributes)
+   (add-hook 'change-major-mode-after-body-hook 'remap-faces-default-attributes))
