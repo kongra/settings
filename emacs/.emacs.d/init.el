@@ -109,16 +109,16 @@
 (global-set-key (kbd "M-<down>") 'move-line-down)
 
 ;; JUMPING N LINES UP/DOWN
-(defun next-line-n (n)
-  (interactive "nLines down: ")
-  (forward-line n))
+;; (defun next-line-n (n)
+;;   (interactive "nLines down: ")
+;;   (forward-line n))
 
-(defun previous-line-n (n)
-  (interactive "nLines up: ")
-  (forward-line (- n)))
+;; (defun previous-line-n (n)
+;;   (interactive "nLines up: ")
+;;   (forward-line (- n)))
 
-(global-set-key (kbd "C-n")     'next-line-n)
-(global-set-key (kbd "C-p") 'previous-line-n)
+;; (global-set-key (kbd "C-n")     'next-line-n)
+;; (global-set-key (kbd "C-p") 'previous-line-n)
 
 ;; SUBWORD FOR M-f/M-b (forward-word/backward-word)
 (global-subword-mode 1)
