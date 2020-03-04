@@ -538,6 +538,8 @@
     ;; cause we work with cljc files:
     (setq cider-font-lock-reader-conditionals nil)))
 
+(global-set-key (kbd "C-c C-l") 'cider-repl-clear-buffer)
+
 ;; ESS (Emacs Speaks Statistics)
 (add-hook
  'find-file-hook
