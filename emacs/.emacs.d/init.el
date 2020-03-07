@@ -521,8 +521,7 @@
   :ensure t
   :init
   (progn
-    (setq clojure-indent-style :always-indent)
-    (setq clojure-align-forms-automatically t)))
+    (setq clojure-indent-style :always-indent)))
 
 (use-package cider
   :ensure t
