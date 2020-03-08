@@ -540,15 +540,27 @@
 
 (global-set-key (kbd "C-c C-l") 'cider-repl-clear-buffer)
 
-;; SLIME WITH SBCL
+;; COMMON LISP/SLIME
 (use-package slime
   :ensure t
   :init
   (progn
-    (setq inferior-lisp-program "/home/kongra/sbcl/bin/sbcl")
-    ;; (setq inferior-lisp-program "/home/kongra/ccl/lx86cl64")
+    ;; (setq inferior-lisp-program "/home/kongra/Lispsoft/sbcl/bin/sbcl")
+    (setq inferior-lisp-program "/home/kongra/Lispsoft/ccl/lx86cl64")))
 
-    (slime-setup '(slime-fancy))))
+(slime-setup '(slime-fancy))
+
+(add-to-list 'slime-contribs
+             'slime-autodoc)
+
+(setq slime-completion-at-point-functions
+      'slime-fuzzy-complete-symbol)
+
+(global-set-key (kbd "M-RET") 'slime-complete-symbol)
+
+;; (use-package slime-company
+;;   :ensure t)
+;; (slime-setup '(slime-company))
 
 ;; ESS (Emacs Speaks Statistics)
 (add-hook
