@@ -40,8 +40,8 @@
 (global-set-key (kbd "M-u") 'undo) ; was upcase-word
 (global-unset-key "\C-_")
 (global-set-key (kbd "M-a") 'mark-whole-buffer)
-(global-set-key (kbd "C-x g") 'goto-line)
-(global-set-key (kbd "C-x C-b") 'ibuffer)
+;; (global-set-key (kbd "C-x g") 'goto-line)
+;; (global-set-key (kbd "C-x C-b") 'ibuffer)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
@@ -125,7 +125,7 @@
 
 ;; SAVE ALL BUFFERS
 (defun save-all-buffs () (interactive) (save-some-buffers t))
-(global-set-key (kbd "C-x C-a") 'save-all-buffs)
+;; (global-set-key (kbd "C-x C-a") 'save-all-buffs)
 
 ;; NO STARTUP SCREEN
 (setq inhibit-startup-screen t)
@@ -388,7 +388,7 @@
     ("righttack"      "⊢" nil 0)
     ("mathfunarrow"   "↦" nil 0)))
 
-;; (setq-default abbrev-mode t) ;; ABBREVS ALWAYS ON
+;; (setq-default abbrev-mode t) ;; ABBREVS OFF BY DEFAULT
 
 ;; NXML MODE
 (add-to-list 'auto-mode-alist '("\\.xml\\'" . nxml-mode))
@@ -539,6 +539,14 @@
     (setq cider-font-lock-reader-conditionals nil)))
 
 (global-set-key (kbd "C-c C-l") 'cider-repl-clear-buffer)
+
+;; SLIME WITH SBCL
+(use-package slime
+  :ensure t
+  :init
+  (progn
+    (setq inferior-lisp-program "/home/kongra/sbcl/bin/sbcl")
+    (slime-setup '(slime-fancy))))
 
 ;; ESS (Emacs Speaks Statistics)
 (add-hook

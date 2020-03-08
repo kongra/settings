@@ -28,6 +28,7 @@ JAVA_HOME=$HOME/Javasoft/jdk
 ANT_HOME=$HOME/Javasoft/ant
 
 PATH=$JAVA_HOME/bin:$PATH:$ANT_HOME/bin
+CLASSPATH=.
 
 # Maven
 M2_HOME=$HOME/Javasoft/apache-maven
@@ -40,6 +41,7 @@ PATH=$PATH:$HOME/Javasoft/gradle/bin
 
 # Antlr4
 ANTLR4_HOME=$HOME/Devel/Libs/antlr4
+CLASSPATH=$CLASSPATH:$ANTLR4_HOME/antlr-complete.jar
 
 # GNAT/Ada
 GNAT_HOME=$HOME/Adasoft/GNAT/current
@@ -54,6 +56,10 @@ PATH=$PATH:$HOME/Devel/Libs/cmake/bin
 
 # Haskell
 # PATH=$PATH:$HOME/.cabal/bin:/opt/cabal/1.24/bin:/opt/ghc/8.0.2/bin:/opt/happy/1.19.5/bin:/opt/alex/3.1.7/bin
+
+# SBCL
+SBCL_HOME=$HOME/sbcl/lib/sbcl
+PATH=$PATH:$HOME/sbcl/bin
 
 # TMPDIR=$HOME/tmp
 # R
@@ -77,7 +83,7 @@ PATH=$PATH:$HOME/Devel/Libs/node/bin:$HOME/node_modules/.bin:$HOME/node_modules/
 R_ENABLE_JIT=3
 
 # ANDROID
-ANDROID_HOME=$HOME/Devel/Libs/android-sdk
-PATH=$PATH:$ANDROID_HOME:$ANDROID_HOME/bin
+ANDROID_SDK_ROOT=$HOME/Devel/Libs/android-sdk
+PATH=$PATH:$ANDROID_SDK_ROOT:$ANDROID_SDK_ROOT/bin:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/emulator/qemu/linux-x86_64
 
-export PATH JAVA_HOME ANT_HOME M2_HOME M2 MAVEN_OPTS ANTLR4_HOME GNAT_HOME LLVM_HOME IBUS_ENABLE_SYNC_MODE R_ENABLE_JIT ANDROID_HOME
+export PATH JAVA_HOME ANT_HOME M2_HOME M2 MAVEN_OPTS ANTLR4_HOME GNAT_HOME LLVM_HOME SBCL_HOME IBUS_ENABLE_SYNC_MODE R_ENABLE_JIT ANDROID_SDK_ROOT
