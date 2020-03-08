@@ -546,6 +546,8 @@
   :init
   (progn
     (setq inferior-lisp-program "/home/kongra/sbcl/bin/sbcl")
+    ;; (setq inferior-lisp-program "/home/kongra/ccl/lx86cl64")
+
     (slime-setup '(slime-fancy))))
 
 ;; ESS (Emacs Speaks Statistics)
