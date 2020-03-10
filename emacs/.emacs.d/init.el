@@ -556,7 +556,7 @@
 (setq slime-completion-at-point-functions
       'slime-fuzzy-complete-symbol)
 
-(global-set-key (kbd "M-RET") 'slime-complete-symbol)
+(global-set-key (kbd "<C-tab>") 'slime-complete-symbol)
 
 ;; (use-package slime-company
 ;;   :ensure t)
