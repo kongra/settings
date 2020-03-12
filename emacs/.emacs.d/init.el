@@ -52,7 +52,7 @@
 
 ;; DEFAULT WEB BROWSER
 (setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "/usr/bin/firefox")
+      browse-url-generic-program "/usr/bin/google-chrome")
 
 ;; ENCODING
 (prefer-coding-system                   'utf-8     )
@@ -542,25 +542,27 @@
 
 ;; COMMON LISP/SLIME
 (use-package slime
-  :ensure t
-  :init
-  (progn
-    ;; (setq inferior-lisp-program "/home/kongra/Lispsoft/sbcl/bin/sbcl")
-    (setq inferior-lisp-program "/home/kongra/Lispsoft/ccl/lx86cl64")))
+  :ensure t)
 
 (slime-setup '(slime-fancy))
+(add-to-list 'slime-contribs 'slime-autodoc)
 
-(add-to-list 'slime-contribs
-             'slime-autodoc)
-
+(setq inferior-lisp-program
+      "/home/kongra/Lispsoft/ccl/lx86cl64")
+;; (setq inferior-lisp-program
+;;       "/home/kongra/Lispsoft/sbcl/bin/sbcl")
 (setq slime-completion-at-point-functions
       'slime-fuzzy-complete-symbol)
+(setq lisp-indent-function
+      'common-lisp-indent-function)
+(setq common-lisp-hyperspec-root
+      "/home/kongra/Lispsoft/HyperSpec/")
 
-(global-set-key (kbd "<C-tab>") 'slime-complete-symbol)
+(add-hook 'slime-mode-hook
+          '(lambda() (local-set-key (kbd "C-l") 'slime-repl-clear-buffer)))
 
-;; (use-package slime-company
-;;   :ensure t)
-;; (slime-setup '(slime-company))
+(add-hook 'slime-mode-hook
+          '(lambda() (local-set-key (kbd "<C-tab>") 'slime-complete-symbol)))
 
 ;; ESS (Emacs Speaks Statistics)
 (add-hook
