@@ -529,6 +529,9 @@
   (progn
     (add-hook 'cider-repl-mode-hook #'paredit-mode)
     (add-hook 'cider-repl-mode-hook #'cider-company-enable-fuzzy-completion)
+    (add-hook 'cider-repl-mode-hook
+              '(lambda () (local-set-key (kbd "C-l") 'cider-repl-clear-buffer)))
+
     (add-hook 'cider-mode-hook      #'eldoc-mode)
     (add-hook 'cider-mode-hook      #'cider-company-enable-fuzzy-completion)
 
@@ -537,8 +540,6 @@
     ;; Let's disable Cider's fading out reader's conditionals - we need this
     ;; cause we work with cljc files:
     (setq cider-font-lock-reader-conditionals nil)))
-
-(global-set-key (kbd "C-c C-l") 'cider-repl-clear-buffer)
 
 ;; COMMON LISP/SLIME
 (use-package slime
