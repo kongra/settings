@@ -534,8 +534,8 @@
                 '(lambda ()
                   (local-set-key (kbd "C-l") 'cider-repl-clear-buffer)))
 
-      (add-hook 'cider-mode-hook      #'eldoc-mode)
-      (add-hook 'cider-mode-hook      #'cider-company-enable-fuzzy-completion)
+      (add-hook 'cider-mode-hook #'eldoc-mode)
+      (add-hook 'cider-mode-hook #'cider-company-enable-fuzzy-completion)
 
       (setq cider-repl-display-help-banner nil)
 
