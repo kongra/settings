@@ -557,7 +557,7 @@
             "/home/kongra/Lispsoft/ccl/lx86cl64")
       ;; (setq inferior-lisp-program
       ;;        "/home/kongra/Lispsoft/sbcl/bin/sbcl")
-      
+
       (setq slime-completion-at-point-functions
             'slime-fuzzy-complete-symbol)
       (setq lisp-indent-function
