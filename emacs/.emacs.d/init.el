@@ -52,8 +52,8 @@
 
 ;; DEFAULT WEB BROWSER
 (setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "/usr/bin/google-chrome"
-      ;; browse-url-generic-program "/usr/bin/firefox"
+      ;; browse-url-generic-program "/usr/bin/google-chrome"
+      browse-url-generic-program "/usr/bin/firefox"
       )
 
 ;; ENCODING
@@ -553,10 +553,10 @@
     (progn
       (slime-setup '(slime-fancy))
       (add-to-list 'slime-contribs 'slime-autodoc)
-      (setq inferior-lisp-program
-            "/home/kongra/Lispsoft/ccl/lx86cl64")
       ;; (setq inferior-lisp-program
-      ;;        "/home/kongra/Lispsoft/sbcl/bin/sbcl")
+      ;;         "/home/kongra/Lispsoft/ccl/lx86cl64")
+      (setq inferior-lisp-program
+                  "/home/kongra/Lispsoft/sbcl/bin/sbcl")
 
       (setq slime-completion-at-point-functions
             'slime-fuzzy-complete-symbol)
