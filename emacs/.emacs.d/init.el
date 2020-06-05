@@ -52,8 +52,9 @@
 
 ;; DEFAULT WEB BROWSER
 (setq browse-url-browser-function 'browse-url-generic
-      ;; browse-url-generic-program "/usr/bin/google-chrome"
-      browse-url-generic-program "/usr/bin/firefox")
+      browse-url-generic-program "/usr/bin/google-chrome"
+      ;; browse-url-generic-program "/usr/bin/firefox"
+      )
 
 ;; ENCODING
 (prefer-coding-system                   'utf-8     )
@@ -626,8 +627,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279"
-     "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" default)))
+    ("84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" default)))
  '(package-selected-packages
    (quote
     (color-moccur spacemacs-theme which-key use-package))))
