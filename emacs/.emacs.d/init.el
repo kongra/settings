@@ -52,9 +52,8 @@
 
 ;; DEFAULT WEB BROWSER
 (setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "/usr/bin/google-chrome"
-      ;; browse-url-generic-program "/usr/bin/firefox"
-      )
+      ;; browse-url-generic-program "/usr/bin/google-chrome"
+      browse-url-generic-program "/usr/bin/firefox")
 
 ;; ENCODING
 (prefer-coding-system                   'utf-8     )
@@ -571,6 +570,20 @@
       (add-hook 'slime-mode-hook
                 '(lambda()
                   (local-set-key (kbd "<C-tab>") 'slime-complete-symbol)))))
+
+;; HASKELL
+(use-package haskell-mode
+   :ensure t)
+
+(add-hook 'haskell-mode-hook
+  (lambda ()
+    (set (make-local-variable 'company-backends)
+         (append '((company-capf company-dabbrev-code))
+                 company-backends))))
+
+(add-hook 'haskell-mode-hook 'interactive-haskell-mode)
+
+(custom-set-variables '(haskell-stylish-on-save t))
 
 ;; ESS (Emacs Speaks Statistics)
 (add-hook

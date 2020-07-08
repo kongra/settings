@@ -2,12 +2,14 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/kongra/.oh-my-zsh
+export ZSH=/home/kongra/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+# ZSH_THEME="avit"
+ZSH_THEME="bira"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -84,4 +86,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias antlr4="java -jar $ANTLR4_HOME/antlr-complete.jar"
-alias grun='java org.antlr.v4.gui.TestRig'
+alias grun='java -cp :.$ANTLR4_HOME/antlr-complete.jar org.antlr.v4.gui.TestRig'
