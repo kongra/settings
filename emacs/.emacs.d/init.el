@@ -52,9 +52,8 @@
 
 ;; DEFAULT WEB BROWSER
 (setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "/usr/bin/google-chrome"
-      ;; browse-url-generic-program "/usr/bin/firefox"
-      )
+      ;; browse-url-generic-program "/usr/bin/google-chrome"
+      browse-url-generic-program "/usr/bin/firefox")
 
 ;; ENCODING
 (prefer-coding-system                   'utf-8     )
@@ -246,8 +245,10 @@
 ;; COMPANY
 (use-package company
     :ensure t
-    :init (progn (setq company-idle-delay                      0)
-                 (setq company-minimum-prefix-length           2)
+    :init (progn (setq company-idle-delay              0)
+                 (setq company-minimum-prefix-length   2)
+                 (setq company-tooltip-minimum         2)
+                 (setq company-tooltip-limit         999)
                  (add-hook 'after-init-hook 'global-company-mode)))
 
 ;; POWERLINE
