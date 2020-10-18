@@ -17,7 +17,11 @@
 ;; PACKAGES INITIALIZATION
 (require 'package)
 (setq package-enable-at-startup nil)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"   ))
+(add-to-list 'package-archives '("org"   . "https://orgmode.org/elpa/"     ))
+(add-to-list 'package-archives '("elpa"  . "https://elpa.gnu.org/packages/"))
+
 (package-initialize)
 
 ;; ADDITIONAL LOAD PATHS
@@ -78,7 +82,6 @@
 (setq x-select-enable-clipboard t)
 
 ;; OPTIMIZE UP/DOWN LAGS
-
 
 ;; MOVING LINES UP/DOWN
 ;; https://www.emacswiki.org/emacs/MoveLine
@@ -143,7 +146,7 @@
 (menu-bar-mode -1)
 
 ;; FONTS
-(set-default-font "Ubuntu Mono-12")
+;; (set-default-font "Ubuntu Mono-12")
 (add-to-list 'default-frame-alist '(font . "Ubuntu Mono-12"))
 
 ;; FONT LOCK MODE ALWAYS
@@ -596,7 +599,7 @@
  '(haskell-stylish-on-save t)
  '(package-selected-packages
    (quote
-    (color-moccur spacemacs-theme which-key use-package))))
+    (rainbow-mode ess color-moccur spacemacs-theme which-key use-package))))
 
 ;; ESS (Emacs Speaks Statistics)
 (add-hook
@@ -646,7 +649,14 @@
     :init (progn (add-hook 'prog-mode-hook #'rainbow-mode)
                  (add-hook 'org-mode-hook  #'rainbow-mode)))
 
+;; DEALING WITH LONG LINES (PERF. REASONS)
+(setq bidi-paragraph-direction 'left-to-right)
 
+(if (version<= "27.1" emacs-version)
+    (setq bidi-inhibit-bpa t))
+
+(if (version<= "27.1" emacs-version)
+    (global-so-long-mode 1))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
