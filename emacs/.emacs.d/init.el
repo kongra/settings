@@ -515,6 +515,11 @@
 ;; DIRED+
 (require 'dired+)
 
+;; FLYCHECK
+(use-package flycheck
+             :ensure t
+             :init (global-flycheck-mode))
+
 ;; C/C++
 (setq-default indent-tabs-mode  nil)
 (setq         c-basic-offset      2)
