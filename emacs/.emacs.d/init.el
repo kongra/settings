@@ -79,7 +79,7 @@
 (global-auto-revert-mode t)
 
 ;; CLIPBOARD
-(setq x-select-enable-clipboard t)
+(setq select-enable-clipboard t)
 
 ;; OPTIMIZE UP/DOWN LAGS
 
@@ -603,7 +603,7 @@
  '(haskell-stylish-on-save t)
  '(package-selected-packages
    (quote
-    (flycheck-clj-kondo rainbow-mode ess color-moccur spacemacs-theme which-key use-package))))
+    (uniquify-files wisi flycheck-clj-kondo rainbow-mode ess color-moccur spacemacs-theme which-key use-package))))
 
 ;; ESS (Emacs Speaks Statistics)
 (add-hook
@@ -646,6 +646,16 @@
    ;; (when (executable-find "ipython")
    ;;   (setq python-shell-interpreter "ipython"))
    ))
+
+;; ADA MODE
+(use-package wisi
+  :ensure t)
+
+(use-package uniquify-files
+  :ensure t)
+
+;; (use-package ada-mode
+;;   :ensure t)
 
 ;; RAINBOW MODE
 (use-package rainbow-mode
