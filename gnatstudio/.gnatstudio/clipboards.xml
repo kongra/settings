@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Clipboard>
+  <clipboard last="true" >2019-02-10</clipboard>
+  <clipboard>-- Copyright (c) Konrad Grzanek
+-- Created: 2021-02-09</clipboard>
+  <clipboard>-- Created: 2021-02-09</clipboard>
+  <clipboard>function Value_Or (M : Maybe; Default : Value_Type) return Value_Type is
+      case M.Kind is
+         when Just    =&gt; M.Value;
+         when Nothing =&gt; Default;
+      end case;
+   end Value_Or;</clipboard>
+  <clipboard>Ada.Text_IO.Put_Line (Kleene_Arr&apos;Size&apos;Image);</clipboard>
+  <clipboard>type Kleene_Arr is array (Positive range 1 .. 100) of Kleene.Maybe;</clipboard>
+  <clipboard>Ada.Text_IO.Put_Line (Selected_Months&apos;Size&apos;Image);</clipboard>
+  <clipboard>Prelude.Maybe (Value_Type =&gt; Natural);</clipboard>
+  <clipboard>Ada.Text_IO.Put_Line (I1.Value&apos;Image);</clipboard>
+  <clipboard>Ada.Text_IO.Put_Line (&quot;Cool&quot;);</clipboard>
+</Clipboard>

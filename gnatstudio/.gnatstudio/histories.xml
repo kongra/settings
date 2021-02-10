@@ -1,0 +1,678 @@
+<?xml version="1.0"?>
+<History>
+  <key type="booleans" name="omni-search-include-all-from-source-dirs" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-severities-High-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-initial value of an object is not used-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="keyshortcuts-filter-negate" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-function with side effects-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-an IN OUT parameter or an In_Out global that is not written-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-input item missing from the null dependency clause-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-dead code-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="preferences_editor_searchpreferences_editor_search-case_sensitive" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-loop invariant-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="preferences_editor_searchpreferences_editor_search-whole_word" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-invariant check on default value-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-illegal write of a global input-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="keyshortcuts-filter-approximate" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="project_view-filter-whole-word" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="bookmarks-filter-negate" >
+    <value>FALSE</value>
+  </key>
+  <key type="strings" name="preferences_editor_search-width" >
+    <value> 25</value>
+  </key>
+  <key type="booleans" name="traceseditor-filter-whole-word" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-initial condition-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="locations-filter-recent" >
+    <Length> 5</Length>
+  </key>
+  <key type="booleans" name="gnathub-rules-warnings-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-essential complexity-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="window_x_Preferences" >
+    <value> 429</value>
+    <value> 469</value>
+    <value> 552</value>
+    <value> 434</value>
+    <value> 297</value>
+    <value> 262</value>
+    <value> 281</value>
+    <value> 269</value>
+    <value> 457</value>
+    <value> 495</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-an extra item in the Global or Initializes contract-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-ceiling priority in Interrupt_Priority-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-wrong Default_Initial_Condition aspect-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-post-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="Call_Graph_Show_Locations" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-precondition of main-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-hierarchy fan-out coupling-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-protected operation blocks-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="search-recent-Current file"  />
+  <key type="booleans" name="gnathub-rules-discriminant check-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-interrupt is reserved-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-end-of-line comments-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-unit fan-out coupling-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="memory_usage_view-filter-fuzzy" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-object is not used-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-refined postcondition-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-cyclomatic complexity-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-postcondition always False-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-precondition not True while class-wide precondition is True-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-memory leak-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="outline-filter-recent" >
+    <Length> 5</Length>
+  </key>
+  <key type="booleans" name="gnathub-rules-blank lines-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="project_view-filter-recent" >
+    <Length> 5</Length>
+  </key>
+  <key type="booleans" name="gnathub-rules-volatile function wrongly declared as non-volatile-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="search-recent-Actions"  />
+  <key type="booleans" name="gnathub-rules-subprogram output depends on a Proof_In global-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-code lines-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="global_searchglobal_search-case_sensitive" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-OUT parameters-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="bookmarks-filter-whole-word" >
+    <value>FALSE</value>
+  </key>
+  <key type="strings" name="search-recent-Opened"  />
+  <key type="booleans" name="memory_usage_view-filter-negate" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-race condition-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-loop variant-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-a missing pragma Elaborate_Body-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-all execution paths raise exceptions or do not return-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="outline-filter-whole-word" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-overflow check-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="locations-filter-whole-word" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-pragma Assume always False-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="memory_usage_view-filter-is-regexp" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-severities-Unspecified-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-IN parameters-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="search-recent-Entities" >
+    <value>Collatz_Arg:euler14.adb:8:12</value>
+    <value>Create_Primary_Table:s-regexp.adb:661:17</value>
+    <value>Prelude.Maybe:prelude-maybe.ads:5:9</value>
+    <value>Winter_Month:main.adb:6:12</value>
+    <value>Natural_16:s-wwdenu.adb:90:12</value>
+    <Length> 5</Length>
+  </key>
+  <key type="booleans" name="gnathub-rules-postcondition-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-extra input item in the dependency clause-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="keyshortcuts-filter-fuzzy" >
+    <value>FALSE</value>
+  </key>
+  <key type="strings" name="search-recent-Entities for current file"  />
+  <key type="strings" name="search-recent-File names"  />
+  <key type="booleans" name="gnathub-rules-control fan-out coupling-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-memory leak at end of scope-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-tagged fan-out coupling-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-invariant check-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="keyshortcuts-filter-recent" >
+    <Length> 5</Length>
+  </key>
+  <key type="booleans" name="gnathub-rules-predicate check on default value-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="commits-filter-negate" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-all statements-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-unreachable code-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-informational-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-unreachable branch-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="commits-filter-is-regexp" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="traceseditor-filter-negate" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-all parameters-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-private types-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="bookmarks-filter-recent" >
+    <Length> 5</Length>
+  </key>
+  <key type="booleans" name="gnathub-rules-null exclusion-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-unchecked conversion size check-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-invalid context for call to Current_Task-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-non-ghost output of ghost procedure-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-complete contract cases-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="bookmarks-filter-fuzzy" >
+    <value>FALSE</value>
+  </key>
+  <key type="strings" name="Prove File" >
+    <value>gnatprove -P%PP -j0 %X --ide-progress-bar -u %fp</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-class-wide postcondition stronger than overridden one-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-range check-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-Average lines in body-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-contract case-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-divide by zero-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="commits-filter-whole-word" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-tag check-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-comment lines-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-hierarchy fan-in coupling-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="interactive" >
+    <Length> 100</Length>
+  </key>
+  <key type="booleans" name="project_view-filter-fuzzy" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-all declarations-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-null pointer dereference-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="global_searchglobal_search-whole_word" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-fp_overflow check-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="global_search-preview" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-assertion-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-index check-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="memory_usage_view-filter-whole-word" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-all type definitions-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="memory_usage_view-filter-recent" >
+    <Length> 5</Length>
+  </key>
+  <key type="booleans" name="gnathub-rules-maximal construct nesting-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-control fan-in coupling-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="search-recent-Preferences"  />
+  <key type="booleans" name="gnathub-rules-Inline_For_Proof annotation-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="locations-filter-is-regexp" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-a state abstraction that is impossible to initialize-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-contract complete-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-public subprograms-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="Compile All Sources" >
+    <value>%builder -c -U -d %eL -P%PP %config %autoconf %X -s</value>
+    <value>%builder -c -U -d %eL -P%PP %config %autoconf %X</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-tagged fan-in coupling-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-all lines-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-statement complexity-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-aliasing between subprogram parameters-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-input item missing from the dependency clause-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-extra exit points-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-loop with stable statement-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-precondition always False-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="Basic Prove File" >
+    <value>gnatprove -P%PP -j0 %X --ide-progress-bar --level=0 -u %fp</value>
+  </key>
+  <key type="booleans" name="gnathub-severities-Medium-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="global_search-kind" >
+    <value>FUZZY</value>
+    <value>FULL_TEXT</value>
+    <Length> 1</Length>
+  </key>
+  <key type="booleans" name="gnathub-severities-Annotation-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-spark lines-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="reopen_files" >
+    <value>/tmp/ref$prelude-maybe.adb</value>
+    <value>/home/kongra/Adasoft/GNAT/current/lib/gcc/x86_64-pc-linux-gnu/9.3.1/rts-native/adainclude/s-regexp.ads</value>
+    <value>/home/kongra/Adasoft/GNAT/current/lib/gcc/x86_64-pc-linux-gnu/9.3.1/rts-native/adainclude/s-regexp.adb</value>
+    <value>/media/kongra/Devel/Projects/Present/Adaprj/src/euler14.adb</value>
+    <value>/media/kongra/Devel/Projects/Present/Adaprj/src/prelude-maybe.ads</value>
+    <value>/media/kongra/Devel/Projects/Present/Adaprj/src/prelude-maybe.adb</value>
+    <value>/media/kongra/Devel/Projects/Present/Adaprj/src/prelude.ads</value>
+    <value>/media/kongra/Devel/Projects/Present/Adaprj/src/prelude-commons.ads</value>
+    <value>/media/kongra/Devel/Projects/Present/Adaprj/src/prelude-commons.adb</value>
+    <value>/home/kongra/Adasoft/GNAT/current/lib/gcc/x86_64-pc-linux-gnu/9.3.1/rts-native/adainclude/a-dinopr.ads</value>
+  </key>
+  <key type="strings" name="GNAT Metrics for file" >
+    <value>%gnathub -P%PP %X %subdirsarg --plugins=gnatmetric --targs:gnatmetric %fp --complexity-cyclomatic</value>
+    <value>%gnathub -P%PP %X %subdirsarg --plugins=gnatmetric --targs:gnatmetric %fp</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-all subprogram bodies-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-non-volatile function wrongly declared as volatile-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="keyshortcuts-filter-whole-word" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-maximum loop nesting-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="search-displays-relative-paths" >
+    <value>FALSE</value>
+  </key>
+  <key type="strings" name="search-recent-Plugins"  />
+  <key type="booleans" name="gnathub-rules-disjoint contract cases-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-class-wide precondition weaker than overridden one-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-illegal write of an object declared as constant after elaboration-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-precondition-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-task termination-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="traceseditor-filter-recent" >
+    <Length> 5</Length>
+  </key>
+  <key type="booleans" name="gnathub-rules-contract complexity-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="traceseditor-filter-fuzzy" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-ceiling priority protocol-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-expression complexity-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-raised exception-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="outline-filter-fuzzy" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-incomplete Global or Initializes contract-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-output item missing from the dependency clause-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-tools-GNATprove-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-severities-Informational-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="Clean All" >
+    <value>%gprclean -r %eL -P%PP %X</value>
+  </key>
+  <key type="booleans" name="commits-filter-fuzzy" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="traceseditor-filter-is-regexp" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-invalid call in type invariant-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-illegal reference to a global object in precondition of a protected operation-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-default initial condition-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-unchecked conversion check-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-errors-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-IN OUT parameters-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-postcondition stronger than class-wide postcondition-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="commits-filter-recent" >
+    <Length> 5</Length>
+  </key>
+  <key type="booleans" name="gnathub-rules-constants with variable inputs that is not a state constituent-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="Build All" >
+    <value>%builder -d %eL -P%PP %config %autoconf %X</value>
+  </key>
+  <key type="booleans" name="outline-filter-negate" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-loop invariant after first iteration-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="locations-filter-negate" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-an extra item in the Initializes contract-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-maximal unit nesting-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-length check-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="Build Main" >
+    <value>%builder -d %eL -P%PP %config %autoconf %X %TT -s</value>
+    <value>%builder -d %eL -P%PP %config %autoconf %X %TT</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-predicate check-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="keyshortcuts-filter-is-regexp" >
+    <value>FALSE</value>
+  </key>
+  <key type="strings" name="window_y_Preferences" >
+    <value> 0</value>
+    <value> 11</value>
+    <value> 46</value>
+    <value> 78</value>
+    <value> 13</value>
+    <value> 33</value>
+    <value> 29</value>
+    <value> 4</value>
+    <value> 145</value>
+    <value> 44</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-constant with no variable inputs as an abstract state&apos;s constituent-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="bookmarks-filter-is-regexp" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-a statement with no effect on subprogram&apos;s outputs-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-tools-gnatmetric-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="history-filter-recent" >
+    <Length> 5</Length>
+  </key>
+  <key type="strings" name="preferences_editor_search-kind" >
+    <value>FUZZY</value>
+    <value>FULL_TEXT</value>
+    <Length> 1</Length>
+  </key>
+  <key type="booleans" name="gnathub-rules-subprogram marked Terminating may not terminate-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="project_view-filter-is-regexp" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="history-filter-is-regexp" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-loop invariant in first iteration-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-use of an uninitialized variable-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="global_search-width" >
+    <value> 25</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-contract-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-use of an abstract state of a package that was not yet elaborated-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="key-theme" >
+    <value>default</value>
+    <Length> 1</Length>
+  </key>
+  <key type="booleans" name="gnathub-rules-unit fan-in coupling-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="traceseditor-filter-approximate" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-average complexity-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="preferences_editor_search-preview" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="project_files" >
+    <value>/home/kongra/Adasoft/GNAT/current/bin/default.gpr</value>
+    <value>/media/kongra/Devel/Projects/Present/Adaprj/adaprj.gpr</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-precondition weaker than class-wide precondition-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-comment percentage-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="global-search-entry-Entities" >
+    <value>Collatz_a</value>
+    <Length> 1</Length>
+  </key>
+  <key type="booleans" name="project_view-filter-negate" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-severities-Low-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="global-search-entry" >
+    <value />
+    <Length> 1</Length>
+  </key>
+  <key type="booleans" name="locations-filter-fuzzy" >
+    <value>FALSE</value>
+  </key>
+  <key type="booleans" name="gnathub-rules-public types-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="strings" name="search-recent-Specific file"  />
+  <key type="booleans" name="gnathub-rules-logical SLOC-active" >
+    <value>TRUE</value>
+  </key>
+  <key type="booleans" name="outline-filter-is-regexp" >
+    <value>FALSE</value>
+  </key>
+</History>
