@@ -36,9 +36,9 @@
 
 ;; WHICH-KEY
 (use-package which-key
-             :ensure t
-             :init
-             (which-key-mode))
+  :ensure t
+  :init
+  (which-key-mode))
 
 ;; SOME ESSENTIAL KEYS
 (global-set-key (kbd "M-u") 'undo) ; was upcase-word
@@ -168,9 +168,9 @@
 
 ;; SPACEMACS THEME
 (use-package spacemacs-theme
-             :ensure t
-             :defer  t
-             :init (require 'spacemacs-dark-theme))
+  :ensure t
+  :defer  t
+  :init (require 'spacemacs-dark-theme))
 
 ;; CURSOR
 (set-cursor-color "#eead0e")
@@ -200,7 +200,7 @@
 (setq-default fill-column 80)
 
 (use-package fill-column-indicator
-             :ensure t)
+  :ensure t)
 
 (setq fci-rule-width 1)
 (setq fci-rule-color "#404347")
@@ -233,26 +233,26 @@
 
 ;; GIT-GUTTER
 (use-package git-gutter
-             :ensure t
-             :init
-             (progn (setq git-gutter:lighter " GG")
-                    (global-git-gutter-mode t)
-                    (set-face-foreground 'git-gutter:modified "BlueViolet")
-                    (set-face-foreground 'git-gutter:added    "ForestGreen")
-                    (set-face-foreground 'git-gutter:deleted  "red")))
+  :ensure t
+  :init
+  (progn (setq git-gutter:lighter " GG")
+         (global-git-gutter-mode t)
+         (set-face-foreground 'git-gutter:modified "BlueViolet")
+         (set-face-foreground 'git-gutter:added    "ForestGreen")
+         (set-face-foreground 'git-gutter:deleted  "red")))
 
 ;; MAGIT
 (use-package magit
-             :ensure t)
+  :ensure t)
 
 ;; COMPANY
 (use-package company
-             :ensure t
-             :init (progn (setq company-idle-delay              0)
-                          (setq company-minimum-prefix-length   2)
-                          (setq company-tooltip-minimum         2)
-                          (setq company-tooltip-limit         999)
-                          (add-hook 'after-init-hook 'global-company-mode)))
+  :ensure t
+  :init (progn (setq company-idle-delay              0)
+               (setq company-minimum-prefix-length   2)
+               (setq company-tooltip-minimum         2)
+               (setq company-tooltip-limit         999)
+               (add-hook 'after-init-hook 'global-company-mode)))
 
 ;; POWERLINE
 ;; (add-to-list 'load-path "~/.emacs.d/elisp/powerline")
@@ -261,30 +261,30 @@
 
 ;; IDO VERTICAL WITH SMEX
 (use-package ido-vertical-mode
-             :ensure t
-             :init
-             (progn
-               (setq ido-enable-flex-matching      t) ;; enable fuzzy matching
-               ;; (setq ido-enable-flex-matching nil)
-               (setq ido-create-new-buffer   'always)
-               (setq ido-everywhere                t)
-               (setq ido-vertical-show-count       t)
-               (ido-mode                           1)
-               (ido-vertical-mode                  1)))
+  :ensure t
+  :init
+  (progn
+    (setq ido-enable-flex-matching      t) ;; enable fuzzy matching
+    ;; (setq ido-enable-flex-matching nil)
+    (setq ido-create-new-buffer   'always)
+    (setq ido-everywhere                t)
+    (setq ido-vertical-show-count       t)
+    (ido-mode                           1)
+    (ido-vertical-mode                  1)))
 
 (use-package smex
-             :ensure t
-             :init
-             (progn
-               (smex-initialize)
-               (global-set-key (kbd "M-x") 'smex)
-               (global-set-key (kbd "M-X") 'smex-major-mode-commands)))
+  :ensure t
+  :init
+  (progn
+    (smex-initialize)
+    (global-set-key (kbd "M-x") 'smex)
+    (global-set-key (kbd "M-X") 'smex-major-mode-commands)))
 
 ;; IVY/SWIPER/COUNSEL
 (defun ivy-with-thing-at-point (cmd)
   (let ((ivy-initial-inputs-alist
-          (list
-           (cons cmd (thing-at-point 'symbol)))))
+         (list
+          (cons cmd (thing-at-point 'symbol)))))
     (funcall cmd)))
 
 (defun counsel-rg-thing-at-point ()
@@ -295,26 +295,26 @@
       "rg -i -M 120 --no-heading --line-number --color never '%s' %s")
 
 (use-package swiper
-             :ensure t
-             :init (global-set-key "\C-s" 'swiper-isearch-thing-at-point))
+  :ensure t
+  :init (global-set-key "\C-s" 'swiper-isearch-thing-at-point))
 
 (use-package ivy
-             :ensure t)
+  :ensure t)
 
 (use-package counsel
-             :ensure t
-             :init (global-set-key "\C-f" 'counsel-rg-thing-at-point))
+  :ensure t
+  :init (global-set-key "\C-f" 'counsel-rg-thing-at-point))
 
 ;; PAREDIT
 (use-package paredit
-             :ensure t
-             :init
-             (progn
-               (add-hook 'clojure-mode-hook          (lambda () (paredit-mode +1)))
-               (add-hook 'emacs-lisp-mode-hook       (lambda () (paredit-mode +1)))
-               (add-hook 'lisp-interaction-mode-hook (lambda () (paredit-mode +1)))
-               (add-hook 'lisp-mode-hook             (lambda () (paredit-mode +1)))
-               (add-hook 'slime-repl-mode-hook       (lambda () (paredit-mode +1)))))
+  :ensure t
+  :init
+  (progn
+    (add-hook 'clojure-mode-hook          (lambda () (paredit-mode +1)))
+    (add-hook 'emacs-lisp-mode-hook       (lambda () (paredit-mode +1)))
+    (add-hook 'lisp-interaction-mode-hook (lambda () (paredit-mode +1)))
+    (add-hook 'lisp-mode-hook             (lambda () (paredit-mode +1)))
+    (add-hook 'slime-repl-mode-hook       (lambda () (paredit-mode +1)))))
 
 (setq skeleton-pair t)
 (setq skeleton-pair-alist
@@ -336,15 +336,15 @@
 
 ;; RAINBOW DELIMITERS
 (use-package rainbow-delimiters
-             :ensure t
-             :init (add-hook 'prog-mode-hook #'rainbow-delimiters-mode))
+  :ensure t
+  :init (add-hook 'prog-mode-hook #'rainbow-delimiters-mode))
 
 ;; HIGHLIGHT MATCHING PARENS
 (use-package mic-paren
-             :ensure t
-             :init
-             (progn (paren-activate)
-                    (setf paren-priority 'close)))
+  :ensure t
+  :init
+  (progn (paren-activate)
+         (setf paren-priority 'close)))
 
 ;; MANAGING BOOKMARKS
 (global-set-key [f8] 'bookmark-set)
@@ -356,44 +356,44 @@
 
 ;; COLOR (M)OCCUR
 (use-package color-moccur
-             :ensure t)
+  :ensure t)
 
 ;; ABBREVS
 (define-abbrev-table 'global-abbrev-table
-    '(
-      ("alpha"          "α" nil 0)
-      ("beta"           "β" nil 0)
-      ("gamma"          "γ" nil 0)
-      ("delta"          "δ" nil 0)
-      ("epsilon"        "ε" nil 0)
-      ("zeta"           "ζ" nil 0)
-      ("eta"            "η" nil 0)
-      ("theta"          "θ" nil 0)
-      ("iota"           "ι" nil 0)
-      ("kappa"          "κ" nil 0)
-      ("lambda"         "λ" nil 0)
-      ("mu"             "μ" nil 0)
-      ("nu"             "ν" nil 0)
-      ("xi"             "ξ" nil 0)
-      ("omicron"        "ο" nil 0)
-      ("pi"             "π" nil 0)
-      ("rho"            "ρ" nil 0)
-      ("sigma"          "σ" nil 0)
-      ("tau"            "τ" nil 0)
-      ("upsilon"        "υ" nil 0)
-      ("phi"            "φ" nil 0)
-      ("chi"            "χ" nil 0)
-      ("psi"            "ψ" nil 0)
-      ("omega"          "ω" nil 0)
-      ("aleph"          "א" nil 0)
-      ("inf"            "∞" nil 0)
-      ("forall"         "∀" nil 0)
-      ("thereexists"    "∃" nil 0)
-      ("downtack"       "⊤" nil 0)
-      ("uptack"         "⊥" nil 0)
-      ("falsum"         "⊥" nil 0)
-      ("righttack"      "⊢" nil 0)
-      ("mathfunarrow"   "↦" nil 0)))
+  '(
+    ("alpha"          "α" nil 0)
+    ("beta"           "β" nil 0)
+    ("gamma"          "γ" nil 0)
+    ("delta"          "δ" nil 0)
+    ("epsilon"        "ε" nil 0)
+    ("zeta"           "ζ" nil 0)
+    ("eta"            "η" nil 0)
+    ("theta"          "θ" nil 0)
+    ("iota"           "ι" nil 0)
+    ("kappa"          "κ" nil 0)
+    ("lambda"         "λ" nil 0)
+    ("mu"             "μ" nil 0)
+    ("nu"             "ν" nil 0)
+    ("xi"             "ξ" nil 0)
+    ("omicron"        "ο" nil 0)
+    ("pi"             "π" nil 0)
+    ("rho"            "ρ" nil 0)
+    ("sigma"          "σ" nil 0)
+    ("tau"            "τ" nil 0)
+    ("upsilon"        "υ" nil 0)
+    ("phi"            "φ" nil 0)
+    ("chi"            "χ" nil 0)
+    ("psi"            "ψ" nil 0)
+    ("omega"          "ω" nil 0)
+    ("aleph"          "א" nil 0)
+    ("inf"            "∞" nil 0)
+    ("forall"         "∀" nil 0)
+    ("thereexists"    "∃" nil 0)
+    ("downtack"       "⊤" nil 0)
+    ("uptack"         "⊥" nil 0)
+    ("falsum"         "⊥" nil 0)
+    ("righttack"      "⊢" nil 0)
+    ("mathfunarrow"   "↦" nil 0)))
 
 ;; (setq-default abbrev-mode t) ;; ABBREVS OFF BY DEFAULT
 
@@ -498,10 +498,10 @@
 
 ;; HIGHLIGHT SYMBOL AT POINT
 (use-package highlight-symbol
-             :ensure t)
+  :ensure t)
 
 (use-package highlight
-             :ensure t)
+  :ensure t)
 
 (global-set-key [f1] 'highlight-symbol-at-point)
 
@@ -517,8 +517,8 @@
 
 ;; FLYCHECK
 (use-package flycheck
-             :ensure t
-             :init (global-flycheck-mode))
+  :ensure t
+  :init (global-flycheck-mode))
 
 ;; C/C++
 (setq-default indent-tabs-mode  nil)
@@ -530,59 +530,59 @@
 
 ;; CLOJURE/CIDER
 (use-package clojure-mode
-             :ensure t
-             :init   (progn (setq clojure-indent-style :always-indent))
-             :config (require 'flycheck-clj-kondo))
+  :ensure t
+  :init   (progn (setq clojure-indent-style :always-indent))
+  :config (require 'flycheck-clj-kondo))
 
 (use-package cider
-             :ensure t
-             :init
-             (progn
-               (add-hook 'cider-repl-mode-hook #'paredit-mode)
-               (add-hook 'cider-repl-mode-hook #'cider-company-enable-fuzzy-completion)
-               (add-hook 'cider-repl-mode-hook
-                         '(lambda ()
-                           (local-set-key (kbd "C-l") 'cider-repl-clear-buffer)))
+  :ensure t
+  :init
+  (progn
+    (add-hook 'cider-repl-mode-hook #'paredit-mode)
+    (add-hook 'cider-repl-mode-hook #'cider-company-enable-fuzzy-completion)
+    (add-hook 'cider-repl-mode-hook
+              '(lambda ()
+                 (local-set-key (kbd "C-l") 'cider-repl-clear-buffer)))
 
-               (add-hook 'cider-mode-hook #'eldoc-mode)
-               (add-hook 'cider-mode-hook #'cider-company-enable-fuzzy-completion)
+    (add-hook 'cider-mode-hook #'eldoc-mode)
+    (add-hook 'cider-mode-hook #'cider-company-enable-fuzzy-completion)
 
-               (setq cider-repl-display-help-banner nil)
+    (setq cider-repl-display-help-banner nil)
 
-               ;; Let's disable Cider's fading out reader's conditionals - we need this
-               ;; cause we work with cljc files:
-               (setq cider-font-lock-reader-conditionals nil)))
+    ;; Let's disable Cider's fading out reader's conditionals - we need this
+    ;; cause we work with cljc files:
+    (setq cider-font-lock-reader-conditionals nil)))
 
 ;; COMMON LISP/SLIME
 (use-package slime
-             :ensure t
+  :ensure t
 
-             :init
-             (progn
-               (slime-setup '(slime-fancy))
-               (add-to-list 'slime-contribs 'slime-autodoc)
-               (setq inferior-lisp-program
-                     "/home/kongra/Lispsoft/ccl/lx86cl64")
-               ;; (setq inferior-lisp-program
-               ;;              "/home/kongra/Lispsoft/sbcl/bin/sbcl")
+  :init
+  (progn
+    (slime-setup '(slime-fancy))
+    (add-to-list 'slime-contribs 'slime-autodoc)
+    (setq inferior-lisp-program
+          "/home/kongra/Lispsoft/ccl/lx86cl64")
+    ;; (setq inferior-lisp-program
+    ;;              "/home/kongra/Lispsoft/sbcl/bin/sbcl")
 
-               (setq slime-completion-at-point-functions
-                     'slime-fuzzy-complete-symbol)
-               (setq lisp-indent-function
-                     'common-lisp-indent-function)
-               (setq common-lisp-hyperspec-root
-                     "/home/kongra/Lispsoft/HyperSpec/")
+    (setq slime-completion-at-point-functions
+          'slime-fuzzy-complete-symbol)
+    ;; (setq lisp-indent-function
+    ;;       'common-lisp-indent-function)
+    (setq common-lisp-hyperspec-root
+          "/home/kongra/Lispsoft/HyperSpec/")
 
-               (add-hook 'slime-mode-hook
-                         '(lambda()
-                           (local-set-key (kbd "C-l") 'slime-repl-clear-buffer)))
-               (add-hook 'slime-mode-hook
-                         '(lambda()
-                           (local-set-key (kbd "<C-tab>") 'slime-complete-symbol)))))
+    (add-hook 'slime-mode-hook
+              '(lambda()
+                 (local-set-key (kbd "C-l") 'slime-repl-clear-buffer)))
+    (add-hook 'slime-mode-hook
+              '(lambda()
+                 (local-set-key (kbd "<C-tab>") 'slime-complete-symbol)))))
 
 ;; HASKELL
 (use-package haskell-mode
-             :ensure t)
+  :ensure t)
 
 (add-hook 'haskell-mode-hook
           (lambda ()
@@ -617,12 +617,12 @@
              'flymake-proc-legacy-flymake)
 
 (use-package ess
-             :ensure t
-             :init
-             (progn
-               (global-set-key (kbd "M-n") 'ess-eval-line-and-step)
-               (global-set-key (kbd "M-m") (lambda () (interactive) (insert "%>% ")))
-               (global-set-key (kbd "M--") (lambda () (interactive) (insert "<- " )))))
+  :ensure t
+  :init
+  (progn
+    (global-set-key (kbd "M-n") 'ess-eval-line-and-step)
+    (global-set-key (kbd "M-m") (lambda () (interactive) (insert "%>% ")))
+    (global-set-key (kbd "M--") (lambda () (interactive) (insert "<- " )))))
 
 (add-hook 'ess-mode-hook
           (lambda ()
@@ -642,10 +642,10 @@
  'python-mode-hook
 
  '(lambda ()
-   (setq python-indent 2)
-   ;; (when (executable-find "ipython")
-   ;;   (setq python-shell-interpreter "ipython"))
-   ))
+    (setq python-indent 2)
+    ;; (when (executable-find "ipython")
+    ;;   (setq python-shell-interpreter "ipython"))
+    ))
 
 ;; ADA MODE
 (use-package wisi
@@ -659,9 +659,9 @@
 
 ;; RAINBOW MODE
 (use-package rainbow-mode
-             :ensure t
-             :init (progn (add-hook 'prog-mode-hook #'rainbow-mode)
-                          (add-hook 'org-mode-hook  #'rainbow-mode)))
+  :ensure t
+  :init (progn (add-hook 'prog-mode-hook #'rainbow-mode)
+               (add-hook 'org-mode-hook  #'rainbow-mode)))
 
 ;; DEALING WITH LONG LINES (PERF. REASONS)
 (setq bidi-paragraph-direction 'left-to-right)
