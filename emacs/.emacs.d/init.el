@@ -1,3 +1,6 @@
+;;; init.el --- by kongra
+;;; Commentary:
+
 ;; GC
 ;; https://github.com/Fanael/init.el/blob/master/init.el
 (setq gc-cons-threshold (* 16 1024 1024))
@@ -573,12 +576,30 @@
     (setq common-lisp-hyperspec-root
           "/home/kongra/Lispsoft/HyperSpec/")
 
-    (add-hook 'slime-mode-hook
-              '(lambda()
-                 (local-set-key (kbd "C-l") 'slime-repl-clear-buffer)))
-    (add-hook 'slime-mode-hook
-              '(lambda()
-                 (local-set-key (kbd "<C-tab>") 'slime-complete-symbol)))))
+    (add-hook
+     'slime-mode-hook
+     '(lambda() (local-set-key (kbd "C-l") 'slime-repl-clear-buffer)))
+
+    (add-hook
+     'slime-mode-hook
+     '(lambda() (local-set-key (kbd "<C-tab>") 'slime-complete-symbol)))
+
+    (add-hook
+     'slime-mode-hook
+     '(lambda() (local-set-key (kbd "C-c C-o") 'slime-eval-last-expression-overlay)))))
+
+;; EVALUATION RESULT OVERLAYS (CIDER-LIKE) FOR EMACS LISP AND SLIME
+(use-package eros
+  :ensure t
+  :init (progn (eros-mode 1)))
+
+(defun slime-eval-last-expression-overlay ()
+  (interactive)
+  (destructuring-bind (output value)
+      (slime-eval `(swank:eval-and-grab-output ,(slime-last-expression)))
+    (eros--make-result-overlay (concat output value)
+      :where (point)
+      :duration eros-eval-result-duration)))
 
 ;; HASKELL
 (use-package haskell-mode
@@ -603,7 +624,8 @@
  '(haskell-stylish-on-save t)
  '(package-selected-packages
    (quote
-    (uniquify-files wisi flycheck-clj-kondo rainbow-mode ess color-moccur spacemacs-theme which-key use-package))))
+    (uniquify-files wisi flycheck-clj-kondo rainbow-mode ess color-moccur spacemacs-theme which-key use-package)))
+ '(safe-local-variable-values (quote ((Package . CCL)))))
 
 ;; ESS (Emacs Speaks Statistics)
 (add-hook
